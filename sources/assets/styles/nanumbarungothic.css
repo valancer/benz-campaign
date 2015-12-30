@@ -1,0 +1,58 @@
+/* 
+ * Nanum Barun Gothic Web Fonts
+ * https://github.com/hiun/NanumBarunGothic
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
+ */
+ 
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 200;
+  src: url(/assets/fonts/eot/NanumBarunGothicUltraLight.eot);
+  src: local('Nanum Barun Gothic UltraLight'),
+       local('NanumBarunGothicUltraLight'),
+       url(/assets/fonts/eot/NanumBarunGothicUltraLight.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/NanumBarunGothicUltraLight.woff2) format('woff2'),
+       url(/assets/fonts/woff/NanumBarunGothicUltraLight.woff) format('woff'),
+       url(/assets/fonts/ttf/NanumBarunGothicUltraLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/fonts/eot/NanumBarunGothicLight.eot);
+  src: local('Nanum Barun Gothic Light'),
+       local('NanumBarunGothicLight'),
+       url(/assets/fonts/eot/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/NanumBarunGothicLight.woff2) format('woff2'),
+       url(/assets/fonts/woff/NanumBarunGothicLight.woff) format('woff'),
+       url(/assets/fonts/ttf/NanumBarunGothicLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/eot/NanumBarunGothic.eot);
+  src: local('Nanum Barun Gothic'),
+       local('NanumBarunGothic'),
+       url(/assets/fonts/eot/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/NanumBarunGothic.woff2) format('woff2'),
+       url(/assets/fonts/woff/NanumBarunGothic.woff) format('woff'),
+       url(/assets/fonts/ttf/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/fonts/eot/NanumBarunGothicBold.eot);
+  src: local('Nanum Barun Gothic Bold'),
+       local('NanumBarunGothicBold'),
+       url(/assets/fonts/eot/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/NanumBarunGothicBold.woff2) format('woff2'),
+       url(/assets/fonts/woff/NanumBarunGothicBold.woff) format('woff'),
+       url(/assets/fonts/ttf/NanumBarunGothicBold.ttf) format('truetype');
+}
+

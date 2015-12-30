@@ -1,0 +1,93 @@
+
+body { min-width: 320px; background-color: #000; }
+
+/// 모바일 영역
+@include mobile {
+
+}
+
+/// 데스크탑 영역
+@include desktop {
+
+}
+
+
+
+/* Mercedes-Benz header */
+.mbenz-header { position: relative; margin: 0 auto; height: 120px; width: $default-width;
+	> h1 { display: block; position: absolute; top: 20px; left: 20px; text-indent: -9999px; @include sprite($sd-benz-logo-header); }
+	
+	p { position: absolute; right: 0px; bottom: 30px;
+		a { display: block; position: relative; float: left; font-size: 18px; color: #949494;
+			time { display: block; position: absolute; top: -80%; left: 0; font-size: 12px; color: #949494; }
+
+			&:first-child {
+				&:after { content: '|'; margin-right: 18px; margin-left: 18px; color: #949494; }
+			}
+			&.selected { color: #4cc1ed; }
+		}
+	}
+
+	/// 모바일 영역
+	@include mobile { padding: 15px 15px 30px 15px; width: 290px; height: auto;
+		> h1 { position: static; @include retina_sprite($sm-benz-logo-header-group); }
+
+		p { position: static; margin-top: 27px;
+			a { width: 50%; font-size: 13px; text-align: center;
+				time { top: -70%; left: 12px; font-size: 11px; }
+
+				&:first-child {
+					&:after { content: '|'; position: absolute; right: 0; margin: 0; }
+				}
+				&.selected { color: #4cc1ed; }
+			}
+		}
+	}
+
+	/// 데스크탑 영역
+	@include desktop { padding: 0 26px; width: $desktop-width;
+		> h1 { left: 40px; }
+		p { right: 26px; }
+	}
+}
+
+
+
+/* Mercedes-Benz contents */
+article.contents { position: relative; margin: 0 auto; padding-bottom: 50px; width: $default-width;
+
+	/// 모바일 영역
+	@include mobile { padding-bottom: 22px; width: $mobile-width;
+
+	}
+
+	/// 데스크탑 영역
+	@include desktop { padding: 0 26px 50px 26px; width: $desktop-width;
+
+	}
+}
+
+
+/* Mercedes-Benz footer */
+.mbenz-footer { position: relative; margin: 0 auto; padding: 21px 0 30px 0; width: $default-width;
+	&:before { content: ''; display: block; position: absolute; top: 0; right: 0; left: 0; height: 1px; background-color: #333; }
+
+	.btn-top { display: block; float: right; font-size: 13px; color: #969697;
+		&:after { content: ''; display: inline-block; margin: -3px 0 0 5px; vertical-align: middle; @include sprite($sd-btn-top01); }
+	}
+	small { font-size: 13px; color: #969697; }
+
+	/// 모바일 영역
+	@include mobile { padding-top: 14px; padding-bottom: 15px; width: $mobile-width;
+		.btn-top { font-size: 10px;
+			&:after { @include retina_sprite($sm-btn-top01-group); }
+		}
+		small { font-size: 10px; }
+	}
+
+	/// 데스크탑 영역
+	@include desktop { padding: 21px 26px 30px 26px; width: $desktop-width;
+		&:before { right: 26px; left: 26px; }
+	}
+}
+

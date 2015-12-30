@@ -1,0 +1,511 @@
+/* event - 추억도 A/S가 되나요? */
+.pg-event01 {
+
+	/// 모바일 영역
+	@include mobile {
+
+	}
+
+	/// 데스크탑 영역
+	@include desktop {
+
+	}
+
+
+	
+	/* 티져 및 이벤트 메시지 */
+	.representation {
+		> .title { display: none; }
+
+		.teaser { position: relative; @include aspect-ratio(1180, 556); background: url('/assets/images/desktop/bg_teaser.jpg') center top no-repeat;
+			.btn-play { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; text-indent: -9999px;
+				&:before { content: ''; display: block; position: absolute; top: 50%; left: 50%; margin-top: -$sd-btn-play01-height/2; margin-left: -$sd-btn-play01-width/2; @include sprite($sd-btn-play01); }
+			}
+		}
+
+		.copyright { margin-top: 30px; padding-top: 43px; height: 133px; color: #333; text-align: center; background: url('/assets/images/desktop/bg_copyright.jpg') left center no-repeat; background-size: contain;
+			.title { margin: 0 auto; height: 26px; width: 783px; text-indent: -9999px; background: url('/assets/images/desktop/txt/copyright01_default.png') left top no-repeat; }
+			.message { margin-top: 18px; font-size: 16px; line-height: 25px; text-shadow: 1px 1px 1px #fff; }
+		}
+
+		/// 모바일 영역
+		@include mobile {
+			.teaser { height: 151px; width: 320px; background: url('/assets/images/mobile/bg_teaser.jpg') center top no-repeat; background-size: contain;
+				.btn-play {
+					&:before { margin-top: -$sm-btn-play01-height/2; margin-left: -$sm-btn-play01-width/2; @include retina_sprite($sm-btn-play01-group); }
+				}
+			}
+
+			.copyright { margin-top: 23px; padding-top: 20px; height: 112px; width: 320px; background: url('/assets/images/mobile/bg_copyright.jpg') left center no-repeat;
+				@include retina { background: url('/assets/images/mobile/bg_copyright@2x.jpg') left center no-repeat; background-size: 320px 132px; }
+
+				.title { height: 35px; width: 240px; background: url('/assets/images/mobile/txt/copyright01.png') left top no-repeat;
+					@include retina { background: url('/assets/images/mobile/txt/copyright01@2x.png') left top no-repeat; background-size: 240px 35px; }
+				}
+				.message { margin-top: 11px; font-size: 11px; line-height: 17px; }
+			}
+		}
+
+		/// 데스크탑 영역
+		@include desktop {
+			.copyright { padding-top: 55px; height: 165px;
+				.title { height: 32px; width: 977px; background: url('/assets/images/desktop/txt/copyright01_desktop.png') left top no-repeat; }
+				.message { margin-top: 23px; font-size: 20px; line-height: 30px; }
+			}
+		}
+	}
+
+
+	/* SNS 로그인 / 댓글 입력 / 댓글 목록  */
+	/* SNS 로그인 */
+	.login-sns { display: block; overflow: hidden;
+
+		.title { display: block; float: left; margin-right: 11px; font-size: 16px; color: #4cc1ed; line-height: 48px; vertical-align: middle; }
+		.btn { display: block; float: left; margin-right: 2px; height: 48px; width: 48px; text-indent: -9999px; vertical-align: middle; background-color: #1a1a1a;
+			&.fb { @include sprite($sd-btn-fb01); }
+			&.tw { @include sprite($sd-btn-tw01); }
+			&.ks { @include sprite($sd-btn-ks01); }
+			&.insta { @include sprite($sd-btn-insta01); }
+
+			&.selected { position: relative;
+				&:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 2px solid #4cc1ed; }
+
+				&.fb { @include sprite($sd-btn-fb01-selected); }
+				&.tw { @include sprite($sd-btn-tw01-selected); }
+				&.ks { @include sprite($sd-btn-ks01-selected); }
+				&.insta { @include sprite($sd-btn-insta01-selected); }
+			}
+		}
+
+		/// 모바일 영역
+		@include mobile { text-align: center;
+			.title { margin-right: 8px; font-size: 11px; line-height: 37px; }
+			.btn { height: 37px; width: 37px;
+				&.fb { @include retina_sprite($sm-btn-fb01-group); }
+				&.tw { @include retina_sprite($sm-btn-tw01-group); }
+				&.ks { @include retina_sprite($sm-btn-ks01-group); }
+				&.insta { @include retina_sprite($sm-btn-insta01-group); }
+
+				&.selected {
+					&.fb { @include retina_sprite($sm-btn-fb01-selected-group); }
+					&.tw { @include retina_sprite($sm-btn-tw01-selected-group); }
+					&.ks { @include retina_sprite($sm-btn-ks01-selected-group); }
+					&.insta { @include retina_sprite($sm-btn-insta01-selected-group); }
+				}
+			}
+		}
+
+		/// 데스크탑 영역
+		@include desktop {
+
+		}
+	}
+
+
+	/* 댓글 입력 */
+	.write-comment { display: block; position: relative; padding: 3px; height: 40px; border: 1px solid #888; background-color: #1f1f1f;
+		&:before { content: ''; display: block; position: absolute; top: 3px; left: 3px; @include sprite($sd-icon-mbenz); }
+		
+		.remain { display: block; position: absolute; top: 0; right: 90px; z-index: z("default"); font-size: 12px; color: #9f9f9f; line-height: 48px; }
+		.txt-input { position: absolute; top: 3px; right: 130px; bottom: 3px; left: 53px;
+			input[type=text] { display: block; height: 40px; width: 100%; font-size: 12px; color: #9f9f9f; line-height: 40px; border: 0px; background-color: transparent; }
+		}
+		.btn-submit { display: block; position: absolute; top: -1px; right: -1px; bottom: -1px; z-index: z("default"); width: 78px; font-size: 15px; font-weight: bold; color: #353535; text-align: center; line-height: 50px; background-color: #ebebeb; }
+
+		/// 모바일 영역
+		@include mobile { padding: 2px; height: 31px;
+			&:before { top: 2px; left: 2px; @include retina_sprite($sm-icon-mbenz-group); }
+
+			.remain { right: 70px; font-size: 10px; line-height: 35px; }
+			.txt-input { top: 2px; right: 100px; bottom: 2px; left: 41px;
+				input[type=text] { height: 31px; font-size: 10px; line-height: 31px; }
+			}
+			.btn-submit { width: 60px; font-size: 11px; line-height: 37px; }
+		}
+
+		/// 데스크탑 영역
+		@include desktop {
+
+		}
+	}
+
+
+	/* 댓글 아이템 */
+	.comment-item { overflow: hidden; position: relative; min-height: 40px;
+
+		.user { display: block; float: left; width: 243px;
+			.via { display: inline-block; margin-right: 7px; text-indent: -9999px; vertical-align: middle;
+				&.facebook { @include sprite($sd-icon-facebook01); }
+				&.twitter { @include sprite($sd-icon-twitter01); }
+				&.kakaostory { @include sprite($sd-icon-kakaostory01); }
+				&.instagram { @include sprite($sd-icon-instagram01); }
+			}
+			.thumb { display: inline-block; margin-right: 6px; height: 40px; width: 40px; vertical-align: middle; }
+			figcaption { display: inline-block; font-size: 12px; color: #a9a9a9; line-height: 40px; vertical-align: middle; }
+		}
+
+		.comment { display: block; float: left; position: relative; width: 607px; margin-top: 11px; padding-right: 10px; padding-left: 13px; min-height: 20px; font-size: 12px; color: #f8f8f8; line-height: 20px;
+			&:before { content: ''; display: block; position: absolute; top: -1px; left: 0px; height: 20px; width: 1px; background-color: #3c3d3c; }
+
+		}
+
+		/// 모바일 영역
+		@include mobile {
+			.user { float: none; width: 100%;
+				.via { margin-right: 3px;
+					&.facebook { @include retina_sprite($sm-icon-facebook01-group); }
+					&.twitter { @include retina_sprite($sm-icon-twitter01-group); }
+					&.kakaostory { @include retina_sprite($sm-icon-kakaostory01-group); }
+					&.instagram { @include retina_sprite($sm-icon-instagram01-group); }
+				}
+				.thumb { margin-right: 4px; height: 30px; width: 30px; }
+				figcaption { font-size: 10px; color: #a9a9a9; line-height: 30px; }
+			}
+			.comment { box-sizing: border-box; margin: 6px 20px 0 28px; padding: 6px 0 0 0; width: auto; font-size: 10px; color: #f8f8f8; line-height: 14px; border-top: 1px solid #3c3c3c;
+				&:before { content: none; }
+			}
+		}
+
+		/// 데스크탑 영역
+		@include desktop {
+			.comment { width: 844px; }
+		}
+	}
+
+
+	/* 댓글 목록 */
+	.list-comments { margin: 30px -40px 0 -40px;
+		> li { position: relative; margin-top: 12px; padding: 10px 0 10px 70px; background-color: #1a1a1a;
+			&:before { content: ''; display: block; position: absolute; top: -$sd-icon-arrow02-height; left: 120px; @include sprite($sd-icon-arrow02); }
+		}
+
+		/// 모바일 영역
+		@include mobile { margin: 0px;
+			> li { margin-top: 8px; padding: 8px 0 13px 15px;
+				&:before { top: -$sm-icon-arrow02-height; left: 40px; @include retina_sprite($sm-icon-arrow02-group); }
+			}
+		}
+
+		/// 데스크탑 영역
+		@include desktop {
+
+		}
+	}
+
+	/* 더보기 */
+	.btn-list-more { display: block; margin: 12px -40px 0 -40px; font-size: 12px; color: #9f9f9f; line-height: 30px; text-align: center; background-color: #1f1f1f;
+		&:before { content: ''; display: inline-block; margin-top: -2px; margin-right: 5px; vertical-align: middle; @include sprite($sd-icon-arrow01); }
+
+		/// 모바일 영역
+		@include mobile { margin: 6px 0 0 0; font-size: 10px; line-height: 24px;
+			&:before { @include retina_sprite($sm-icon-arrow01-group); }
+		}
+	}
+
+
+	.sns-area { position: relative; margin-top: 43px; padding: 0 40px;
+		> .title { display: none; }
+
+		.login-sns { }
+		.write-comment { position: absolute; top: 0; right: 40px; left: 343px; }
+
+
+		/// 모바일 영역
+		@include mobile { margin-top: 17px; padding: 0 10px;
+			.login-sns { margin: 0 auto; width: 217px; }
+			.write-comment { position: relative; top: auto; right: auto; left: auto; margin-top: 15px; }
+		}
+
+		/// 데스크탑 영역
+		@include desktop {
+
+		}
+	}
+
+
+
+	/* 이벤트 안내 */
+	.event-summary { margin-top: 50px; min-height: 245px; background: url('/assets/images/desktop/bg_summary.png') 600px 0px no-repeat; background-size: 299px 245px;
+		.title { display: block; height: 21px; width: 104px; text-indent: -9999px; background: url('/assets/images/desktop/txt/event01_default.png') left top no-repeat; }
+		.list-winner-goods { margin-top: 25px; margin-left: 63px;
+			> li { position: relative; padding-left: 10px; font-size: 14px; color: #fff; line-height: 23px;
+				&:before { content: ''; display: block; position: absolute; top: 8px; left: 0; height: 2px; width: 5px; background-color: #4cc1ed; }
+				em { color: #4cc1ed; }
+			}
+		}
+		.description { margin-top: 16px; margin-left: 73px; font-size: 14px; color: #797979;
+			em { display: block; margin-top: 14px; font-size: 13px; }
+			span { margin-left: 40px; }
+		}
+
+		/// 모바일 영역
+		@include mobile { margin-top: 25px; min-height: 215px; background-image: none;
+			.title { height: 17px; width: 80px; background-image: url('/assets/images/mobile/txt/event01.png');
+				@include retina {
+					background-image: url('/assets/images/mobile/txt/event01@2x.png'); background-size: 80px 17px;
+				}
+			}
+
+			.list-winner-goods { margin-top: 20px; margin-left: 0px;
+				> li { font-size: 11px; line-height: 20px;
+					span { margin-left: 50px; }
+				}
+			}
+
+			.description { margin-top: 8px; margin-left: 0px; padding-left: 10px; font-size: 11px; line-height: 23px;
+				em { margin-top: 0px; margin-left: -10px; font-size: 10px; }
+				span { margin-left: 0px; }
+			}
+		}
+
+		/// 데스크탑 영역
+		@include desktop { min-height: 272px; background-position: 830px 0; background-size: 332px 272px;
+			.title { height: 23px; width: 114px; background-image: url('/assets/images/desktop/txt/event01_desktop.png'); }
+			.list-winner-goods { margin-top: 27px; margin-left: 70px;
+				> li { font-size: 16px; line-height: 26px;
+					&:before { top: 10px; }
+				}
+			}
+			.description { margin-top: 20px; margin-left: 79px; font-size: 16px;
+				em { margin-top: 18px; font-size: 15px; }
+				span { margin-left: 46px; }
+			}
+		}
+	}
+
+	
+	/* 사진 목록 */
+	.photos-mfs { position: relative; overflow: hidden;
+		> li { overflow: hidden; float: left; margin-right: 4px; margin-bottom: 4px;
+			&.makingfilm01 { height: 350px; width: 312px;
+				.title { height: 18px; width: 229px; background-image: url('/assets/images/desktop/txt/makingfilm01_default.png'); }
+			}
+			&.makingfilm02 { height: 174px; width: 312px;
+				.title { height: 18px; width: 175px; background-image: url('/assets/images/desktop/txt/makingfilm02_default.png'); }
+			}
+			&.makingfilm03 { margin-right: 0px; height: 174px; width: 312px;
+				figcaption { display: none; }
+			}
+			&.makingfilm04 { float: right; margin-right: 0px; height: 350px; width: 312px;
+				.title { height: 18px; width: 187px; background-image: url('/assets/images/desktop/txt/makingfilm04_default.png'); }
+			}
+
+			&.center01 { clear: left; height: 174px; width: 312px;
+				figcaption { display: none; }
+			}
+			&.center02 { margin-top: -176px; height: 350px; width: 312px;
+				.title { height: 32px; width: 232px; background-image: url('/assets/images/desktop/txt/center02_default.png'); }
+				p { margin-top: 8px; }
+			}
+			&.center03 { height: 174px; width: 628px;
+				.title { height: 31px; width: 155px; background-image: url('/assets/images/desktop/txt/center03_default.png'); }
+				p { margin-top: 8px; }
+			}
+			&.center04 { margin-right: 0px; height: 174px; width: 312px;
+				figcaption { display: none; }
+			}
+
+			figure { display: block; position: relative; height: 100%; width: 100%;
+				img { height: 100%; width: 100%; }
+				figcaption { display: block; position: absolute; right: 0; bottom: 24px; left: 23px; width: 100%;
+					.title { display: block; text-indent: -9999px; background-position: 0px 0px; background-repeat: no-repeat; }
+					p { margin-top: 18px; font-size: 13px; color: #dfdfdf; line-height: 18px; }
+				}
+			}
+		}
+
+		/// 모바일 영역
+		@include mobile { padding: 0 10px;
+			> li { float: none; margin: 0 0 3px 0;
+				&.makingfilm01 { height: auto; width: 100%;
+					.title { height: 17px; width: 219px; background-image: url('/assets/images/mobile/txt/makingfilm01.png');
+						@include retina { background-image: url('/assets/images/mobile/txt/makingfilm01@2x.png'); background-size: 219px 17px; }
+					}
+				}
+				&.makingfilm02 { height: auto; width: 100%;
+					.title { height: 17px; width: 167px; background-image: url('/assets/images/mobile/txt/makingfilm02.png');
+						@include retina { background-image: url('/assets/images/mobile/txt/makingfilm02@2x.png'); background-size: 167px 17px; }
+					}
+				}
+				&.makingfilm03 { height: auto; width: 100%; }
+				&.makingfilm04 { height: auto; width: 100%;
+					.title { height: 17px; width: 179px; background-image: url('/assets/images/mobile/txt/makingfilm04.png');
+						@include retina { background-image: url('/assets/images/mobile/txt/makingfilm04@2x.png'); background-size: 179px 17px; }
+					}
+				}
+
+				&.center01 { height: auto; width: 100%; }
+				&.center02 { margin-top: 0; height: auto; width: 100%;
+					.title { height: 30px; width: 221px; background-image: url('/assets/images/mobile/txt/center02.png');
+						@include retina { background-image: url('/assets/images/mobile/txt/center02@2x.png'); background-size: 221px 30px; }
+					}
+					p { margin-top: 9px; }
+				}
+				&.center03 { height: auto; width: 100%;
+					.title { height: 30px; width: 147px; background-image: url('/assets/images/mobile/txt/center03.png');
+						@include retina { background-image: url('/assets/images/mobile/txt/center03@2x.png'); background-size: 147px 30px; }
+					}
+					p { margin-top: 9px; }
+				}
+				&.center04 { height: auto; width: 100%; }
+
+				figure {
+					img { height: auto; width: 100%; }
+					figcaption { bottom: 20px; left: 23px;
+						p { margin-top: 14px; font-size: 12px; line-height: 17px; }
+					}
+				}
+			}
+		}
+
+		/// 데스크탑 영역
+		@include desktop {
+			> li { margin-right: 5px; margin-bottom: 5px;
+				&.makingfilm01 { height: 437px; width: 390px;
+					.title { height: 20px; width: 258px; background-image: url('/assets/images/desktop/txt/makingfilm01_desktop.png'); }
+				}
+				&.makingfilm02 { height: 216px; width: 390px;
+					.title { height: 20px; width: 197px; background-image: url('/assets/images/desktop/txt/makingfilm02_desktop.png'); }
+				}
+				&.makingfilm03 { height: 216px; width: 390px; }
+				&.makingfilm04 { height: 437px; width: 390px;
+					.title { height: 20px; width: 211px; background-image: url('/assets/images/desktop/txt/makingfilm04_desktop.png'); }
+				}
+
+				&.center01 { height: 216px; width: 390px; }
+				&.center02 { margin-top: -220px; height: 437px; width: 390px;
+					.title { height: 38px; width: 290px; background-image: url('/assets/images/desktop/txt/center02_desktop.png'); }
+					p { margin-top: 10px; }
+				}
+				&.center03 { height: 216px; width: 785px;
+					.title { height: 38px; width: 193px; background-image: url('/assets/images/desktop/txt/center03_desktop.png'); }
+					p { margin-top: 10px; }
+				}
+				&.center04 { height: 216px; width: 390px; }
+
+				figure {
+					figcaption { bottom: 30px; left: 28px;
+						p { margin-top: 18px; font-size: 15px; line-height: 22px; }
+					}
+				}
+			}
+		}
+	}
+
+	/* 메이킹 필름 & 서비스 센터 */
+	.making-service {
+		> .title { display: none; }
+
+	}
+}
+
+/* 이벤트 응모 팝업 */
+.popup-application { display: block; position: relative; margin: 0 auto; padding: 0 30px 30px 30px; width: 740px; color: #666; background-color: #fff;
+	> .btn-popup-close { display: block; position: absolute; top: 15px; right: 15px; text-indent: -9999px; @include sprite($sd-btn-close01); }
+
+	> .title { margin: 0 -30px; padding: 0 30px; font-size: 20px; color: #333; line-height: 74px; background: url('/assets/images/desktop/bg_popup01.jpg') left top no-repeat; }
+	.btns { margin-top: 30px; text-align: center;
+		a { display: inline-block; margin: 0 3px; height: 48px; width: 108px; font-size: 16px; font-weight: bold; line-height: 48px; text-align: center;
+			&.btn-done { background-color: #4cc1ed; }
+			&.btn-cancel { background-color: #9c9c9c; }
+		}
+	}
+
+	.box { overflow: hidden; padding-top: 30px; width: 100%;
+		> .title { display: block; font-size: 16px; font-weight: bold; color: #333;
+			strong { color: #1d9fd0; }
+		}
+
+		table { margin-top: 15px; width: 100%;
+			th { width: 56px; font-size: 14px; font-weight: bold; color: #666; text-align: left; }
+			td { padding-left: 22px; font-size: 14px; color: #000; line-height: 34px; border-bottom: 2px solid #fff; background-color: #e7e7e7; }
+		}
+		
+		.check { margin-top: 18px; padding-top: 8px; border-top: 1px solid #c3c3c3; }
+		.radios { margin-top: 12px; text-align: right;
+			input[type=radio] { position: absolute; left: -9999px;
+				+ label { display: inline-block; margin-left: 33px; font-size: 16px; color: #000;
+					&:before { content: ''; display: inline-block; margin: -3px 7px 0 0; vertical-align: middle; @include sprite($sd-radio01); }
+				}
+
+				&:checked {
+					+ label:before { @include sprite($sd-radio01-selected); }
+				}
+			}
+		}
+
+		&.basic-info { padding-top: 15px; padding-bottom: 30px; border-bottom: 1px solid #c3c3c3;
+			p { display: inline-block; margin-top: 15px; margin-right: 26px; font-size: 14px; color: #666; line-height: 32px; }
+			label { display: inline-block; width: 56px; font-size: 14px; font-weight: bold; color: #666; line-height: 32px; }
+			input[type=text],
+			input[type=tel] { width: 172px; font-size: 14px; color: #666; line-height: 32px; text-align: center; border: 1px solid #888; }
+			input[type=tel] { width: 72px; }
+		}
+
+		&.agreement {
+			.warning { font-size: 14px; font-weight: bold; color: #666; }
+		}
+	}
+
+	/// 모바일 영역
+	@include mobile { padding: 0 22px 22px 22px; width: auto;
+		> .btn-popup-close { top: 10px; right: 10px; @include retina_sprite($sm-btn-close01-group); }
+
+		> .title { margin: 0 -22px; padding: 14px 22px  0 22px; height: 43px; font-size: 12px; line-height: 16px; background: url('/assets/images/mobile/bg_popup01.jpg') left top no-repeat;
+			@include retina { background-image: url('/assets/images/mobile/bg_popup01@2x.jpg'); background-size: 320px 57px; }
+		}
+
+		.btns { margin-top: 23px;
+			a { display: inline-block; margin: 0 3px; height: 37px; width: 83px; font-size: 12px; line-height: 37px; }
+		}
+
+		.box { padding-top: 15px;
+			> .title { margin-bottom: 10px; font-size: 11px; }
+
+			table { margin-top: 10px; 
+				th { width: 43px; font-size: 11px; }
+				td { padding-left: 17px; font-size: 11px; line-height: 27px; border-bottom: 1px solid #fff; }
+			}
+
+			.check { margin-top: 14px; padding-top: 5px; }
+			.radios { margin-top: 6px;
+				input[type=radio] {
+					+ label { margin-left: 25px; font-size: 12px;
+						&:before { content: ''; display: inline-block; margin: -3px 7px 0 0; vertical-align: middle; @include retina_sprite($sm-radio01-group); }
+					}
+
+					&:checked {
+						+ label:before { @include retina_sprite($sm-radio01-selected-group); }
+					}
+				}
+			}
+
+			&.basic-info { padding-top: 7px; padding-bottom: 15px;
+				p { display: block; margin-top: 7px; margin-right: 0px; font-size: 10px; line-height: 26px; }
+				label { width: 43px; font-size: 10px; line-height: 26px; }
+				input[type=text],
+				input[type=tel] { width: 132px; font-size: 10px; line-height: 26px; }
+				input[type=tel] { width: 55px; }
+			}
+
+			&.agreement {
+				.warning { font-size: 11px; line-height: 16px; }
+			}
+		}
+	}
+
+	/// 데스크탑 영역
+	@include desktop {
+
+	}
+}
+
+/// 모바일 영역
+@include mobile {
+
+}
+
+/// 데스크탑 영역
+@include desktop {
+
+}

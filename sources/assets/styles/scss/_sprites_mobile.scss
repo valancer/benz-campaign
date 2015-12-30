@@ -1,0 +1,631 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sm-benz-logo-header-name: 'sm-benz_logo_header';
+$sm-benz-logo-header-x: 0px;
+$sm-benz-logo-header-y: 0px;
+$sm-benz-logo-header-offset-x: 0px;
+$sm-benz-logo-header-offset-y: 0px;
+$sm-benz-logo-header-width: 159px;
+$sm-benz-logo-header-height: 44px;
+$sm-benz-logo-header-total-width: 202px;
+$sm-benz-logo-header-total-height: 176px;
+$sm-benz-logo-header-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-benz-logo-header: (0px, 0px, 0px, 0px, 159px, 44px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-benz_logo_header', );
+$sm-btn-close01-name: 'sm-btn_close01';
+$sm-btn-close01-x: 0px;
+$sm-btn-close01-y: 145px;
+$sm-btn-close01-offset-x: 0px;
+$sm-btn-close01-offset-y: -145px;
+$sm-btn-close01-width: 31px;
+$sm-btn-close01-height: 31px;
+$sm-btn-close01-total-width: 202px;
+$sm-btn-close01-total-height: 176px;
+$sm-btn-close01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-close01: (0px, 145px, 0px, -145px, 31px, 31px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_close01', );
+$sm-btn-fb01-name: 'sm-btn_fb01';
+$sm-btn-fb01-x: 52px;
+$sm-btn-fb01-y: 50px;
+$sm-btn-fb01-offset-x: -52px;
+$sm-btn-fb01-offset-y: -50px;
+$sm-btn-fb01-width: 37px;
+$sm-btn-fb01-height: 37px;
+$sm-btn-fb01-total-width: 202px;
+$sm-btn-fb01-total-height: 176px;
+$sm-btn-fb01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-fb01: (52px, 50px, -52px, -50px, 37px, 37px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_fb01', );
+$sm-btn-fb01-selected-name: 'sm-btn_fb01_selected';
+$sm-btn-fb01-selected-x: 95px;
+$sm-btn-fb01-selected-y: 50px;
+$sm-btn-fb01-selected-offset-x: -95px;
+$sm-btn-fb01-selected-offset-y: -50px;
+$sm-btn-fb01-selected-width: 37px;
+$sm-btn-fb01-selected-height: 37px;
+$sm-btn-fb01-selected-total-width: 202px;
+$sm-btn-fb01-selected-total-height: 176px;
+$sm-btn-fb01-selected-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-fb01-selected: (95px, 50px, -95px, -50px, 37px, 37px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_fb01_selected', );
+$sm-btn-insta01-name: 'sm-btn_insta01';
+$sm-btn-insta01-x: 0px;
+$sm-btn-insta01-y: 102px;
+$sm-btn-insta01-offset-x: 0px;
+$sm-btn-insta01-offset-y: -102px;
+$sm-btn-insta01-width: 37px;
+$sm-btn-insta01-height: 37px;
+$sm-btn-insta01-total-width: 202px;
+$sm-btn-insta01-total-height: 176px;
+$sm-btn-insta01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-insta01: (0px, 102px, 0px, -102px, 37px, 37px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_insta01', );
+$sm-btn-insta01-selected-name: 'sm-btn_insta01_selected';
+$sm-btn-insta01-selected-x: 43px;
+$sm-btn-insta01-selected-y: 102px;
+$sm-btn-insta01-selected-offset-x: -43px;
+$sm-btn-insta01-selected-offset-y: -102px;
+$sm-btn-insta01-selected-width: 37px;
+$sm-btn-insta01-selected-height: 37px;
+$sm-btn-insta01-selected-total-width: 202px;
+$sm-btn-insta01-selected-total-height: 176px;
+$sm-btn-insta01-selected-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-insta01-selected: (43px, 102px, -43px, -102px, 37px, 37px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_insta01_selected', );
+$sm-btn-ks01-name: 'sm-btn_ks01';
+$sm-btn-ks01-x: 86px;
+$sm-btn-ks01-y: 102px;
+$sm-btn-ks01-offset-x: -86px;
+$sm-btn-ks01-offset-y: -102px;
+$sm-btn-ks01-width: 37px;
+$sm-btn-ks01-height: 37px;
+$sm-btn-ks01-total-width: 202px;
+$sm-btn-ks01-total-height: 176px;
+$sm-btn-ks01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-ks01: (86px, 102px, -86px, -102px, 37px, 37px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_ks01', );
+$sm-btn-ks01-selected-name: 'sm-btn_ks01_selected';
+$sm-btn-ks01-selected-x: 165px;
+$sm-btn-ks01-selected-y: 0px;
+$sm-btn-ks01-selected-offset-x: -165px;
+$sm-btn-ks01-selected-offset-y: 0px;
+$sm-btn-ks01-selected-width: 37px;
+$sm-btn-ks01-selected-height: 37px;
+$sm-btn-ks01-selected-total-width: 202px;
+$sm-btn-ks01-selected-total-height: 176px;
+$sm-btn-ks01-selected-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-ks01-selected: (165px, 0px, -165px, 0px, 37px, 37px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_ks01_selected', );
+$sm-btn-play01-name: 'sm-btn_play01';
+$sm-btn-play01-x: 0px;
+$sm-btn-play01-y: 50px;
+$sm-btn-play01-offset-x: 0px;
+$sm-btn-play01-offset-y: -50px;
+$sm-btn-play01-width: 46px;
+$sm-btn-play01-height: 46px;
+$sm-btn-play01-total-width: 202px;
+$sm-btn-play01-total-height: 176px;
+$sm-btn-play01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-play01: (0px, 50px, 0px, -50px, 46px, 46px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_play01', );
+$sm-btn-top01-name: 'sm-btn_top01';
+$sm-btn-top01-x: 183px;
+$sm-btn-top01-y: 145px;
+$sm-btn-top01-offset-x: -183px;
+$sm-btn-top01-offset-y: -145px;
+$sm-btn-top01-width: 14px;
+$sm-btn-top01-height: 14px;
+$sm-btn-top01-total-width: 202px;
+$sm-btn-top01-total-height: 176px;
+$sm-btn-top01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-top01: (183px, 145px, -183px, -145px, 14px, 14px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_top01', );
+$sm-btn-tw01-name: 'sm-btn_tw01';
+$sm-btn-tw01-x: 165px;
+$sm-btn-tw01-y: 43px;
+$sm-btn-tw01-offset-x: -165px;
+$sm-btn-tw01-offset-y: -43px;
+$sm-btn-tw01-width: 37px;
+$sm-btn-tw01-height: 37px;
+$sm-btn-tw01-total-width: 202px;
+$sm-btn-tw01-total-height: 176px;
+$sm-btn-tw01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-tw01: (165px, 43px, -165px, -43px, 37px, 37px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_tw01', );
+$sm-btn-tw01-selected-name: 'sm-btn_tw01_selected';
+$sm-btn-tw01-selected-x: 165px;
+$sm-btn-tw01-selected-y: 86px;
+$sm-btn-tw01-selected-offset-x: -165px;
+$sm-btn-tw01-selected-offset-y: -86px;
+$sm-btn-tw01-selected-width: 37px;
+$sm-btn-tw01-selected-height: 37px;
+$sm-btn-tw01-selected-total-width: 202px;
+$sm-btn-tw01-selected-total-height: 176px;
+$sm-btn-tw01-selected-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-btn-tw01-selected: (165px, 86px, -165px, -86px, 37px, 37px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-btn_tw01_selected', );
+$sm-icon-arrow01-name: 'sm-icon_arrow01';
+$sm-icon-arrow01-x: 185px;
+$sm-icon-arrow01-y: 129px;
+$sm-icon-arrow01-offset-x: -185px;
+$sm-icon-arrow01-offset-y: -129px;
+$sm-icon-arrow01-width: 10px;
+$sm-icon-arrow01-height: 6px;
+$sm-icon-arrow01-total-width: 202px;
+$sm-icon-arrow01-total-height: 176px;
+$sm-icon-arrow01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-icon-arrow01: (185px, 129px, -185px, -129px, 10px, 6px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-icon_arrow01', );
+$sm-icon-arrow02-name: 'sm-icon_arrow02';
+$sm-icon-arrow02-x: 165px;
+$sm-icon-arrow02-y: 129px;
+$sm-icon-arrow02-offset-x: -165px;
+$sm-icon-arrow02-offset-y: -129px;
+$sm-icon-arrow02-width: 14px;
+$sm-icon-arrow02-height: 7px;
+$sm-icon-arrow02-total-width: 202px;
+$sm-icon-arrow02-total-height: 176px;
+$sm-icon-arrow02-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-icon-arrow02: (165px, 129px, -165px, -129px, 14px, 7px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-icon_arrow02', );
+$sm-icon-facebook01-name: 'sm-icon_facebook01';
+$sm-icon-facebook01-x: 138px;
+$sm-icon-facebook01-y: 50px;
+$sm-icon-facebook01-offset-x: -138px;
+$sm-icon-facebook01-offset-y: -50px;
+$sm-icon-facebook01-width: 21px;
+$sm-icon-facebook01-height: 20px;
+$sm-icon-facebook01-total-width: 202px;
+$sm-icon-facebook01-total-height: 176px;
+$sm-icon-facebook01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-icon-facebook01: (138px, 50px, -138px, -50px, 21px, 20px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-icon_facebook01', );
+$sm-icon-instagram01-name: 'sm-icon_instagram01';
+$sm-icon-instagram01-x: 156px;
+$sm-icon-instagram01-y: 145px;
+$sm-icon-instagram01-offset-x: -156px;
+$sm-icon-instagram01-offset-y: -145px;
+$sm-icon-instagram01-width: 21px;
+$sm-icon-instagram01-height: 20px;
+$sm-icon-instagram01-total-width: 202px;
+$sm-icon-instagram01-total-height: 176px;
+$sm-icon-instagram01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-icon-instagram01: (156px, 145px, -156px, -145px, 21px, 20px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-icon_instagram01', );
+$sm-icon-kakaostory01-name: 'sm-icon_kakaostory01';
+$sm-icon-kakaostory01-x: 102px;
+$sm-icon-kakaostory01-y: 145px;
+$sm-icon-kakaostory01-offset-x: -102px;
+$sm-icon-kakaostory01-offset-y: -145px;
+$sm-icon-kakaostory01-width: 21px;
+$sm-icon-kakaostory01-height: 20px;
+$sm-icon-kakaostory01-total-width: 202px;
+$sm-icon-kakaostory01-total-height: 176px;
+$sm-icon-kakaostory01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-icon-kakaostory01: (102px, 145px, -102px, -145px, 21px, 20px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-icon_kakaostory01', );
+$sm-icon-mbenz-name: 'sm-icon_mbenz';
+$sm-icon-mbenz-x: 37px;
+$sm-icon-mbenz-y: 145px;
+$sm-icon-mbenz-offset-x: -37px;
+$sm-icon-mbenz-offset-y: -145px;
+$sm-icon-mbenz-width: 31px;
+$sm-icon-mbenz-height: 31px;
+$sm-icon-mbenz-total-width: 202px;
+$sm-icon-mbenz-total-height: 176px;
+$sm-icon-mbenz-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-icon-mbenz: (37px, 145px, -37px, -145px, 31px, 31px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-icon_mbenz', );
+$sm-icon-twitter01-name: 'sm-icon_twitter01';
+$sm-icon-twitter01-x: 129px;
+$sm-icon-twitter01-y: 145px;
+$sm-icon-twitter01-offset-x: -129px;
+$sm-icon-twitter01-offset-y: -145px;
+$sm-icon-twitter01-width: 21px;
+$sm-icon-twitter01-height: 20px;
+$sm-icon-twitter01-total-width: 202px;
+$sm-icon-twitter01-total-height: 176px;
+$sm-icon-twitter01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-icon-twitter01: (129px, 145px, -129px, -145px, 21px, 20px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-icon_twitter01', );
+$sm-radio01-name: 'sm-radio01';
+$sm-radio01-x: 129px;
+$sm-radio01-y: 102px;
+$sm-radio01-offset-x: -129px;
+$sm-radio01-offset-y: -102px;
+$sm-radio01-width: 22px;
+$sm-radio01-height: 21px;
+$sm-radio01-total-width: 202px;
+$sm-radio01-total-height: 176px;
+$sm-radio01-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-radio01: (129px, 102px, -129px, -102px, 22px, 21px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-radio01', );
+$sm-radio01-selected-name: 'sm-radio01_selected';
+$sm-radio01-selected-x: 74px;
+$sm-radio01-selected-y: 145px;
+$sm-radio01-selected-offset-x: -74px;
+$sm-radio01-selected-offset-y: -145px;
+$sm-radio01-selected-width: 22px;
+$sm-radio01-selected-height: 21px;
+$sm-radio01-selected-total-width: 202px;
+$sm-radio01-selected-total-height: 176px;
+$sm-radio01-selected-image: '/assets/images/mobile/sprites_mobile.png';
+$sm-radio01-selected: (74px, 145px, -74px, -145px, 22px, 21px, 202px, 176px, '/assets/images/mobile/sprites_mobile.png', 'sm-radio01_selected', );
+$sm-benz-logo-header-2x-name: 'sm-benz_logo_header@2x';
+$sm-benz-logo-header-2x-x: 0px;
+$sm-benz-logo-header-2x-y: 0px;
+$sm-benz-logo-header-2x-offset-x: 0px;
+$sm-benz-logo-header-2x-offset-y: 0px;
+$sm-benz-logo-header-2x-width: 318px;
+$sm-benz-logo-header-2x-height: 88px;
+$sm-benz-logo-header-2x-total-width: 404px;
+$sm-benz-logo-header-2x-total-height: 352px;
+$sm-benz-logo-header-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-benz-logo-header-2x: (0px, 0px, 0px, 0px, 318px, 88px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-benz_logo_header@2x', );
+$sm-btn-close01-2x-name: 'sm-btn_close01@2x';
+$sm-btn-close01-2x-x: 0px;
+$sm-btn-close01-2x-y: 290px;
+$sm-btn-close01-2x-offset-x: 0px;
+$sm-btn-close01-2x-offset-y: -290px;
+$sm-btn-close01-2x-width: 62px;
+$sm-btn-close01-2x-height: 62px;
+$sm-btn-close01-2x-total-width: 404px;
+$sm-btn-close01-2x-total-height: 352px;
+$sm-btn-close01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-close01-2x: (0px, 290px, 0px, -290px, 62px, 62px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_close01@2x', );
+$sm-btn-fb01-2x-name: 'sm-btn_fb01@2x';
+$sm-btn-fb01-2x-x: 104px;
+$sm-btn-fb01-2x-y: 100px;
+$sm-btn-fb01-2x-offset-x: -104px;
+$sm-btn-fb01-2x-offset-y: -100px;
+$sm-btn-fb01-2x-width: 74px;
+$sm-btn-fb01-2x-height: 74px;
+$sm-btn-fb01-2x-total-width: 404px;
+$sm-btn-fb01-2x-total-height: 352px;
+$sm-btn-fb01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-fb01-2x: (104px, 100px, -104px, -100px, 74px, 74px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_fb01@2x', );
+$sm-btn-fb01-selected-2x-name: 'sm-btn_fb01_selected@2x';
+$sm-btn-fb01-selected-2x-x: 190px;
+$sm-btn-fb01-selected-2x-y: 100px;
+$sm-btn-fb01-selected-2x-offset-x: -190px;
+$sm-btn-fb01-selected-2x-offset-y: -100px;
+$sm-btn-fb01-selected-2x-width: 74px;
+$sm-btn-fb01-selected-2x-height: 74px;
+$sm-btn-fb01-selected-2x-total-width: 404px;
+$sm-btn-fb01-selected-2x-total-height: 352px;
+$sm-btn-fb01-selected-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-fb01-selected-2x: (190px, 100px, -190px, -100px, 74px, 74px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_fb01_selected@2x', );
+$sm-btn-insta01-2x-name: 'sm-btn_insta01@2x';
+$sm-btn-insta01-2x-x: 0px;
+$sm-btn-insta01-2x-y: 204px;
+$sm-btn-insta01-2x-offset-x: 0px;
+$sm-btn-insta01-2x-offset-y: -204px;
+$sm-btn-insta01-2x-width: 74px;
+$sm-btn-insta01-2x-height: 74px;
+$sm-btn-insta01-2x-total-width: 404px;
+$sm-btn-insta01-2x-total-height: 352px;
+$sm-btn-insta01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-insta01-2x: (0px, 204px, 0px, -204px, 74px, 74px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_insta01@2x', );
+$sm-btn-insta01-selected-2x-name: 'sm-btn_insta01_selected@2x';
+$sm-btn-insta01-selected-2x-x: 86px;
+$sm-btn-insta01-selected-2x-y: 204px;
+$sm-btn-insta01-selected-2x-offset-x: -86px;
+$sm-btn-insta01-selected-2x-offset-y: -204px;
+$sm-btn-insta01-selected-2x-width: 74px;
+$sm-btn-insta01-selected-2x-height: 74px;
+$sm-btn-insta01-selected-2x-total-width: 404px;
+$sm-btn-insta01-selected-2x-total-height: 352px;
+$sm-btn-insta01-selected-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-insta01-selected-2x: (86px, 204px, -86px, -204px, 74px, 74px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_insta01_selected@2x', );
+$sm-btn-ks01-2x-name: 'sm-btn_ks01@2x';
+$sm-btn-ks01-2x-x: 172px;
+$sm-btn-ks01-2x-y: 204px;
+$sm-btn-ks01-2x-offset-x: -172px;
+$sm-btn-ks01-2x-offset-y: -204px;
+$sm-btn-ks01-2x-width: 74px;
+$sm-btn-ks01-2x-height: 74px;
+$sm-btn-ks01-2x-total-width: 404px;
+$sm-btn-ks01-2x-total-height: 352px;
+$sm-btn-ks01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-ks01-2x: (172px, 204px, -172px, -204px, 74px, 74px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_ks01@2x', );
+$sm-btn-ks01-selected-2x-name: 'sm-btn_ks01_selected@2x';
+$sm-btn-ks01-selected-2x-x: 330px;
+$sm-btn-ks01-selected-2x-y: 0px;
+$sm-btn-ks01-selected-2x-offset-x: -330px;
+$sm-btn-ks01-selected-2x-offset-y: 0px;
+$sm-btn-ks01-selected-2x-width: 74px;
+$sm-btn-ks01-selected-2x-height: 74px;
+$sm-btn-ks01-selected-2x-total-width: 404px;
+$sm-btn-ks01-selected-2x-total-height: 352px;
+$sm-btn-ks01-selected-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-ks01-selected-2x: (330px, 0px, -330px, 0px, 74px, 74px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_ks01_selected@2x', );
+$sm-btn-play01-2x-name: 'sm-btn_play01@2x';
+$sm-btn-play01-2x-x: 0px;
+$sm-btn-play01-2x-y: 100px;
+$sm-btn-play01-2x-offset-x: 0px;
+$sm-btn-play01-2x-offset-y: -100px;
+$sm-btn-play01-2x-width: 92px;
+$sm-btn-play01-2x-height: 92px;
+$sm-btn-play01-2x-total-width: 404px;
+$sm-btn-play01-2x-total-height: 352px;
+$sm-btn-play01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-play01-2x: (0px, 100px, 0px, -100px, 92px, 92px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_play01@2x', );
+$sm-btn-top01-2x-name: 'sm-btn_top01@2x';
+$sm-btn-top01-2x-x: 366px;
+$sm-btn-top01-2x-y: 290px;
+$sm-btn-top01-2x-offset-x: -366px;
+$sm-btn-top01-2x-offset-y: -290px;
+$sm-btn-top01-2x-width: 28px;
+$sm-btn-top01-2x-height: 28px;
+$sm-btn-top01-2x-total-width: 404px;
+$sm-btn-top01-2x-total-height: 352px;
+$sm-btn-top01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-top01-2x: (366px, 290px, -366px, -290px, 28px, 28px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_top01@2x', );
+$sm-btn-tw01-2x-name: 'sm-btn_tw01@2x';
+$sm-btn-tw01-2x-x: 330px;
+$sm-btn-tw01-2x-y: 86px;
+$sm-btn-tw01-2x-offset-x: -330px;
+$sm-btn-tw01-2x-offset-y: -86px;
+$sm-btn-tw01-2x-width: 74px;
+$sm-btn-tw01-2x-height: 74px;
+$sm-btn-tw01-2x-total-width: 404px;
+$sm-btn-tw01-2x-total-height: 352px;
+$sm-btn-tw01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-tw01-2x: (330px, 86px, -330px, -86px, 74px, 74px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_tw01@2x', );
+$sm-btn-tw01-selected-2x-name: 'sm-btn_tw01_selected@2x';
+$sm-btn-tw01-selected-2x-x: 330px;
+$sm-btn-tw01-selected-2x-y: 172px;
+$sm-btn-tw01-selected-2x-offset-x: -330px;
+$sm-btn-tw01-selected-2x-offset-y: -172px;
+$sm-btn-tw01-selected-2x-width: 74px;
+$sm-btn-tw01-selected-2x-height: 74px;
+$sm-btn-tw01-selected-2x-total-width: 404px;
+$sm-btn-tw01-selected-2x-total-height: 352px;
+$sm-btn-tw01-selected-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-btn-tw01-selected-2x: (330px, 172px, -330px, -172px, 74px, 74px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-btn_tw01_selected@2x', );
+$sm-icon-arrow01-2x-name: 'sm-icon_arrow01@2x';
+$sm-icon-arrow01-2x-x: 370px;
+$sm-icon-arrow01-2x-y: 258px;
+$sm-icon-arrow01-2x-offset-x: -370px;
+$sm-icon-arrow01-2x-offset-y: -258px;
+$sm-icon-arrow01-2x-width: 20px;
+$sm-icon-arrow01-2x-height: 12px;
+$sm-icon-arrow01-2x-total-width: 404px;
+$sm-icon-arrow01-2x-total-height: 352px;
+$sm-icon-arrow01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-icon-arrow01-2x: (370px, 258px, -370px, -258px, 20px, 12px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-icon_arrow01@2x', );
+$sm-icon-arrow02-2x-name: 'sm-icon_arrow02@2x';
+$sm-icon-arrow02-2x-x: 330px;
+$sm-icon-arrow02-2x-y: 258px;
+$sm-icon-arrow02-2x-offset-x: -330px;
+$sm-icon-arrow02-2x-offset-y: -258px;
+$sm-icon-arrow02-2x-width: 28px;
+$sm-icon-arrow02-2x-height: 14px;
+$sm-icon-arrow02-2x-total-width: 404px;
+$sm-icon-arrow02-2x-total-height: 352px;
+$sm-icon-arrow02-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-icon-arrow02-2x: (330px, 258px, -330px, -258px, 28px, 14px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-icon_arrow02@2x', );
+$sm-icon-facebook01-2x-name: 'sm-icon_facebook01@2x';
+$sm-icon-facebook01-2x-x: 276px;
+$sm-icon-facebook01-2x-y: 100px;
+$sm-icon-facebook01-2x-offset-x: -276px;
+$sm-icon-facebook01-2x-offset-y: -100px;
+$sm-icon-facebook01-2x-width: 42px;
+$sm-icon-facebook01-2x-height: 40px;
+$sm-icon-facebook01-2x-total-width: 404px;
+$sm-icon-facebook01-2x-total-height: 352px;
+$sm-icon-facebook01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-icon-facebook01-2x: (276px, 100px, -276px, -100px, 42px, 40px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-icon_facebook01@2x', );
+$sm-icon-instagram01-2x-name: 'sm-icon_instagram01@2x';
+$sm-icon-instagram01-2x-x: 312px;
+$sm-icon-instagram01-2x-y: 290px;
+$sm-icon-instagram01-2x-offset-x: -312px;
+$sm-icon-instagram01-2x-offset-y: -290px;
+$sm-icon-instagram01-2x-width: 42px;
+$sm-icon-instagram01-2x-height: 40px;
+$sm-icon-instagram01-2x-total-width: 404px;
+$sm-icon-instagram01-2x-total-height: 352px;
+$sm-icon-instagram01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-icon-instagram01-2x: (312px, 290px, -312px, -290px, 42px, 40px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-icon_instagram01@2x', );
+$sm-icon-kakaostory01-2x-name: 'sm-icon_kakaostory01@2x';
+$sm-icon-kakaostory01-2x-x: 204px;
+$sm-icon-kakaostory01-2x-y: 290px;
+$sm-icon-kakaostory01-2x-offset-x: -204px;
+$sm-icon-kakaostory01-2x-offset-y: -290px;
+$sm-icon-kakaostory01-2x-width: 42px;
+$sm-icon-kakaostory01-2x-height: 40px;
+$sm-icon-kakaostory01-2x-total-width: 404px;
+$sm-icon-kakaostory01-2x-total-height: 352px;
+$sm-icon-kakaostory01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-icon-kakaostory01-2x: (204px, 290px, -204px, -290px, 42px, 40px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-icon_kakaostory01@2x', );
+$sm-icon-mbenz-2x-name: 'sm-icon_mbenz@2x';
+$sm-icon-mbenz-2x-x: 74px;
+$sm-icon-mbenz-2x-y: 290px;
+$sm-icon-mbenz-2x-offset-x: -74px;
+$sm-icon-mbenz-2x-offset-y: -290px;
+$sm-icon-mbenz-2x-width: 62px;
+$sm-icon-mbenz-2x-height: 62px;
+$sm-icon-mbenz-2x-total-width: 404px;
+$sm-icon-mbenz-2x-total-height: 352px;
+$sm-icon-mbenz-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-icon-mbenz-2x: (74px, 290px, -74px, -290px, 62px, 62px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-icon_mbenz@2x', );
+$sm-icon-twitter01-2x-name: 'sm-icon_twitter01@2x';
+$sm-icon-twitter01-2x-x: 258px;
+$sm-icon-twitter01-2x-y: 290px;
+$sm-icon-twitter01-2x-offset-x: -258px;
+$sm-icon-twitter01-2x-offset-y: -290px;
+$sm-icon-twitter01-2x-width: 42px;
+$sm-icon-twitter01-2x-height: 40px;
+$sm-icon-twitter01-2x-total-width: 404px;
+$sm-icon-twitter01-2x-total-height: 352px;
+$sm-icon-twitter01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-icon-twitter01-2x: (258px, 290px, -258px, -290px, 42px, 40px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-icon_twitter01@2x', );
+$sm-radio01-2x-name: 'sm-radio01@2x';
+$sm-radio01-2x-x: 258px;
+$sm-radio01-2x-y: 204px;
+$sm-radio01-2x-offset-x: -258px;
+$sm-radio01-2x-offset-y: -204px;
+$sm-radio01-2x-width: 44px;
+$sm-radio01-2x-height: 42px;
+$sm-radio01-2x-total-width: 404px;
+$sm-radio01-2x-total-height: 352px;
+$sm-radio01-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-radio01-2x: (258px, 204px, -258px, -204px, 44px, 42px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-radio01@2x', );
+$sm-radio01-selected-2x-name: 'sm-radio01_selected@2x';
+$sm-radio01-selected-2x-x: 148px;
+$sm-radio01-selected-2x-y: 290px;
+$sm-radio01-selected-2x-offset-x: -148px;
+$sm-radio01-selected-2x-offset-y: -290px;
+$sm-radio01-selected-2x-width: 44px;
+$sm-radio01-selected-2x-height: 42px;
+$sm-radio01-selected-2x-total-width: 404px;
+$sm-radio01-selected-2x-total-height: 352px;
+$sm-radio01-selected-2x-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$sm-radio01-selected-2x: (148px, 290px, -148px, -290px, 44px, 42px, 404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', 'sm-radio01_selected@2x', );
+$spritesheet-width: 202px;
+$spritesheet-height: 176px;
+$spritesheet-image: '/assets/images/mobile/sprites_mobile.png';
+$spritesheet-sprites: ($sm-benz-logo-header, $sm-btn-close01, $sm-btn-fb01, $sm-btn-fb01-selected, $sm-btn-insta01, $sm-btn-insta01-selected, $sm-btn-ks01, $sm-btn-ks01-selected, $sm-btn-play01, $sm-btn-top01, $sm-btn-tw01, $sm-btn-tw01-selected, $sm-icon-arrow01, $sm-icon-arrow02, $sm-icon-facebook01, $sm-icon-instagram01, $sm-icon-kakaostory01, $sm-icon-mbenz, $sm-icon-twitter01, $sm-radio01, $sm-radio01-selected, );
+$spritesheet: (202px, 176px, '/assets/images/mobile/sprites_mobile.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 404px;
+$retina-spritesheet-height: 352px;
+$retina-spritesheet-image: '/assets/images/mobile/sprites_mobile@2x.png';
+$retina-spritesheet-sprites: ($sm-benz-logo-header-2x, $sm-btn-close01-2x, $sm-btn-fb01-2x, $sm-btn-fb01-selected-2x, $sm-btn-insta01-2x, $sm-btn-insta01-selected-2x, $sm-btn-ks01-2x, $sm-btn-ks01-selected-2x, $sm-btn-play01-2x, $sm-btn-top01-2x, $sm-btn-tw01-2x, $sm-btn-tw01-selected-2x, $sm-icon-arrow01-2x, $sm-icon-arrow02-2x, $sm-icon-facebook01-2x, $sm-icon-instagram01-2x, $sm-icon-kakaostory01-2x, $sm-icon-mbenz-2x, $sm-icon-twitter01-2x, $sm-radio01-2x, $sm-radio01-selected-2x, );
+$retina-spritesheet: (404px, 352px, '/assets/images/mobile/sprites_mobile@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$sm-benz-logo-header-group-name: 'sm-benz_logo_header';
+$sm-benz-logo-header-group: ('sm-benz_logo_header', $sm-benz-logo-header, $sm-benz-logo-header-2x, );
+$sm-btn-close01-group-name: 'sm-btn_close01';
+$sm-btn-close01-group: ('sm-btn_close01', $sm-btn-close01, $sm-btn-close01-2x, );
+$sm-btn-fb01-group-name: 'sm-btn_fb01';
+$sm-btn-fb01-group: ('sm-btn_fb01', $sm-btn-fb01, $sm-btn-fb01-2x, );
+$sm-btn-fb01-selected-group-name: 'sm-btn_fb01_selected';
+$sm-btn-fb01-selected-group: ('sm-btn_fb01_selected', $sm-btn-fb01-selected, $sm-btn-fb01-selected-2x, );
+$sm-btn-insta01-group-name: 'sm-btn_insta01';
+$sm-btn-insta01-group: ('sm-btn_insta01', $sm-btn-insta01, $sm-btn-insta01-2x, );
+$sm-btn-insta01-selected-group-name: 'sm-btn_insta01_selected';
+$sm-btn-insta01-selected-group: ('sm-btn_insta01_selected', $sm-btn-insta01-selected, $sm-btn-insta01-selected-2x, );
+$sm-btn-ks01-group-name: 'sm-btn_ks01';
+$sm-btn-ks01-group: ('sm-btn_ks01', $sm-btn-ks01, $sm-btn-ks01-2x, );
+$sm-btn-ks01-selected-group-name: 'sm-btn_ks01_selected';
+$sm-btn-ks01-selected-group: ('sm-btn_ks01_selected', $sm-btn-ks01-selected, $sm-btn-ks01-selected-2x, );
+$sm-btn-play01-group-name: 'sm-btn_play01';
+$sm-btn-play01-group: ('sm-btn_play01', $sm-btn-play01, $sm-btn-play01-2x, );
+$sm-btn-top01-group-name: 'sm-btn_top01';
+$sm-btn-top01-group: ('sm-btn_top01', $sm-btn-top01, $sm-btn-top01-2x, );
+$sm-btn-tw01-group-name: 'sm-btn_tw01';
+$sm-btn-tw01-group: ('sm-btn_tw01', $sm-btn-tw01, $sm-btn-tw01-2x, );
+$sm-btn-tw01-selected-group-name: 'sm-btn_tw01_selected';
+$sm-btn-tw01-selected-group: ('sm-btn_tw01_selected', $sm-btn-tw01-selected, $sm-btn-tw01-selected-2x, );
+$sm-icon-arrow01-group-name: 'sm-icon_arrow01';
+$sm-icon-arrow01-group: ('sm-icon_arrow01', $sm-icon-arrow01, $sm-icon-arrow01-2x, );
+$sm-icon-arrow02-group-name: 'sm-icon_arrow02';
+$sm-icon-arrow02-group: ('sm-icon_arrow02', $sm-icon-arrow02, $sm-icon-arrow02-2x, );
+$sm-icon-facebook01-group-name: 'sm-icon_facebook01';
+$sm-icon-facebook01-group: ('sm-icon_facebook01', $sm-icon-facebook01, $sm-icon-facebook01-2x, );
+$sm-icon-instagram01-group-name: 'sm-icon_instagram01';
+$sm-icon-instagram01-group: ('sm-icon_instagram01', $sm-icon-instagram01, $sm-icon-instagram01-2x, );
+$sm-icon-kakaostory01-group-name: 'sm-icon_kakaostory01';
+$sm-icon-kakaostory01-group: ('sm-icon_kakaostory01', $sm-icon-kakaostory01, $sm-icon-kakaostory01-2x, );
+$sm-icon-mbenz-group-name: 'sm-icon_mbenz';
+$sm-icon-mbenz-group: ('sm-icon_mbenz', $sm-icon-mbenz, $sm-icon-mbenz-2x, );
+$sm-icon-twitter01-group-name: 'sm-icon_twitter01';
+$sm-icon-twitter01-group: ('sm-icon_twitter01', $sm-icon-twitter01, $sm-icon-twitter01-2x, );
+$sm-radio01-group-name: 'sm-radio01';
+$sm-radio01-group: ('sm-radio01', $sm-radio01, $sm-radio01-2x, );
+$sm-radio01-selected-group-name: 'sm-radio01_selected';
+$sm-radio01-selected-group: ('sm-radio01_selected', $sm-radio01-selected, $sm-radio01-selected-2x, );
+$retina-groups: ($sm-benz-logo-header-group, $sm-btn-close01-group, $sm-btn-fb01-group, $sm-btn-fb01-selected-group, $sm-btn-insta01-group, $sm-btn-insta01-selected-group, $sm-btn-ks01-group, $sm-btn-ks01-selected-group, $sm-btn-play01-group, $sm-btn-top01-group, $sm-btn-tw01-group, $sm-btn-tw01-selected-group, $sm-icon-arrow01-group, $sm-icon-arrow02-group, $sm-icon-facebook01-group, $sm-icon-instagram01-group, $sm-icon-kakaostory01-group, $sm-icon-mbenz-group, $sm-icon-twitter01-group, $sm-radio01-group, $sm-radio01-selected-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

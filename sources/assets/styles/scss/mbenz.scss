@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/**
+ * variable
+**/
+$font-base-stack: 'Nanum Barun Gothic', sans-serif;
+
+///* colors */
+$color_orange: #ff792a;
+
+
+///* media query break point */
+$mobile-break-point: 767px;
+$desktop-break-point: 1280px;
+
+///* contents width */
+$mobile-width: 320px;
+$default-width: 944px;
+$desktop-width: 1180px;
+
+
+@import url(nanumbarungothic.css);
+@import url(magnific-popup.css);
+
+
+
+/**
+ * functions
+**/
+///* z-index */
+$z-layers: (
+	'modal':            1000,
+	'layout':            900,
+	'modaless':          800,
+	'dropdown':          500,
+	'hover':             200,
+	'tooltip':           100,
+	'default':             1,
+	'bottomless-pit': -10000
+);
+
+@function z($layer) {
+	@if not map-has-key($z-layers, $layer) {
+		@warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+	}
+	@return map-get($z-layers, $layer);
+}
+
+
+
+/**
+ * mixin
+**/
+///* media query */
+@mixin mobile {
+	@media only screen and (min-width: 320px) and (max-width: #{$mobile-break-point}) {
+		@content;
+	}
+}
+
+@mixin default {
+	@media only screen and (min-width: #{$mobile-break-point}) and (max-width: #{$desktop-break-point}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media only screen and (min-width: #{$desktop-break-point}) {
+		@content;
+	}
+}
+
+
+@mixin retina {
+	@media
+		only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (-o-min-device-pixel-ratio: 2/1),
+		only screen and (min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+			@content;
+		}
+}
+
+
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+
+
+
+@import "reset";
+@import "sprites_mobile";
+@import "sprites_desktop";
+
+
+
+/**
+ * import
+**/
+@import "layout";
+@import "event01";
