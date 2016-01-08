@@ -1447,6 +1447,7 @@ article.contents {
         line-height: 32px; }
       .popup-application .box.basic-info input[type=text],
       .popup-application .box.basic-info input[type=tel] {
+        height: 32px;
         width: 172px;
         font-size: 14px;
         color: #666;

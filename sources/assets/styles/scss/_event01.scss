@@ -438,7 +438,7 @@
 			p { display: inline-block; margin-top: 15px; margin-right: 26px; font-size: 14px; color: #666; line-height: 32px; }
 			label { display: inline-block; width: 56px; font-size: 14px; font-weight: bold; color: #666; line-height: 32px; }
 			input[type=text],
-			input[type=tel] { width: 172px; font-size: 14px; color: #666; line-height: 32px; text-align: center; border: 1px solid #888; }
+			input[type=tel] { height: 32px; width: 172px; font-size: 14px; color: #666; line-height: 32px; text-align: center; border: 1px solid #888; }
 			input[type=tel] { width: 72px; }
 		}
 
