@@ -23,9 +23,9 @@
 			}
 		}
 
-		.copyright { margin-top: 30px; padding-top: 43px; height: 133px; color: #333; text-align: center; background: url('/assets/images/desktop/bg_copyright.jpg') left center no-repeat; background-size: contain;
-			.title { margin: 0 auto; height: 26px; width: 783px; text-indent: -9999px; background: url('/assets/images/desktop/txt/copyright01_default.png') left top no-repeat; }
-			.message { margin-top: 18px; font-size: 16px; line-height: 25px; text-shadow: 1px 1px 1px #fff; }
+		.copyright { padding: 55px 0 0 128px; height: 315px; background: url('/assets/images/desktop/bg_copyright.jpg') center top no-repeat;
+			.title { font-size: 30px; color: #fff; line-height: 42px; }
+			.message { margin-top: 29px; font-size: 18px; color: #d8d7d7; line-height: 30px; }
 		}
 
 		/// 모바일 영역
@@ -36,29 +36,23 @@
 				}
 			}
 
-			.copyright { margin-top: 23px; padding-top: 20px; height: 112px; width: 320px; background: url('/assets/images/mobile/bg_copyright.jpg') left center no-repeat;
-				@include retina { background: url('/assets/images/mobile/bg_copyright@2x.jpg') left center no-repeat; background-size: 320px 132px; }
+			.copyright { padding: 26px 0 0 27px; height: 253px; background: url('/assets/images/mobile/bg_copyright.jpg') center top no-repeat;
+				@include retina { background-image: url('/assets/images/mobile/bg_copyright@2x.jpg'); background-size: 320px 279px; }
 
-				.title { height: 35px; width: 240px; background: url('/assets/images/mobile/txt/copyright01.png') left top no-repeat;
-					@include retina { background: url('/assets/images/mobile/txt/copyright01@2x.png') left top no-repeat; background-size: 240px 35px; }
-				}
-				.message { margin-top: 11px; font-size: 11px; line-height: 17px; }
+				.title { font-size: 15px; line-height: 21px; }
+				.message { margin-top: 19px; font-size: 11px; line-height: 17px; }
 			}
 		}
 
 		/// 데스크탑 영역
 		@include desktop {
-			.copyright { padding-top: 55px; height: 165px;
-				.title { height: 32px; width: 977px; background: url('/assets/images/desktop/txt/copyright01_desktop.png') left top no-repeat; }
-				.message { margin-top: 23px; font-size: 20px; line-height: 30px; }
-			}
 		}
 	}
 
 
 	/* SNS 로그인 / 댓글 입력 / 댓글 목록  */
 	/* SNS 로그인 */
-	.login-sns { display: block; overflow: hidden;
+	.login-sns { display: block; overflow: hidden; 
 
 		.title { display: block; float: left; margin-right: 11px; font-size: 16px; color: #4cc1ed; line-height: 48px; vertical-align: middle; }
 		.btn { display: block; float: left; margin-right: 2px; height: 48px; width: 48px; text-indent: -9999px; vertical-align: middle; background-color: #1a1a1a;
@@ -161,7 +155,7 @@
 				.thumb { margin-right: 4px; height: 30px; width: 30px; }
 				figcaption { font-size: 10px; color: #a9a9a9; line-height: 30px; }
 			}
-			.comment { box-sizing: border-box; margin: 6px 20px 0 28px; padding: 6px 0 0 0; width: auto; font-size: 10px; color: #f8f8f8; line-height: 14px; border-top: 1px solid #3c3c3c;
+			.comment { box-sizing: border-box; margin: 6px 20px 0 28px; padding: 6px 0 0 0; width: 230px; font-size: 10px; color: #f8f8f8; line-height: 14px; border-top: 1px solid #3c3c3c;
 				&:before { content: none; }
 			}
 		}
@@ -180,7 +174,7 @@
 		}
 
 		/// 모바일 영역
-		@include mobile { margin: 0px;
+		@include mobile { margin: 17px 0 0 0;
 			> li { margin-top: 8px; padding: 8px 0 13px 15px;
 				&:before { top: -$sm-icon-arrow02-height; left: 40px; @include retina_sprite($sm-icon-arrow02-group); }
 			}
@@ -203,15 +197,15 @@
 	}
 
 
-	.sns-area { position: relative; margin-top: 43px; padding: 0 40px;
+	.sns-area { position: relative; margin-top: -87px; padding: 0 40px;
 		> .title { display: none; }
 
-		.login-sns { }
+		.login-sns { margin-top: 20px; }
 		.write-comment { position: absolute; top: 0; right: 40px; left: 343px; }
 
 
 		/// 모바일 영역
-		@include mobile { margin-top: 17px; padding: 0 10px;
+		@include mobile { margin-top: -98px; padding: 0 10px;
 			.login-sns { margin: 0 auto; width: 217px; }
 			.write-comment { position: relative; top: auto; right: auto; left: auto; margin-top: 15px; }
 		}
@@ -226,7 +220,7 @@
 
 	/* 이벤트 안내 */
 	.event-summary { margin-top: 50px; min-height: 245px; background: url('/assets/images/desktop/bg_summary.png') 600px 0px no-repeat; background-size: 299px 245px;
-		.title { display: block; height: 21px; width: 104px; text-indent: -9999px; background: url('/assets/images/desktop/txt/event01_default.png') left top no-repeat; }
+		.title { display: block; font-size: 18px; color: #4cc1ed; }
 		.list-winner-goods { margin-top: 25px; margin-left: 63px;
 			> li { position: relative; padding-left: 10px; font-size: 14px; color: #fff; line-height: 23px;
 				&:before { content: ''; display: block; position: absolute; top: 8px; left: 0; height: 2px; width: 5px; background-color: #4cc1ed; }
@@ -240,11 +234,7 @@
 
 		/// 모바일 영역
 		@include mobile { margin-top: 25px; min-height: 215px; background-image: none;
-			.title { height: 17px; width: 80px; background-image: url('/assets/images/mobile/txt/event01.png');
-				@include retina {
-					background-image: url('/assets/images/mobile/txt/event01@2x.png'); background-size: 80px 17px;
-				}
-			}
+			.title { font-size: 15px; }
 
 			.list-winner-goods { margin-top: 20px; margin-left: 0px;
 				> li { font-size: 11px; line-height: 20px;
@@ -260,7 +250,7 @@
 
 		/// 데스크탑 영역
 		@include desktop { min-height: 272px; background-position: 830px 0; background-size: 332px 272px;
-			.title { height: 23px; width: 114px; background-image: url('/assets/images/desktop/txt/event01_desktop.png'); }
+			.title { font-size: 20px; }
 			.list-winner-goods { margin-top: 27px; margin-left: 70px;
 				> li { font-size: 16px; line-height: 26px;
 					&:before { top: 10px; }
@@ -277,28 +267,20 @@
 	/* 사진 목록 */
 	.photos-mfs { position: relative; overflow: hidden;
 		> li { overflow: hidden; float: left; margin-right: 4px; margin-bottom: 4px;
-			&.makingfilm01 { height: 350px; width: 312px;
-				.title { height: 18px; width: 229px; background-image: url('/assets/images/desktop/txt/makingfilm01_default.png'); }
-			}
-			&.makingfilm02 { height: 174px; width: 312px;
-				.title { height: 18px; width: 175px; background-image: url('/assets/images/desktop/txt/makingfilm02_default.png'); }
-			}
+			&.makingfilm01 { height: 350px; width: 312px; }
+			&.makingfilm02 { height: 174px; width: 312px; }
 			&.makingfilm03 { margin-right: 0px; height: 174px; width: 312px;
 				figcaption { display: none; }
 			}
-			&.makingfilm04 { float: right; margin-right: 0px; height: 350px; width: 312px;
-				.title { height: 18px; width: 187px; background-image: url('/assets/images/desktop/txt/makingfilm04_default.png'); }
-			}
+			&.makingfilm04 { float: right; margin-right: 0px; height: 350px; width: 312px; }
 
 			&.center01 { clear: left; height: 174px; width: 312px;
 				figcaption { display: none; }
 			}
 			&.center02 { margin-top: -176px; height: 350px; width: 312px;
-				.title { height: 32px; width: 232px; background-image: url('/assets/images/desktop/txt/center02_default.png'); }
 				p { margin-top: 8px; }
 			}
 			&.center03 { height: 174px; width: 628px;
-				.title { height: 31px; width: 155px; background-image: url('/assets/images/desktop/txt/center03_default.png'); }
 				p { margin-top: 8px; }
 			}
 			&.center04 { margin-right: 0px; height: 174px; width: 312px;
@@ -308,7 +290,11 @@
 			figure { display: block; position: relative; height: 100%; width: 100%;
 				img { height: 100%; width: 100%; }
 				figcaption { display: block; position: absolute; right: 0; bottom: 24px; left: 23px; width: 100%;
-					.title { display: block; text-indent: -9999px; background-position: 0px 0px; background-repeat: no-repeat; }
+					.title { display: block; font-size: 16px; color: #4cc1ed;
+						&.link { font-size: 18px; color: #fff;
+							&:after { content: ''; display: inline-block; margin-left: 30px; vertical-align: middle; @include sprite($sd-icon-arrow03); }
+						}
+					}
 					p { margin-top: 18px; font-size: 13px; color: #dfdfdf; line-height: 18px; }
 				}
 			}
@@ -317,34 +303,17 @@
 		/// 모바일 영역
 		@include mobile { padding: 0 10px;
 			> li { float: none; margin: 0 0 3px 0;
-				&.makingfilm01 { height: auto; width: 100%;
-					.title { height: 17px; width: 219px; background-image: url('/assets/images/mobile/txt/makingfilm01.png');
-						@include retina { background-image: url('/assets/images/mobile/txt/makingfilm01@2x.png'); background-size: 219px 17px; }
-					}
-				}
-				&.makingfilm02 { height: auto; width: 100%;
-					.title { height: 17px; width: 167px; background-image: url('/assets/images/mobile/txt/makingfilm02.png');
-						@include retina { background-image: url('/assets/images/mobile/txt/makingfilm02@2x.png'); background-size: 167px 17px; }
-					}
-				}
+				&.makingfilm01 { height: auto; width: 100%; }
+				&.makingfilm02 { height: auto; width: 100%; }
 				&.makingfilm03 { height: auto; width: 100%; }
-				&.makingfilm04 { height: auto; width: 100%;
-					.title { height: 17px; width: 179px; background-image: url('/assets/images/mobile/txt/makingfilm04.png');
-						@include retina { background-image: url('/assets/images/mobile/txt/makingfilm04@2x.png'); background-size: 179px 17px; }
-					}
-				}
+				&.makingfilm04 { height: auto; width: 100%; }
 
 				&.center01 { height: auto; width: 100%; }
 				&.center02 { margin-top: 0; height: auto; width: 100%;
-					.title { height: 30px; width: 221px; background-image: url('/assets/images/mobile/txt/center02.png');
-						@include retina { background-image: url('/assets/images/mobile/txt/center02@2x.png'); background-size: 221px 30px; }
-					}
 					p { margin-top: 9px; }
 				}
 				&.center03 { height: auto; width: 100%;
-					.title { height: 30px; width: 147px; background-image: url('/assets/images/mobile/txt/center03.png');
-						@include retina { background-image: url('/assets/images/mobile/txt/center03@2x.png'); background-size: 147px 30px; }
-					}
+
 					p { margin-top: 9px; }
 				}
 				&.center04 { height: auto; width: 100%; }
@@ -352,6 +321,11 @@
 				figure {
 					img { height: auto; width: 100%; }
 					figcaption { bottom: 20px; left: 23px;
+						.title { font-size: 17px;
+							&.link { font-size: 17px;
+								&:after { margin-top: -2px; margin-left: 23px; @include retina_sprite($sm-icon-arrow03-group); }
+							}
+						}
 						p { margin-top: 14px; font-size: 12px; line-height: 17px; }
 					}
 				}
@@ -361,30 +335,25 @@
 		/// 데스크탑 영역
 		@include desktop {
 			> li { margin-right: 5px; margin-bottom: 5px;
-				&.makingfilm01 { height: 437px; width: 390px;
-					.title { height: 20px; width: 258px; background-image: url('/assets/images/desktop/txt/makingfilm01_desktop.png'); }
-				}
-				&.makingfilm02 { height: 216px; width: 390px;
-					.title { height: 20px; width: 197px; background-image: url('/assets/images/desktop/txt/makingfilm02_desktop.png'); }
-				}
+				&.makingfilm01 { height: 437px; width: 390px; }
+				&.makingfilm02 { height: 216px; width: 390px; }
 				&.makingfilm03 { height: 216px; width: 390px; }
-				&.makingfilm04 { height: 437px; width: 390px;
-					.title { height: 20px; width: 211px; background-image: url('/assets/images/desktop/txt/makingfilm04_desktop.png'); }
-				}
+				&.makingfilm04 { height: 437px; width: 390px; }
 
 				&.center01 { height: 216px; width: 390px; }
 				&.center02 { margin-top: -220px; height: 437px; width: 390px;
-					.title { height: 38px; width: 290px; background-image: url('/assets/images/desktop/txt/center02_desktop.png'); }
 					p { margin-top: 10px; }
 				}
 				&.center03 { height: 216px; width: 785px;
-					.title { height: 38px; width: 193px; background-image: url('/assets/images/desktop/txt/center03_desktop.png'); }
 					p { margin-top: 10px; }
 				}
 				&.center04 { height: 216px; width: 390px; }
 
 				figure {
 					figcaption { bottom: 30px; left: 28px;
+						.title { font-size: 18px;
+							&.link { font-size: 20px; }
+						}
 						p { margin-top: 18px; font-size: 15px; line-height: 22px; }
 					}
 				}

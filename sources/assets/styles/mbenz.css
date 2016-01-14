@@ -279,7 +279,7 @@ body {
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .mbenz-header > h1 {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 202px 176px; } }
+        background-size: 202px 202px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .mbenz-header p {
         position: static;
@@ -364,13 +364,13 @@ article.contents {
         font-size: 10px; }
         .mbenz-footer .btn-top:after {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -183px -145px;
+          background-position: -184px -145px;
           width: 14px;
           height: 14px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .mbenz-footer .btn-top:after {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .mbenz-footer small {
         font-size: 10px; } }
@@ -434,24 +434,18 @@ article.contents {
         width: 86px;
         height: 87px; }
   .pg-event01 .representation .copyright {
-    margin-top: 30px;
-    padding-top: 43px;
-    height: 133px;
-    color: #333;
-    text-align: center;
-    background: url("/assets/images/desktop/bg_copyright.jpg") left center no-repeat;
-    background-size: contain; }
+    padding: 55px 0 0 128px;
+    height: 315px;
+    background: url("/assets/images/desktop/bg_copyright.jpg") center top no-repeat; }
     .pg-event01 .representation .copyright .title {
-      margin: 0 auto;
-      height: 26px;
-      width: 783px;
-      text-indent: -9999px;
-      background: url("/assets/images/desktop/txt/copyright01_default.png") left top no-repeat; }
+      font-size: 30px;
+      color: #fff;
+      line-height: 42px; }
     .pg-event01 .representation .copyright .message {
-      margin-top: 18px;
-      font-size: 16px;
-      line-height: 25px;
-      text-shadow: 1px 1px 1px #fff; }
+      margin-top: 29px;
+      font-size: 18px;
+      color: #d8d7d7;
+      line-height: 30px; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .pg-event01 .representation .teaser {
       height: 151px;
@@ -468,44 +462,24 @@ article.contents {
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .pg-event01 .representation .teaser .btn-play:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 202px 176px; } }
+        background-size: 202px 202px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .pg-event01 .representation .copyright {
-      margin-top: 23px;
-      padding-top: 20px;
-      height: 112px;
-      width: 320px;
-      background: url("/assets/images/mobile/bg_copyright.jpg") left center no-repeat; } }
+      padding: 26px 0 0 27px;
+      height: 253px;
+      background: url("/assets/images/mobile/bg_copyright.jpg") center top no-repeat; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
     .pg-event01 .representation .copyright {
-      background: url("/assets/images/mobile/bg_copyright@2x.jpg") left center no-repeat;
-      background-size: 320px 132px; } }
+      background-image: url("/assets/images/mobile/bg_copyright@2x.jpg");
+      background-size: 320px 279px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .pg-event01 .representation .copyright .title {
-        height: 35px;
-        width: 240px;
-        background: url("/assets/images/mobile/txt/copyright01.png") left top no-repeat; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
-      .pg-event01 .representation .copyright .title {
-        background: url("/assets/images/mobile/txt/copyright01@2x.png") left top no-repeat;
-        background-size: 240px 35px; } }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 15px;
+        line-height: 21px; }
       .pg-event01 .representation .copyright .message {
-        margin-top: 11px;
+        margin-top: 19px;
         font-size: 11px;
         line-height: 17px; } }
-  @media only screen and (min-width: 1280px) {
-    .pg-event01 .representation .copyright {
-      padding-top: 55px;
-      height: 165px; }
-      .pg-event01 .representation .copyright .title {
-        height: 32px;
-        width: 977px;
-        background: url("/assets/images/desktop/txt/copyright01_desktop.png") left top no-repeat; }
-      .pg-event01 .representation .copyright .message {
-        margin-top: 23px;
-        font-size: 20px;
-        line-height: 30px; } }
   .pg-event01 .login-sns {
     display: block;
     overflow: hidden; }
@@ -533,7 +507,7 @@ article.contents {
         height: 48px; }
       .pg-event01 .login-sns .btn.tw {
         background-image: url(/assets/images/desktop/sprites_desktop.png);
-        background-position: -162px -181px;
+        background-position: -216px -181px;
         width: 48px;
         height: 48px; }
       .pg-event01 .login-sns .btn.ks {
@@ -564,7 +538,7 @@ article.contents {
           height: 48px; }
         .pg-event01 .login-sns .btn.selected.tw {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -216px -181px;
+          background-position: -162px -181px;
           width: 48px;
           height: 48px; }
         .pg-event01 .login-sns .btn.selected.ks {
@@ -595,17 +569,17 @@ article.contents {
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.fb {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.tw {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -165px -43px;
+            background-position: -165px -86px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.tw {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.ks {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
@@ -615,7 +589,7 @@ article.contents {
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.ks {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.insta {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
@@ -625,7 +599,7 @@ article.contents {
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.insta {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.selected.fb {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
@@ -635,17 +609,17 @@ article.contents {
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.selected.fb {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.selected.tw {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -165px -86px;
+            background-position: -165px -43px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.selected.tw {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.selected.ks {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
@@ -655,7 +629,7 @@ article.contents {
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.selected.ks {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.selected.insta {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
@@ -665,7 +639,7 @@ article.contents {
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.selected.insta {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
 
   .pg-event01 .write-comment {
     display: block;
@@ -736,7 +710,7 @@ article.contents {
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .pg-event01 .write-comment:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 202px 176px; } }
+        background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
         .pg-event01 .write-comment .remain {
           right: 70px;
@@ -775,12 +749,12 @@ article.contents {
           height: 26px; }
         .pg-event01 .comment-item .user .via.twitter {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -226px -142px;
+          background-position: -194px -142px;
           width: 26px;
           height: 26px; }
         .pg-event01 .comment-item .user .via.kakaostory {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -194px -142px;
+          background-position: -226px -142px;
           width: 26px;
           height: 26px; }
         .pg-event01 .comment-item .user .via.instagram {
@@ -835,37 +809,37 @@ article.contents {
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .comment-item .user .via.facebook {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .comment-item .user .via.twitter {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -129px -145px;
+            background-position: -130px -145px;
             width: 21px;
             height: 20px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .comment-item .user .via.twitter {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .comment-item .user .via.kakaostory {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -102px -145px;
+            background-position: -157px -145px;
             width: 21px;
             height: 20px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .comment-item .user .via.kakaostory {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .comment-item .user .via.instagram {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -156px -145px;
+            background-position: 0px -182px;
             width: 21px;
             height: 20px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .comment-item .user .via.instagram {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
         .pg-event01 .comment-item .user .thumb {
           margin-right: 4px;
@@ -879,7 +853,7 @@ article.contents {
         box-sizing: border-box;
         margin: 6px 20px 0 28px;
         padding: 6px 0 0 0;
-        width: auto;
+        width: 230px;
         font-size: 10px;
         color: #f8f8f8;
         line-height: 14px;
@@ -908,7 +882,7 @@ article.contents {
         height: 9px; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .pg-event01 .list-comments {
-        margin: 0px; }
+        margin: 17px 0 0 0; }
         .pg-event01 .list-comments > li {
           margin-top: 8px;
           padding: 8px 0 13px 15px; }
@@ -922,7 +896,7 @@ article.contents {
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .list-comments > li:before {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 202px 176px; } }
+          background-size: 202px 202px; } }
 
   .pg-event01 .btn-list-more {
     display: block;
@@ -955,14 +929,16 @@ article.contents {
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .pg-event01 .btn-list-more:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 202px 176px; } }
+        background-size: 202px 202px; } }
 
   .pg-event01 .sns-area {
     position: relative;
-    margin-top: 43px;
+    margin-top: -87px;
     padding: 0 40px; }
     .pg-event01 .sns-area > .title {
       display: none; }
+    .pg-event01 .sns-area .login-sns {
+      margin-top: 20px; }
     .pg-event01 .sns-area .write-comment {
       position: absolute;
       top: 0;
@@ -970,7 +946,7 @@ article.contents {
       left: 343px; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .pg-event01 .sns-area {
-        margin-top: 17px;
+        margin-top: -98px;
         padding: 0 10px; }
         .pg-event01 .sns-area .login-sns {
           margin: 0 auto;
@@ -988,10 +964,8 @@ article.contents {
     background-size: 299px 245px; }
     .pg-event01 .event-summary .title {
       display: block;
-      height: 21px;
-      width: 104px;
-      text-indent: -9999px;
-      background: url("/assets/images/desktop/txt/event01_default.png") left top no-repeat; }
+      font-size: 18px;
+      color: #4cc1ed; }
     .pg-event01 .event-summary .list-winner-goods {
       margin-top: 25px;
       margin-left: 63px; }
@@ -1029,14 +1003,7 @@ article.contents {
         min-height: 215px;
         background-image: none; }
         .pg-event01 .event-summary .title {
-          height: 17px;
-          width: 80px;
-          background-image: url("/assets/images/mobile/txt/event01.png"); } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
-      .pg-event01 .event-summary .title {
-        background-image: url("/assets/images/mobile/txt/event01@2x.png");
-        background-size: 80px 17px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
+          font-size: 15px; }
         .pg-event01 .event-summary .list-winner-goods {
           margin-top: 20px;
           margin-left: 0px; }
@@ -1063,9 +1030,7 @@ article.contents {
         background-position: 830px 0;
         background-size: 332px 272px; }
         .pg-event01 .event-summary .title {
-          height: 23px;
-          width: 114px;
-          background-image: url("/assets/images/desktop/txt/event01_desktop.png"); }
+          font-size: 20px; }
         .pg-event01 .event-summary .list-winner-goods {
           margin-top: 27px;
           margin-left: 70px; }
@@ -1094,17 +1059,9 @@ article.contents {
       .pg-event01 .photos-mfs > li.makingfilm01 {
         height: 350px;
         width: 312px; }
-        .pg-event01 .photos-mfs > li.makingfilm01 .title {
-          height: 18px;
-          width: 229px;
-          background-image: url("/assets/images/desktop/txt/makingfilm01_default.png"); }
       .pg-event01 .photos-mfs > li.makingfilm02 {
         height: 174px;
         width: 312px; }
-        .pg-event01 .photos-mfs > li.makingfilm02 .title {
-          height: 18px;
-          width: 175px;
-          background-image: url("/assets/images/desktop/txt/makingfilm02_default.png"); }
       .pg-event01 .photos-mfs > li.makingfilm03 {
         margin-right: 0px;
         height: 174px;
@@ -1116,10 +1073,6 @@ article.contents {
         margin-right: 0px;
         height: 350px;
         width: 312px; }
-        .pg-event01 .photos-mfs > li.makingfilm04 .title {
-          height: 18px;
-          width: 187px;
-          background-image: url("/assets/images/desktop/txt/makingfilm04_default.png"); }
       .pg-event01 .photos-mfs > li.center01 {
         clear: left;
         height: 174px;
@@ -1130,19 +1083,11 @@ article.contents {
         margin-top: -176px;
         height: 350px;
         width: 312px; }
-        .pg-event01 .photos-mfs > li.center02 .title {
-          height: 32px;
-          width: 232px;
-          background-image: url("/assets/images/desktop/txt/center02_default.png"); }
         .pg-event01 .photos-mfs > li.center02 p {
           margin-top: 8px; }
       .pg-event01 .photos-mfs > li.center03 {
         height: 174px;
         width: 628px; }
-        .pg-event01 .photos-mfs > li.center03 .title {
-          height: 31px;
-          width: 155px;
-          background-image: url("/assets/images/desktop/txt/center03_default.png"); }
         .pg-event01 .photos-mfs > li.center03 p {
           margin-top: 8px; }
       .pg-event01 .photos-mfs > li.center04 {
@@ -1168,9 +1113,20 @@ article.contents {
           width: 100%; }
           .pg-event01 .photos-mfs > li figure figcaption .title {
             display: block;
-            text-indent: -9999px;
-            background-position: 0px 0px;
-            background-repeat: no-repeat; }
+            font-size: 16px;
+            color: #4cc1ed; }
+            .pg-event01 .photos-mfs > li figure figcaption .title.link {
+              font-size: 18px;
+              color: #fff; }
+              .pg-event01 .photos-mfs > li figure figcaption .title.link:after {
+                content: '';
+                display: inline-block;
+                margin-left: 30px;
+                vertical-align: middle;
+                background-image: url(/assets/images/desktop/sprites_desktop.png);
+                background-position: -46px -235px;
+                width: 38px;
+                height: 38px; }
           .pg-event01 .photos-mfs > li figure figcaption p {
             margin-top: 18px;
             font-size: 13px;
@@ -1185,42 +1141,15 @@ article.contents {
           .pg-event01 .photos-mfs > li.makingfilm01 {
             height: auto;
             width: 100%; }
-            .pg-event01 .photos-mfs > li.makingfilm01 .title {
-              height: 17px;
-              width: 219px;
-              background-image: url("/assets/images/mobile/txt/makingfilm01.png"); } }
-        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
-          .pg-event01 .photos-mfs > li.makingfilm01 .title {
-            background-image: url("/assets/images/mobile/txt/makingfilm01@2x.png");
-            background-size: 219px 17px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .photos-mfs > li.makingfilm02 {
             height: auto;
             width: 100%; }
-            .pg-event01 .photos-mfs > li.makingfilm02 .title {
-              height: 17px;
-              width: 167px;
-              background-image: url("/assets/images/mobile/txt/makingfilm02.png"); } }
-        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
-          .pg-event01 .photos-mfs > li.makingfilm02 .title {
-            background-image: url("/assets/images/mobile/txt/makingfilm02@2x.png");
-            background-size: 167px 17px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .photos-mfs > li.makingfilm03 {
             height: auto;
             width: 100%; }
           .pg-event01 .photos-mfs > li.makingfilm04 {
             height: auto;
             width: 100%; }
-            .pg-event01 .photos-mfs > li.makingfilm04 .title {
-              height: 17px;
-              width: 179px;
-              background-image: url("/assets/images/mobile/txt/makingfilm04.png"); } }
-        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
-          .pg-event01 .photos-mfs > li.makingfilm04 .title {
-            background-image: url("/assets/images/mobile/txt/makingfilm04@2x.png");
-            background-size: 179px 17px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .photos-mfs > li.center01 {
             height: auto;
             width: 100%; }
@@ -1228,29 +1157,11 @@ article.contents {
             margin-top: 0;
             height: auto;
             width: 100%; }
-            .pg-event01 .photos-mfs > li.center02 .title {
-              height: 30px;
-              width: 221px;
-              background-image: url("/assets/images/mobile/txt/center02.png"); } }
-        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
-          .pg-event01 .photos-mfs > li.center02 .title {
-            background-image: url("/assets/images/mobile/txt/center02@2x.png");
-            background-size: 221px 30px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
             .pg-event01 .photos-mfs > li.center02 p {
               margin-top: 9px; }
           .pg-event01 .photos-mfs > li.center03 {
             height: auto;
             width: 100%; }
-            .pg-event01 .photos-mfs > li.center03 .title {
-              height: 30px;
-              width: 147px;
-              background-image: url("/assets/images/mobile/txt/center03.png"); } }
-        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
-          .pg-event01 .photos-mfs > li.center03 .title {
-            background-image: url("/assets/images/mobile/txt/center03@2x.png");
-            background-size: 147px 30px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
             .pg-event01 .photos-mfs > li.center03 p {
               margin-top: 9px; }
           .pg-event01 .photos-mfs > li.center04 {
@@ -1262,6 +1173,22 @@ article.contents {
           .pg-event01 .photos-mfs > li figure figcaption {
             bottom: 20px;
             left: 23px; }
+            .pg-event01 .photos-mfs > li figure figcaption .title {
+              font-size: 17px; }
+              .pg-event01 .photos-mfs > li figure figcaption .title.link {
+                font-size: 17px; }
+                .pg-event01 .photos-mfs > li figure figcaption .title.link:after {
+                  margin-top: -2px;
+                  margin-left: 23px;
+                  background-image: url(/assets/images/mobile/sprites_mobile.png);
+                  background-position: -129px -102px;
+                  width: 30px;
+                  height: 30px; } }
+            @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+              .pg-event01 .photos-mfs > li figure figcaption .title.link:after {
+                background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                background-size: 202px 202px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
             .pg-event01 .photos-mfs > li figure figcaption p {
               margin-top: 14px;
               font-size: 12px;
@@ -1273,27 +1200,15 @@ article.contents {
         .pg-event01 .photos-mfs > li.makingfilm01 {
           height: 437px;
           width: 390px; }
-          .pg-event01 .photos-mfs > li.makingfilm01 .title {
-            height: 20px;
-            width: 258px;
-            background-image: url("/assets/images/desktop/txt/makingfilm01_desktop.png"); }
         .pg-event01 .photos-mfs > li.makingfilm02 {
           height: 216px;
           width: 390px; }
-          .pg-event01 .photos-mfs > li.makingfilm02 .title {
-            height: 20px;
-            width: 197px;
-            background-image: url("/assets/images/desktop/txt/makingfilm02_desktop.png"); }
         .pg-event01 .photos-mfs > li.makingfilm03 {
           height: 216px;
           width: 390px; }
         .pg-event01 .photos-mfs > li.makingfilm04 {
           height: 437px;
           width: 390px; }
-          .pg-event01 .photos-mfs > li.makingfilm04 .title {
-            height: 20px;
-            width: 211px;
-            background-image: url("/assets/images/desktop/txt/makingfilm04_desktop.png"); }
         .pg-event01 .photos-mfs > li.center01 {
           height: 216px;
           width: 390px; }
@@ -1301,19 +1216,11 @@ article.contents {
           margin-top: -220px;
           height: 437px;
           width: 390px; }
-          .pg-event01 .photos-mfs > li.center02 .title {
-            height: 38px;
-            width: 290px;
-            background-image: url("/assets/images/desktop/txt/center02_desktop.png"); }
           .pg-event01 .photos-mfs > li.center02 p {
             margin-top: 10px; }
         .pg-event01 .photos-mfs > li.center03 {
           height: 216px;
           width: 785px; }
-          .pg-event01 .photos-mfs > li.center03 .title {
-            height: 38px;
-            width: 193px;
-            background-image: url("/assets/images/desktop/txt/center03_desktop.png"); }
           .pg-event01 .photos-mfs > li.center03 p {
             margin-top: 10px; }
         .pg-event01 .photos-mfs > li.center04 {
@@ -1322,6 +1229,10 @@ article.contents {
         .pg-event01 .photos-mfs > li figure figcaption {
           bottom: 30px;
           left: 28px; }
+          .pg-event01 .photos-mfs > li figure figcaption .title {
+            font-size: 18px; }
+            .pg-event01 .photos-mfs > li figure figcaption .title.link {
+              font-size: 20px; }
           .pg-event01 .photos-mfs > li figure figcaption p {
             margin-top: 18px;
             font-size: 15px;
@@ -1419,12 +1330,12 @@ article.contents {
             margin: -3px 7px 0 0;
             vertical-align: middle;
             background-image: url(/assets/images/desktop/sprites_desktop.png);
-            background-position: -92px -142px;
+            background-position: -127px -142px;
             width: 29px;
             height: 26px; }
         .popup-application .box .radios input[type=radio]:checked + label:before {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -127px -142px;
+          background-position: -92px -142px;
           width: 29px;
           height: 26px; }
     .popup-application .box.basic-info {
@@ -1474,7 +1385,7 @@ article.contents {
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .popup-application > .btn-popup-close {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 202px 176px; } }
+        background-size: 202px 202px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .popup-application > .title {
         margin: 0 -22px;
@@ -1526,13 +1437,13 @@ article.contents {
               margin: -3px 7px 0 0;
               vertical-align: middle;
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -129px -102px;
+              background-position: -102px -145px;
               width: 22px;
               height: 21px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .popup-application .box .radios input[type=radio] + label:before {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 202px 176px; } }
+              background-size: 202px 202px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
           .popup-application .box .radios input[type=radio]:checked + label:before {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
@@ -1542,7 +1453,7 @@ article.contents {
         @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
           .popup-application .box .radios input[type=radio]:checked + label:before {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 202px 176px; } }
+            background-size: 202px 202px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
         .popup-application .box.basic-info {
           padding-top: 7px;
