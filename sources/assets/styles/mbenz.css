@@ -501,7 +501,8 @@ article.contents {
       .pg-event01 .representation .copyright .message {
         margin-top: 19px;
         font-size: 11px;
-        line-height: 17px; } }
+        line-height: 17px;
+        letter-spacing: -0.1em; } }
   .pg-event01 .login-sns {
     display: block;
     overflow: hidden; }

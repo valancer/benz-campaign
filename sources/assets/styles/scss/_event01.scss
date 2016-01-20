@@ -45,7 +45,7 @@
 				@include retina { background-image: url('/assets/images/mobile/bg_copyright@2x.jpg'); background-size: 320px 279px; }
 
 				.title { font-size: 15px; line-height: 21px; }
-				.message { margin-top: 19px; font-size: 11px; line-height: 17px; }
+				.message { margin-top: 19px; font-size: 11px; line-height: 17px; letter-spacing: -0.1em; }
 			}
 		}
 
