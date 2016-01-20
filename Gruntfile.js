@@ -175,6 +175,13 @@ module.exports = function(grunt) {
 				}
 			},
 
+			images: {
+				files: ['sources/assets/images/**'],
+				tasks: ['copy:images'],
+				options: {
+					livereload: true
+				}
+			},
 			mobileimages: {
 				files: ['sources/assets/images/mobile/**'],
 				tasks: ['sprite:mobile', 'copy:images'],

@@ -24,7 +24,7 @@ body { min-width: 320px; background-color: #000; }
 			&:first-child {
 				&:after { content: '|'; margin-right: 18px; margin-left: 18px; color: #949494; }
 			}
-			&.selected { color: #4cc1ed; }
+			&.selected { color: #00aeef; }
 		}
 	}
 
@@ -39,7 +39,6 @@ body { min-width: 320px; background-color: #000; }
 				&:first-child {
 					&:after { content: '|'; position: absolute; right: 0; margin: 0; }
 				}
-				&.selected { color: #4cc1ed; }
 			}
 		}
 	}

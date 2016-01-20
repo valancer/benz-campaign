@@ -1,14 +1,19 @@
 /* event - 추억도 A/S가 되나요? */
 .pg-event01 {
+	.mfp-iframe-scaler {
+		.btn-popup-close { display: block; position: absolute; top: 0px; left: 50%; margin-left: 386px; text-indent: -9999px; @include sprite($sd-btn-close01); }
+		iframe { left: 50%; margin-left: -384px; height: 80%; width: 768px; border: 1px solid #fff; }
+	}
 
 	/// 모바일 영역
 	@include mobile {
-
+		.mfp-iframe-scaler {
+			iframe { right: 0; left: 0; margin: 0; height: 100%; width: 100%; }
+		}
 	}
 
 	/// 데스크탑 영역
 	@include desktop {
-
 	}
 
 
@@ -54,7 +59,7 @@
 	/* SNS 로그인 */
 	.login-sns { display: block; overflow: hidden; 
 
-		.title { display: block; float: left; margin-right: 11px; font-size: 16px; color: #4cc1ed; line-height: 48px; vertical-align: middle; }
+		.title { display: block; float: left; margin-right: 11px; font-size: 16px; color: #00aeef; line-height: 48px; vertical-align: middle; }
 		.btn { display: block; float: left; margin-right: 2px; height: 48px; width: 48px; text-indent: -9999px; vertical-align: middle; background-color: #1a1a1a;
 			&.fb { @include sprite($sd-btn-fb01); }
 			&.tw { @include sprite($sd-btn-tw01); }
@@ -62,7 +67,7 @@
 			&.insta { @include sprite($sd-btn-insta01); }
 
 			&.selected { position: relative;
-				&:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 2px solid #4cc1ed; }
+				&:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 2px solid #00aeef; }
 
 				&.fb { @include sprite($sd-btn-fb01-selected); }
 				&.tw { @include sprite($sd-btn-tw01-selected); }
@@ -105,6 +110,7 @@
 			input[type=text] { display: block; height: 40px; width: 100%; font-size: 12px; color: #9f9f9f; line-height: 40px; border: 0px; background-color: transparent; }
 		}
 		.btn-submit { display: block; position: absolute; top: -1px; right: -1px; bottom: -1px; z-index: z("default"); width: 78px; font-size: 15px; font-weight: bold; color: #353535; text-align: center; line-height: 50px; background-color: #ebebeb; }
+		.message { margin-top: 52px; font-size: 12px; color: #9f9f9f; }
 
 		/// 모바일 영역
 		@include mobile { padding: 2px; height: 31px;
@@ -115,6 +121,7 @@
 				input[type=text] { height: 31px; font-size: 10px; line-height: 31px; }
 			}
 			.btn-submit { width: 60px; font-size: 11px; line-height: 37px; }
+			.message { margin-top: 34px; font-size: 10px; }
 		}
 
 		/// 데스크탑 영역
@@ -168,13 +175,13 @@
 
 
 	/* 댓글 목록 */
-	.list-comments { margin: 30px -40px 0 -40px;
+	.list-comments { margin: 40px -40px 0 -40px;
 		> li { position: relative; margin-top: 12px; padding: 10px 0 10px 70px; background-color: #1a1a1a;
 			&:before { content: ''; display: block; position: absolute; top: -$sd-icon-arrow02-height; left: 120px; @include sprite($sd-icon-arrow02); }
 		}
 
 		/// 모바일 영역
-		@include mobile { margin: 17px 0 0 0;
+		@include mobile { margin: 27px 0 0 0;
 			> li { margin-top: 8px; padding: 8px 0 13px 15px;
 				&:before { top: -$sm-icon-arrow02-height; left: 40px; @include retina_sprite($sm-icon-arrow02-group); }
 			}
@@ -197,15 +204,15 @@
 	}
 
 
-	.sns-area { position: relative; margin-top: -87px; padding: 0 40px;
+	.sns-area { position: relative; margin-top: -97px; padding: 0 40px;
 		> .title { display: none; }
 
 		.login-sns { margin-top: 20px; }
-		.write-comment { position: absolute; top: 0; right: 40px; left: 343px; }
+		.write-comment { position: absolute; top: 0; right: 40px; left: 283px; }
 
 
 		/// 모바일 영역
-		@include mobile { margin-top: -98px; padding: 0 10px;
+		@include mobile { margin-top: -108px; padding: 0 10px;
 			.login-sns { margin: 0 auto; width: 217px; }
 			.write-comment { position: relative; top: auto; right: auto; left: auto; margin-top: 15px; }
 		}
@@ -284,11 +291,14 @@
 				p { margin-top: 8px; }
 			}
 			&.center04 { margin-right: 0px; height: 174px; width: 312px;
-				figcaption { display: none; }
+				p { margin-top: 8px; }
 			}
 
 			figure { display: block; position: relative; height: 100%; width: 100%;
-				img { height: 100%; width: 100%; }
+				img { height: 100%; width: 100%;
+					transition: transform 300ms ease-in-out;
+					transform: scale(1.0);
+				}
 				figcaption { display: block; position: absolute; right: 0; bottom: 24px; left: 23px; width: 100%;
 					.title { display: block; font-size: 16px; color: #4cc1ed;
 						&.link { font-size: 18px; color: #fff;
@@ -296,6 +306,14 @@
 						}
 					}
 					p { margin-top: 18px; font-size: 13px; color: #dfdfdf; line-height: 18px; }
+				}
+			}
+
+
+			&:hover {
+				img {
+					transition: transform 300ms ease-in-out;
+					transform: scale(1.2);
 				}
 			}
 		}
@@ -313,7 +331,6 @@
 					p { margin-top: 9px; }
 				}
 				&.center03 { height: auto; width: 100%;
-
 					p { margin-top: 9px; }
 				}
 				&.center04 { height: auto; width: 100%; }
@@ -468,6 +485,337 @@
 
 	}
 }
+
+
+/* 컨텐츠 팝업 */
+.pg-popup {
+	article.contents { display: block; position: relative; padding: 0; width: auto; padding: 84px 0px 0 0px; width: 800px; color: #333; background: #fff url('/assets/images/popup/bg_popup_top.jpg') left top no-repeat;;
+		> .btn-popup-close { display: block; position: absolute; top: 15px; right: 15px; text-indent: -9999px; @include sprite($sd-btn-close01); }
+		> .title { padding-left: 80px; font-size: 26px; color: #00aeef; line-height: 1.3em; }
+	}
+
+	.module { padding: 0 80px;
+		> .title { display: block; position: relative; margin-top: 60px; font-size: 20px; font-weight: bold; color: #333; line-height: 1.3em;
+			&:before { content: ''; position: absolute; top: -9px; left: 0; display: block; height: 3px; width: 33px; background-color: #00aef0; }
+		}
+		p { margin-top: 25px; font-size: 16px; color: #333; line-height: 24px; word-break: keep-all; }
+
+	}
+
+	.section { margin: 0 -80px;
+		> .title { display: block; position: relative; margin: 40px 80px 0 80px; font-size: 18px; font-weight: bold; color: #00aeef;
+			&:before { content: ''; display: block; position: absolute; top: 48%; right: 0px; left: 0px; height: 1px; width: auto; background-color: #00aeef; }
+			> span { display: inline-block; position: relative; z-index: 1; padding-right: 10px; background-color: #fff; }
+		}
+		p { padding-right: 80px; padding-left: 80px; word-break: keep-all; }
+	}
+
+	/// 모바일 영역
+	@include mobile { background-color: #fff;
+
+		article.contents { padding: 42px 0px 0 0px; width: 320px; color: #333; background: #fff url('/assets/images/desktop/bg_popup_top.jpg') left top no-repeat; background-size: 400px 37px;
+			> .btn-popup-close { top: 10px; right: 10px; @include retina_sprite($sm-btn-close01-group); }
+			> .title { padding-left: 0px; font-size: 16px; }
+		}
+	
+		.module { padding: 0px;
+			> .title { margin-top: 30px; font-size: 13px;
+				&:before { top: -4px; height: 1px; width: 17px; }
+			}
+			p { margin-top: 10px; font-size: 10px; line-height: 13px; }
+		}
+
+
+		.section { margin: 0; padding: 0; 
+			> .title { margin: 20px 0 0 0; font-size: 12px;
+				> span { padding-right: 5px; }
+			}
+			p { padding-right: 0; padding-left: 0; }
+		}
+
+	}
+
+	/// 데스크탑 영역
+	@include desktop {
+
+	}
+}
+
+
+
+
+/* 컨텐츠 팝업 - 벤츠 서비스 */
+.pg-popup.mb-service { 
+
+	.module.teaser { padding-top: 83px; background: url('/assets/images/popup/service01@2x.jpg') center top no-repeat;
+		> .title { margin-top: 0px; }
+		.inc-bg { padding-top: 15px; padding-right: 200px; padding-bottom: 15px; }
+		.bg01 { margin: 24px -80px 0 -80px; @include aspect-ratio(4,1); background: url('/assets/images/popup/service02@2x.jpg') center top no-repeat; }
+	}
+
+	/* 스타 진단기 */
+	.eq-bg01 { height: 320px; background: url('/assets/images/popup/service03@2x.jpg') center top no-repeat;
+		p { padding-left: 352px; }
+	}
+
+	/* 고속 진동 발란서 */
+	.eq-bg02 { height: 330px; background: url('/assets/images/popup/service04@2x.jpg') center top no-repeat;
+		p { padding-right: 310px;
+			&:first-child { padding-top: 30px; }
+		}
+	}
+
+	/* 소몰리페어 작업 */
+	.eq-bg03 { height: 400px; background: url('/assets/images/popup/service05@2x.jpg') center top no-repeat;
+		p { padding-left: 352px; }
+	}
+
+	/* 셀렉트 벤치 지그 모듈 */
+	.eq-bg04 { height: 280px; background: url('/assets/images/popup/service06@2x.jpg') center top no-repeat;
+		p { padding-right: 310px; }
+	}
+
+	/* 도장 부스 설비 – 건식 샌딩룸 */
+	.eq-bg05 { margin-top: 20px; @include aspect-ratio(400,121); background: url('/assets/images/popup/service07@2x.jpg') center top no-repeat; }
+	.eq-bg06 { @include aspect-ratio(400,130); background: url('/assets/images/popup/service08@2x.jpg') center top no-repeat; }
+
+	/// 모바일 영역
+	@include mobile {
+		.module.teaser { padding-top: 38px; background: url('/assets/images/popup/service01.jpg') center 10px no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/service01@2x.jpg'); background-size: 400px 140px;
+			}
+			.inc-bg { padding-top: 7px; padding-right: 90px; padding-bottom: 7px; }
+
+			.bg01 { margin: 12px 0 0 0; @include aspect-ratio(3.2,1); background: url('/assets/images/popup/service02.jpg') center top no-repeat;
+				@include retina {
+					background-image: url('/assets/images/popup/service02@2x.jpg'); background-size: 400px 100px;
+				}
+			}
+		}
+
+		/* 스타 진단기 */
+		.eq-bg01 { height: 160px; background: url('/assets/images/popup/service03.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/service03@2x.jpg'); background-size: 400px 160px;
+			}
+			p { padding-left: 135px; }
+		}
+
+		/* 고속 진동 발란서 */
+		.eq-bg02 { height: 165px; background: url('/assets/images/popup/service04.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/service04@2x.jpg'); background-size: 400px 165px;
+			}
+			p { padding-right: 115px;
+				&:first-child { padding-top: 15px; }
+			}
+		}
+
+		/* 소몰리페어 작업 */
+		.eq-bg03 { height: 200px; background: url('/assets/images/popup/service05.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/service05@2x.jpg'); background-size: 400px 200px;
+			}
+			p { padding-left: 135px; }
+		}
+
+		/* 셀렉트 벤치 지그 모듈 */
+		.eq-bg04 { height: 140px; background: url('/assets/images/popup/service06.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/service06@2x.jpg'); background-size: 400px 140px;
+			}
+			p { padding-right: 115px; }
+		}
+
+		/* 도장 부스 설비 – 건식 샌딩룸 */
+		.eq-bg05 { margin-top: 10px; background: url('/assets/images/popup/service07.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/service07@2x.jpg'); background-size: 400px 121px;
+			}
+		}
+		.eq-bg06 { background: url('/assets/images/popup/service08.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/service08@2x.jpg'); background-size: 400px 130px;
+			}
+		}
+
+	}
+
+	/// 데스크탑 영역
+	@include desktop {
+
+	}
+
+}
+
+
+/* 컨텐츠 팝업 - 테크마스터 */
+.pg-popup.mb-master { 
+
+	.techmasters {
+	}
+
+	/* master 소개 01 */
+	.master-bg01 { padding-top: 100px; padding-left: 352px; height: 282px; background: url('/assets/images/popup/master01@2x.jpg') center top no-repeat;
+		p {
+			&:first-child { margin-top: 0; }
+		}
+	}
+
+
+	/* master 소개 02 */
+	.master-bg02 { margin-top: 22px; @include aspect-ratio(400,265); background: url('/assets/images/popup/master02@2x.jpg') center top no-repeat; }
+
+
+	/* master 소개 03 */
+	.master-bg03 { margin-top: 22px; @include aspect-ratio(400,183); background: url('/assets/images/popup/master03@2x.jpg') center top no-repeat; }
+
+
+	/* master 소개 04 */
+	.master-bg04 { margin-top: 38px; height: 370px; background: url('/assets/images/popup/master04@2x.jpg') center top no-repeat;
+		p {
+			&:first-child { margin-top: 0; }
+		}
+	}
+	
+
+	/// 모바일 영역
+	@include mobile {
+		/* master 소개 */
+		.master-bg01 { padding-top: 50px; padding-left: 135px; height: 141px; background: url('/assets/images/popup/master01.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/master01@2x.jpg'); background-size: 400px 191px;
+			}
+			p {
+				&:first-child { margin-top: 0; }
+			}
+		}
+
+		/* master 소개 02 */
+		.master-bg02 { margin-top: 11px; background: url('/assets/images/popup/master02.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/master02@2x.jpg'); background-size: 400px 265px;
+			}
+		}
+
+		/* master 소개 03 */
+		.master-bg03 { margin-top: 11px; background: url('/assets/images/popup/master03.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/master03@2x.jpg'); background-size: 400px 183px;
+			}
+		}
+
+		/* master 소개 04 */
+		.master-bg04 { margin-top: 19px; height: 185px; background: url('/assets/images/popup/master04.jpg') 0px 20px no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/master04@2x.jpg'); background-size: 400px 185px;
+			}
+		}
+
+	}
+
+	/// 데스크탑 영역
+	@include desktop {
+
+	}
+}
+
+
+/* 컨텐츠 팝업 - 마이서비스 */
+.pg-popup.mb-myservice { 
+
+	/* my service 소개 */
+	.module.myservice { position: relative; padding-top: 40px; height: 450px; background: url('/assets/images/popup/myservice01@2x.jpg') center top no-repeat;
+		.btn-download { display: block; position: absolute; bottom: 0; left: 80px; padding: 0 30px; font-size: 14px; color: #fff; line-height: 38px; text-align: center; background-color: #00aeef;
+			&:after { content: ''; display: inline-block; margin: -2px 0 0 5px; vertical-align: middle; @include sprite($sd-icon-arrow04); }
+		}
+	}
+
+	.icon01 { padding-left: 160px; background: url('/assets/images/popup/icon_myservice01@2x.jpg') left top no-repeat; }
+	.icon02 { padding-left: 160px; background: url('/assets/images/popup/icon_myservice02@2x.jpg') left top no-repeat; }
+	.icon03 { padding-left: 160px; background: url('/assets/images/popup/icon_myservice03@2x.jpg') left top no-repeat; }
+	.icon04 { padding-left: 160px; background: url('/assets/images/popup/icon_myservice04@2x.jpg') left top no-repeat; }
+
+	/* 순정르만부품 */
+	.title.reman { margin-top: 100px; }
+	.module.reman { padding-top: 50px; padding-left: 350px; height: 364px; background: url('/assets/images/popup/myservice02@2x.jpg') center top no-repeat; }
+	.module.reman-detail { padding-top: 20px; padding-bottom: 60px;
+		> .title { margin-top: 20px; }
+	}
+	.section {
+		p:first-child { margin-top: 0; }
+	}
+	.section.reman-bg01 { padding-top: 22px; padding-right: 160px; height: 178px; background: url('/assets/images/popup/myservice03@2x.jpg') center top no-repeat; }
+	.section.reman-bg02 { padding-top: 22px; padding-left: 160px; height: 158px; background: url('/assets/images/popup/myservice04@2x.jpg') center top no-repeat; }
+	.section.reman-bg03 { padding-top: 22px; padding-right: 160px; height: 118px; background: url('/assets/images/popup/myservice05@2x.jpg') center top no-repeat; }
+	.section.reman-bg04 { padding-top: 22px; padding-left: 160px; height: 118px; background: url('/assets/images/popup/myservice06@2x.jpg') center top no-repeat; }
+
+
+	/// 모바일 영역
+	@include mobile {
+		/* my service 소개 */
+		.module.myservice { padding-top: 20px; height: 225px; background: url('/assets/images/popup/myservice01.jpg') center top no-repeat;
+			
+			.btn-download { left: 0px; padding: 0 15px; font-size: 10px; line-height: 22px;
+				&:after { margin: -2px 0 0 2px; @include retina_sprite($sm-icon-arrow04-group); }
+			}
+		}
+
+		/* my service icons */
+		.icon01 { padding-left: 80px; background: url('/assets/images/popup/icon_myservice01.jpg') left top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/icon_myservice01@2x.jpg'); background-size: 80px 70px;
+			}
+		}
+		.icon02 { padding-left: 80px; background: url('/assets/images/popup/icon_myservice02.jpg') left top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/icon_myservice02@2x.jpg'); background-size: 80px 70px;
+			}
+		}
+		.icon03 { padding-left: 80px; background: url('/assets/images/popup/icon_myservice03.jpg') left top no-repeat; }
+		.icon04 { padding-left: 80px; background: url('/assets/images/popup/icon_myservice04.jpg') left top no-repeat; }
+
+
+		/* 순정르만부품 */
+		.title.reman { margin-top: 50px; }
+		.module.reman { padding-top: 25px; padding-left: 135px; height: 217px; background: url('/assets/images/popup/myservice02.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/myservice02@2x.jpg'); background-size: 400px 207px;
+			}
+		}
+		.module.reman-detail { padding-top: 10px; padding-bottom: 30px;
+			> .title { margin-top: 10px; }
+		}
+		.section.reman-bg01 { padding-top: 11px; padding-right: 80px; height: 89px; background: url('/assets/images/popup/myservice03.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/myservice03@2x.jpg'); background-size: 400px 100px;
+			}
+		}
+		.section.reman-bg02 { padding-top: 11px; padding-left: 80px; height: 69px; background: url('/assets/images/popup/myservice04.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/myservice04@2x.jpg'); background-size: 400px 80px;
+			}
+		}
+		.section.reman-bg03 { padding-top: 11px; padding-right: 80px; height: 69px; background: url('/assets/images/popup/myservice05.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/myservice05@2x.jpg'); background-size: 400px 70px;
+			}
+		}
+		.section.reman-bg04 { padding-top: 11px; padding-left: 80px; height: 69px; background: url('/assets/images/popup/myservice06.jpg') center top no-repeat;
+			@include retina {
+				background-image: url('/assets/images/popup/myservice06@2x.jpg'); background-size: 400px 70px;
+			}
+		}
+
+	}
+
+	/// 데스크탑 영역
+	@include desktop {
+
+	}
+}
+
 
 /// 모바일 영역
 @include mobile {

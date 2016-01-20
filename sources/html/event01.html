@@ -9,6 +9,44 @@ include "head.html"
 			},
 		}, 0);
 */
+		// youtube popup
+		$('.btn-play').magnificPopup({
+			type: 'ajax'
+			,mainClass: 'mfp-fade'
+			,fixedContentPos: true
+		});
+
+		// mercedes-benz service
+		$('.btn-mb-service').magnificPopup({
+			type: 'ajax'
+			,fixedContentPos: true
+			,mainClass: 'mfp-fade'
+		});
+
+		// tech master
+		$('.btn-mb-master').magnificPopup({
+			type: 'ajax'
+			,fixedContentPos: true
+			,mainClass: 'mfp-fade'
+		});
+
+		// my service
+		$('.btn-mb-myservice').magnificPopup({
+			type: 'ajax'
+			,fixedContentPos: true
+			,mainClass: 'mfp-fade'
+		});
+
+		var hash = window.location.hash.substr(1);
+		if( hash == 'mb-service' ) {
+			$('.btn-mb-service').magnificPopup('open');
+		} else if( hash == 'mb-master') {
+			$('.btn-mb-master').magnificPopup('open');
+		} else if( hash == 'mb-myservice') {
+			$('.btn-mb-myservice').magnificPopup('open');
+		} else if( hash == 'youtube' ) {
+			$('.btn-play').magnificPopup('open');
+		}
 	});
 	</script>
 
@@ -27,7 +65,7 @@ include "head.html"
 				
 				<!-- 티져 영상 -->
 				<div class="teaser">
-					<a href="#" class="btn-play">티져영상 플레이</a>
+					<a href="./contents_youtube.html" class="btn-play">티져영상 플레이</a>
 				</div>
 				
 				<!-- 이벤트 카피 -->
@@ -55,7 +93,7 @@ include "head.html"
 					<a href="#" class="btn fb selected">페이스북 로그인</a>
 					<a href="#" class="btn tw">트위터 로그인</a>
 					<a href="#" class="btn ks">카카오스토리 로그인</a>
-					<a href="#" class="btn insta">인스타그램 로그인</a>
+					<!-- <a href="#" class="btn insta">인스타그램 로그인</a> -->
 				</fieldset>
 
 				<!-- 댓글 입력 -->
@@ -67,6 +105,9 @@ include "head.html"
 						<input type="text" id="" name="" placeholder="로그인 후 메시지를 남기실 수 있습니다.">
 					</p>
 					<input type="subimt" value="복원하기" class="btn-submit">
+					<p class="message">
+						※ 페이스북 댓글은 페이스북이 제공하는 팝업창에 메시지를 남겨주세요.
+					</p>
 				</fieldset>
 
 				<!-- 댓글 목록 -->
@@ -126,17 +167,14 @@ include "head.html"
 
 			<!-- 이벤트 안내 -->
 			<section class="event-summary">
-				<h1 class="title">이벤트 안내</h1>
+				<h1 class="title">이벤트 안내.</h1>
 
 				<ul class="list-winner-goods">
 					<li>
-						<em>1등</em>(1명) : 알펜시아 리조트(인터컨티넨탈 호텔 스위트룸<br class="only-mobile"><span>+ 스파 패키지) + CLS 400 주말 시승권</span>
+						<em>1등</em>(5명) : CGV 씨네드쉐프 상품권 (1인 2매, 20만원 상당)</span>
 					</li>
 					<li>
-						<em>2등</em>(10명) : CGV 씨네드쉐프 상품권 (1인 2매, 20만원 상당)
-					</li>
-					<li>
-						<em>3등</em>(100명) : 스타벅스 캬라멜 마끼아또 기프티콘
+						<em>2등</em>(50명) : 스타벅스 캬라멜 마끼아또 기프티콘
 					</li>
 				</ul>
 				<p class="description">
@@ -155,8 +193,7 @@ include "head.html"
 				<ul class="photos-mfs">
 					<li class="makingfilm01">
 						<figure>
-							<img src="/assets/images/desktop/makingfilm01.jpg" alt="" class="only-desktop">
-							<img src="/assets/images/mobile/makingfilm01.jpg" alt="" class="only-mobile">
+							<img src="/assets/images/desktop/makingfilm01.jpg" alt="">
 							<figcaption>
 								<span class="title">Making Film - 차범근에게 벤츠란?</span>
 								<p>
@@ -167,8 +204,7 @@ include "head.html"
 					</li>
 					<li class="makingfilm02">
 						<figure>
-							<img src="/assets/images/desktop/makingfilm02.jpg" alt="" class="only-desktop">
-							<img src="/assets/images/mobile/makingfilm02.jpg" alt="" class="only-mobile">
+							<img src="/assets/images/desktop/makingfilm02.jpg" alt="">
 							<figcaption>
 								<span class="title">Making Film - 26년의 추억</span>
 								<p>
@@ -179,15 +215,13 @@ include "head.html"
 					</li>
 					<li class="makingfilm03">
 						<figure>
-							<img src="/assets/images/desktop/makingfilm03.jpg" alt="" class="only-desktop">
-							<img src="/assets/images/mobile/makingfilm03.jpg" alt="" class="only-mobile">
+							<img src="/assets/images/desktop/makingfilm03.jpg" alt="">
 							<figcaption>Making Film 관련 이미지</figcaption>
 						</figure>
 					</li>
 					<li class="makingfilm04">
 						<figure>
-							<img src="/assets/images/desktop/makingfilm04.jpg" alt="" class="only-desktop">
-							<img src="/assets/images/mobile/makingfilm04.jpg" alt="" class="only-mobile">
+							<img src="/assets/images/desktop/makingfilm04.jpg" alt="">
 							<figcaption>
 								<span class="title">Making Film - 추억 복원하기</span>
 								<p>
@@ -198,16 +232,14 @@ include "head.html"
 					</li>
 					<li class="center01">
 						<figure>
-							<img src="/assets/images/desktop/center01.jpg" alt="" class="only-desktop">
-							<img src="/assets/images/mobile/center01.jpg" alt="" class="only-mobile">
+							<img src="/assets/images/desktop/center01.jpg" alt="">
 							<figcaption>서비스센터 이미지</figcaption>
 						</figure>
 					</li>
 					<li class="center02">
-						<a href="#">
+						<a href="./contents_service.html" id="mb-service" class="btn-mb-service">
 							<figure>
-								<img src="/assets/images/desktop/center02.jpg" alt="" class="only-desktop">
-								<img src="/assets/images/mobile/center02.jpg" alt="" class="only-mobile">
+								<img src="/assets/images/desktop/center02.jpg" alt="">
 								<figcaption>
 									<span class="title link">Mercedes-Benz Service</span>
 									<p>
@@ -218,7 +250,7 @@ include "head.html"
 						</a>
 					</li>
 					<li class="center03">
-						<a href="#">
+						<a href="./contents_master.html" id="mb-master" class="btn-mb-master">
 							<figure>
 								<img src="/assets/images/desktop/center03.jpg" alt="" class="only-desktop">
 								<img src="/assets/images/mobile/center03.jpg" alt="" class="only-mobile">
@@ -232,11 +264,17 @@ include "head.html"
 						</a>
 					</li>
 					<li class="center04">
-						<figure>
-							<img src="/assets/images/desktop/center04.jpg" alt="" class="only-desktop">
-							<img src="/assets/images/mobile/center04.jpg" alt="" class="only-mobile">
-							<figcaption>서비스센터 이미지</figcaption>
-						</figure>
+						<a href="./contents_myservice.html" id="mb-myservie" class="btn-mb-myservice">
+							<figure>
+								<img src="/assets/images/desktop/center04.jpg" alt="">
+								<figcaption>
+									<span class="title link">Special Value</span>
+									<p>
+										고객을 위한 특별한 제안을 드립니다.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
 					</li>
 				</ul>
 			</section>
@@ -246,6 +284,7 @@ include "head.html"
 	</main>
 
 
+	<!-- 응모 팝업 -->
 	<aside id="popup-event01" class="popup-application mfp-hide">
 		<button class="btn-popup-close mfp-close">닫기</button>
 		
@@ -331,7 +370,6 @@ include "head.html"
 			</p>
 		</fieldset>
 	</aside>
-
 
 	<!-- 하단 영역 -->
 	include "footer.html"
