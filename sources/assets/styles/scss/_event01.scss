@@ -1,14 +1,15 @@
 /* event - 추억도 A/S가 되나요? */
 .pg-event01 {
 	.mfp-iframe-scaler {
-		.btn-popup-close { display: block; position: absolute; top: 0px; left: 50%; margin-left: 386px; text-indent: -9999px; @include sprite($sd-btn-close01); }
-		iframe { left: 50%; margin-left: -384px; height: 80%; width: 768px; border: 1px solid #fff; }
+		.btn-popup-close { display: block; position: absolute; top: -1px; right: 10%; margin-right: -42px; text-indent: -9999px; @include sprite($sd-btn-close01); }
+		iframe { position: absolute; right: 10%; left: 10%; height: 80%; width: 80%; border: 1px solid #fff; }
 	}
 
 	/// 모바일 영역
 	@include mobile {
-		.mfp-iframe-scaler {
-			iframe { right: 0; left: 0; margin: 0; height: 100%; width: 100%; }
+		.mfp-iframe-scaler { overflow: show;
+			.btn-popup-close { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: z("default") - 1; margin: 0; height: 100%; width: 100%; background: none; }
+			iframe { position: fixed; right: 0; left: 0; z-index: z("default"); margin-top: 56.25%; height: 30%; width: 99%; }
 		}
 	}
 
@@ -276,14 +277,12 @@
 		> li { overflow: hidden; float: left; margin-right: 4px; margin-bottom: 4px;
 			&.makingfilm01 { height: 350px; width: 312px; }
 			&.makingfilm02 { height: 174px; width: 312px; }
-			&.makingfilm03 { margin-right: 0px; height: 174px; width: 312px;
-				figcaption { display: none; }
+			&.makingfilm03 { margin-right: 0px; height: 174px; width: 312px; }
+			&.makingfilm04 { float: right; margin-right: 0px; height: 350px; width: 312px;
+				p { margin-top: 8px; }
 			}
-			&.makingfilm04 { float: right; margin-right: 0px; height: 350px; width: 312px; }
 
-			&.center01 { clear: left; height: 174px; width: 312px;
-				figcaption { display: none; }
-			}
+			&.center01 { clear: left; height: 174px; width: 312px; }
 			&.center02 { margin-top: -176px; height: 350px; width: 312px;
 				p { margin-top: 8px; }
 			}
@@ -295,11 +294,11 @@
 			}
 
 			figure { display: block; position: relative; height: 100%; width: 100%;
-				img { height: 100%; width: 100%;
-					transition: transform 300ms ease-in-out;
-					transform: scale(1.0);
+				.thumb { position: relative;
+					&:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: z("default"); background-color: #000; opacity: 0.5; }
+					img { height: 100%; width: 100%; }
 				}
-				figcaption { display: block; position: absolute; right: 0; bottom: 24px; left: 23px; width: 100%;
+				figcaption { display: block; position: absolute; right: 0; bottom: 11px; left: 23px; z-index: z("default") + 1; width: 100%;
 					.title { display: block; font-size: 16px; color: #4cc1ed;
 						&.link { font-size: 18px; color: #fff;
 							&:after { content: ''; display: inline-block; margin-left: 30px; vertical-align: middle; @include sprite($sd-icon-arrow03); }
@@ -311,9 +310,8 @@
 
 
 			&:hover {
-				img {
-					transition: transform 300ms ease-in-out;
-					transform: scale(1.2);
+				.thumb {
+					&:before { opacity: 0; transition: opacity .3s ease-in-out; }
 				}
 			}
 		}
@@ -324,7 +322,9 @@
 				&.makingfilm01 { height: auto; width: 100%; }
 				&.makingfilm02 { height: auto; width: 100%; }
 				&.makingfilm03 { height: auto; width: 100%; }
-				&.makingfilm04 { height: auto; width: 100%; }
+				&.makingfilm04 { height: auto; width: 100%;
+					p { margin-top: 9px; }
+				}
 
 				&.center01 { height: auto; width: 100%; }
 				&.center02 { margin-top: 0; height: auto; width: 100%;
@@ -337,7 +337,7 @@
 
 				figure {
 					img { height: auto; width: 100%; }
-					figcaption { bottom: 20px; left: 23px;
+					figcaption { bottom: 10px; left: 23px;
 						.title { font-size: 17px;
 							&.link { font-size: 17px;
 								&:after { margin-top: -2px; margin-left: 23px; @include retina_sprite($sm-icon-arrow03-group); }
@@ -367,7 +367,7 @@
 				&.center04 { height: 216px; width: 390px; }
 
 				figure {
-					figcaption { bottom: 30px; left: 28px;
+					figcaption { bottom: 17px; left: 28px;
 						.title { font-size: 18px;
 							&.link { font-size: 20px; }
 						}
@@ -488,7 +488,7 @@
 
 
 /* 컨텐츠 팝업 */
-.pg-popup {
+.pg-popup { margin: 0 auto; width: 800px;
 	article.contents { display: block; position: relative; padding: 0; width: auto; padding: 84px 0px 0 0px; width: 800px; color: #333; background: #fff url('/assets/images/popup/bg_popup_top.jpg') left top no-repeat;;
 		> .btn-popup-close { display: block; position: absolute; top: 15px; right: 15px; text-indent: -9999px; @include sprite($sd-btn-close01); }
 		> .title { padding-left: 80px; font-size: 26px; color: #00aeef; line-height: 1.3em; }
@@ -511,7 +511,7 @@
 	}
 
 	/// 모바일 영역
-	@include mobile { background-color: #fff;
+	@include mobile { width: auto; background-color: #fff;
 
 		article.contents { padding: 42px 0px 0 0px; width: 320px; color: #333; background: #fff url('/assets/images/desktop/bg_popup_top.jpg') left top no-repeat; background-size: 400px 37px;
 			> .btn-popup-close { top: 10px; right: 10px; @include retina_sprite($sm-btn-close01-group); }
@@ -727,9 +727,7 @@
 
 	/* my service 소개 */
 	.module.myservice { position: relative; padding-top: 40px; height: 450px; background: url('/assets/images/popup/myservice01@2x.jpg') center top no-repeat;
-		.btn-download { display: block; position: absolute; bottom: 0; left: 80px; padding: 0 30px; font-size: 14px; color: #fff; line-height: 38px; text-align: center; background-color: #00aeef;
-			&:after { content: ''; display: inline-block; margin: -2px 0 0 5px; vertical-align: middle; @include sprite($sd-icon-arrow04); }
-		}
+		.download { display: none; }
 	}
 
 	.icon01 { padding-left: 160px; background: url('/assets/images/popup/icon_myservice01@2x.jpg') left top no-repeat; }
@@ -738,7 +736,6 @@
 	.icon04 { padding-left: 160px; background: url('/assets/images/popup/icon_myservice04@2x.jpg') left top no-repeat; }
 
 	/* 순정르만부품 */
-	.title.reman { margin-top: 100px; }
 	.module.reman { padding-top: 50px; padding-left: 350px; height: 364px; background: url('/assets/images/popup/myservice02@2x.jpg') center top no-repeat; }
 	.module.reman-detail { padding-top: 20px; padding-bottom: 60px;
 		> .title { margin-top: 20px; }
@@ -755,10 +752,15 @@
 	/// 모바일 영역
 	@include mobile {
 		/* my service 소개 */
-		.module.myservice { padding-top: 20px; height: 225px; background: url('/assets/images/popup/myservice01.jpg') center top no-repeat;
-			
-			.btn-download { left: 0px; padding: 0 15px; font-size: 10px; line-height: 22px;
-				&:after { margin: -2px 0 0 2px; @include retina_sprite($sm-icon-arrow04-group); }
+		.module.myservice { padding-top: 20px; height: 244px; background: url('/assets/images/popup/myservice01.jpg') center top no-repeat;
+			.download { display: block; position: absolute; bottom: 0; left: 0px; 
+				.title { font-size: 10px; font-weight: bold; color: #00aeef;
+					&:before { content: ''; display: inline-block; margin: -2px 3px 0 0; vertical-align: middle; @include retina_sprite($sm-icon-arrow04-group); }
+				}
+				.btn-download { display: inline-block; text-indent: -9999px;
+					&.android { margin-left: 10px; @include retina_sprite($sm-btn-down01-group); }
+					&.ios { @include retina_sprite($sm-btn-down02-group); }
+				}
 			}
 		}
 
@@ -778,7 +780,6 @@
 
 
 		/* 순정르만부품 */
-		.title.reman { margin-top: 50px; }
 		.module.reman { padding-top: 25px; padding-left: 135px; height: 217px; background: url('/assets/images/popup/myservice02.jpg') center top no-repeat;
 			@include retina {
 				background-image: url('/assets/images/popup/myservice02@2x.jpg'); background-size: 400px 207px;
