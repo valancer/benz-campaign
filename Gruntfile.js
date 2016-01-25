@@ -94,6 +94,11 @@ module.exports = function(grunt) {
 				files: [{
 					src: ['build/**']
 				}]
+			},
+			release: {
+				files: [{
+					src: ['release/**']
+				}]
 			}
 		},
 
@@ -224,7 +229,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('sass-release', ['sprite', 'sass', 'autoprefixer']);
 	grunt.registerTask('scripts-build', ['newer:jshint']);
 	grunt.registerTask('html-build', ['includes']);
-	grunt.registerTask('build', ['clean', 'sass-build', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
+	grunt.registerTask('build', ['clean:build', 'sass-build', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
 	grunt.registerTask('release', ['clean', 'sass-release', 'scripts-build', 'html-build', 'copy:assets', 'csscomb', 'copy:release']);
 
 };
