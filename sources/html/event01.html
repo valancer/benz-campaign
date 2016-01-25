@@ -10,12 +10,19 @@ include "head.html"
 		}, 0);
 */
 		// popups
-		$('.btn-play').magnificPopup({
+		// $('.btn-play').magnificPopup({
+		// 	type: 'ajax'
+		// 	,fixedContentPos: true
+		// 	,mainClass: 'mfp-fade'
+		// });
+		$('.btn-mb-service').magnificPopup({
 			type: 'ajax'
 			,fixedContentPos: true
 			,mainClass: 'mfp-fade'
+			,closeOnContentClick: false
+			,closeOnBgClick: true
 		});
-		$('.btn-mb-service').magnificPopup({
+		$('.btn-mb-benzservice').magnificPopup({
 			type: 'ajax'
 			,fixedContentPos: true
 			,mainClass: 'mfp-fade'
@@ -43,19 +50,31 @@ include "head.html"
 			,closeOnContentClick: false
 			,closeOnBgClick: true
 		});
+		$('.btn-mb-ashelper').magnificPopup({
+			type: 'ajax'
+			,fixedContentPos: true
+			,mainClass: 'mfp-fade'
+			,closeOnContentClick: false
+			,closeOnBgClick: true
+		});
 
 		var hash = window.location.hash.substr(1);
 		if( hash == 'mb-service' ) {
 			$('.btn-mb-service').magnificPopup('open');
+		} else if( hash == 'mb-benzservice') {
+			$('.btn-mb-benzservice').magnificPopup('open');
 		} else if( hash == 'mb-master') {
 			$('.btn-mb-master').magnificPopup('open');
 		} else if( hash == 'mb-myservice') {
 			$('.btn-mb-myservice').magnificPopup('open');
 		} else if( hash == 'mb-reman') {
 			$('.btn-mb-reman').magnificPopup('open');
-		} else if( hash == 'youtube' ) {
-			$('.btn-play').magnificPopup('open');
+		} else if( hash == 'mb-ashelper') {
+			$('.btn-mb-ashelper').magnificPopup('open');
+		// } else if( hash == 'youtube' ) {
+		// 	$('.btn-play').magnificPopup('open');
 		}
+		
 
 	});
 	</script>
@@ -67,7 +86,7 @@ include "head.html"
 	<!-- 본문 영역 -->
 	<main>
 		<article class="contents">
-			<h1 class="hidden">추억도 A/S가 되나요?</h1>
+			<h1 class="hidden">추억도 A/S가 되나요</h1>
 
 			
 			<section class="representation">
@@ -75,7 +94,8 @@ include "head.html"
 				
 				<!-- 티져 영상 -->
 				<div class="teaser">
-					<a href="./contents_youtube.html" class="btn-play">티져영상 플레이</a>
+					<!-- <a href="./contents_youtube.html" class="btn-play">티져영상 플레이</a> -->
+					<iframe width="100%" height="100%" src="//www.youtube.com/embed/EmvhIRJEab4?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1&vq=hd720" frameborder="0" allowfullscreen></iframe>
 				</div>
 				
 				<!-- 이벤트 카피 -->
@@ -185,7 +205,7 @@ include "head.html"
 						<em>1등</em>(1명) : 남해 사우스케이프(1인 2매 : 주말기준)</span>
 					</li>
 					<li>
-						<em>2등</em>(20명) : 메가박스 부티크M 6만원
+						<em>2등</em>(20명) : 메가박스 부티크M 스위트룸 예매권(1인 2매)
 					</li>
 					<li>
 						<em>2등</em>(50명) : 스타벅스 아메리카노 기프티콘
@@ -206,45 +226,46 @@ include "head.html"
 
 				<ul class="photos-mfs">
 					<li class="makingfilm01">
-						<a href="http://www.mercedes-benz.co.kr/content/korea/mpc/mpc_korea_website/krng/home_mpc/passengercars/home/servicesandaccessories/services_and_workshop/as____.html" target="_blank">
+						<a href="https://www.youtube.com/channel/UChbw0qKAMdFf6TlC0T3Z_zw" target="_blank">
 							<figure>
 								<div class="thumb">
 									<img src="/assets/images/desktop/makingfilm01.jpg" alt="">
 								</div>
 								<figcaption>
-									<span class="title">AS 도우미</span>
+									<span class="title">캠페인영상 보러가기</span>
 									<p>
-										고객과 원활한 양방향 커뮤니케이션을 위해<br>고객용 스마트폰 앱 AS도우미를 운영하고 있습니다
+										메르세데스-벤츠의 영상 컨텐츠를 확인하세요
 									</p>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li class="makingfilm02">
-						<a href="http://www.mercedes-benz.co.kr/content/korea/mpc/mpc_korea_website/krng/home_mpc/passengercars/home/servicesandaccessories/services_and_workshop/services_for_new_cars.html" target="_blank">
+						<a href="./contents_service.html" id="mb-service" class="btn-mb-service">
 							<figure>
 								<div class="thumb">
 									<img src="/assets/images/desktop/makingfilm02.jpg" alt="">
 								</div>
 								<figcaption>
-									<span class="title">메르세데스-벤츠 서비스</span>
+									<span class="title">Technology &amp; Genuine Parts</span>
 									<p>
-										최고의 브랜드에 걸맞은 최고의 서비스를 제공합니다<br class="only-desktop"><br class="only-desktop">
+										차별화된 기술력과 순정부품으로 <br>안전한 드라이빙을 약속합니다
+
 									</p>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li class="makingfilm03">
-						<span>
+						<a href="./contents_benzservice.html" id="mb-service" class="btn-mb-benzservice">
 							<figure>
 								<div class="thumb">
 									<img src="/assets/images/desktop/makingfilm03.jpg" alt="">
 								</div>
 								<figcaption>
-									<span class="title">Making Film - 추억 복원하기</span>
+									<span class="title">Mercedes-Benz Service</span>
 									<p>
-										그의 빛바랜 추억의 길벗을 찾아<br>다시 예전처럼 함께 달리도록 만들겠습니다.
+										최고의 브랜드에 걸맞은 최고의 서비스를 제공합니다<br class="only-desktop"><br class="only-desktop">
 									</p>
 								</figcaption>
 							</figure>
@@ -266,44 +287,13 @@ include "head.html"
 						</a>
 					</li>
 					<li class="center01">
-						<a href="http://www.mercedes-benz.co.kr/content/korea/mpc/mpc_korea_website/krng/home_mpc/passengercars/home/world/sport_lifestyle.flash.html#_int_passengercars:home:module-teaser:sport_lifestyle" target="_blank">
+						<a href="./contents_master.html" id="mb-master" class="btn-mb-master">
 							<figure>
 								<div class="thumb">
 									<img src="/assets/images/desktop/center01.jpg" alt="">
 								</div>
 								<figcaption>
-									<span class="title">전시장 및 서비스 센터 위치</span>
-									<p>
-										가까운 전시장 및 서비스센터를 확인하세요<br class="only-desktop"><br class="only-desktop">
-									</p>
-								</figcaption>
-							</figure>
-						</a>
-					</li>
-					<li class="center02">
-						<a href="./contents_service.html" id="mb-service" class="btn-mb-service">
-							<figure>
-								<div class="thumb">
-									<img src="/assets/images/desktop/center02.jpg" alt="">
-								</div>
-								<figcaption>
-									<span class="title link">Service &amp; Parts</span>
-									<p>
-										메르세데스-벤츠만의 차별화된 서비스를 확인하세요<br class="only-desktop"><br class="only-desktop">
-									</p>
-								</figcaption>
-							</figure>
-						</a>
-					</li>
-					<li class="center03">
-						<a href="./contents_master.html" id="mb-master" class="btn-mb-master">
-							<figure>
-								<div class="thumb">
-									<img src="/assets/images/desktop/center03.jpg" alt="" class="only-desktop">
-									<img src="/assets/images/mobile/center03.jpg" alt="" class="only-mobile">
-								</div>
-								<figcaption>
-									<span class="title link">About Master</span>
+									<span class="title">About TechMaster</span>
 									<p>
 										세계적인 정비능력을 인정받은 테크마스터를 소개합니다<br class="only-desktop"><br class="only-desktop">
 									</p>
@@ -311,16 +301,60 @@ include "head.html"
 							</figure>
 						</a>
 					</li>
-					<li class="center04">
+					<li class="center02">
 						<a href="./contents_myservice.html" id="mb-myservie" class="btn-mb-myservice">
+							<figure>
+								<div class="thumb">
+									<img src="/assets/images/desktop/center02.jpg" alt="">
+								</div>
+								<figcaption>
+									<span class="title link">My Service</span>
+									<p>
+										라이프 스타일에 걸맞은 최상의 프리미엄 서비스를 <br class="only-desktop"><br class="only-mobile"> 경험해보시기 바랍니다<br class="only-desktop">
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="center03">
+						<a href="./contents_ashelper.html" id="mb-myservie" class="btn-mb-ashelper">
+							<figure>
+								<div class="thumb">
+									<img src="/assets/images/desktop/center03.jpg" alt="" class="only-desktop">
+									<img src="/assets/images/mobile/center03.jpg" alt="" class="only-mobile">
+								</div>
+								<figcaption>
+									<span class="title link">AS 도우미</span>
+									<p>
+										고객과 원활한 양방향 커뮤니케이션을 위해<br class="only-desktop"><br class="only-mobile">고객용 스마트폰 앱 AS도우미를 운영하고 있습니다<br class="only-desktop">
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="center04">
+						<a href="http://www.mercedes-benz.co.kr/content/korea/mpc/mpc_korea_website/krng/home_mpc/passengercars/home/world/sport_lifestyle.flash.html#_int_passengercars:home:module-teaser:sport_lifestyle" target="_blank" class="only-desktop">
 							<figure>
 								<div class="thumb">
 									<img src="/assets/images/desktop/center04.jpg" alt="">
 								</div>
 								<figcaption>
-									<span class="title link">Special Value</span>
+									<span class="title link">전시장 및 서비스 센터 위치</span>
 									<p>
-										라이프 스타일에 걸맞은 최상의 프리미엄 서비스를<br>경험해보시기 바랍니다
+										가까운 전시장 및 서비스센터를 확인하세요<br class="only-desktop"><br class="only-desktop">
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="http://newapp.mercedes-benz.co.kr/event/center/index.html" target="_blank" class="only-mobile">
+							<figure>
+								<div class="thumb">
+									<img src="/assets/images/desktop/center04.jpg" alt="">
+								</div>
+								<figcaption>
+									<span class="title link">서비스 센터 위치</span> 
+									<p>
+										가까운 서비스센터를 확인하세요.
 									</p>
 								</figcaption>
 							</figure>

@@ -3,7 +3,9 @@ body { min-width: 320px; background-color: #000; }
 
 /// 모바일 영역
 @include mobile {
-
+	.popup-box {
+		img { width: 100%; }
+	}
 }
 
 /// 데스크탑 영역
@@ -18,7 +20,8 @@ body { min-width: 320px; background-color: #000; }
 	> h1 { display: block; position: absolute; top: 20px; left: 20px; text-indent: -9999px; @include sprite($sd-benz-logo-header); }
 	
 	p { position: absolute; right: 0px; bottom: 30px;
-		a { display: block; position: relative; float: left; font-size: 18px; color: #949494;
+		a,
+		span { display: block; position: relative; float: left; font-size: 18px; color: #949494;
 			time { display: block; position: absolute; top: -80%; left: 0; font-size: 12px; color: #949494; }
 
 			&:first-child {
@@ -33,7 +36,7 @@ body { min-width: 320px; background-color: #000; }
 		> h1 { position: static; @include retina_sprite($sm-benz-logo-header-group); }
 
 		p { position: static; margin-top: 27px;
-			a { width: 50%; font-size: 13px; text-align: center;
+			a, span { width: 50%; font-size: 13px; text-align: center;
 				time { top: -70%; left: 12px; font-size: 11px; }
 
 				&:first-child {

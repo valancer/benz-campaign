@@ -23,10 +23,13 @@
 	.representation {
 		> .title { display: none; }
 
-		.teaser { position: relative; @include aspect-ratio(1180, 556); background: url('/assets/images/desktop/bg_teaser.jpg') center top no-repeat;
+		.teaser { position: relative; @include aspect-ratio(988, 556);
+			iframe { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; }
+/*
 			.btn-play { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; text-indent: -9999px;
 				&:before { content: ''; display: block; position: absolute; top: 50%; left: 50%; margin-top: -$sd-btn-play01-height/2; margin-left: -$sd-btn-play01-width/2; @include sprite($sd-btn-play01); }
 			}
+*/
 		}
 
 		.copyright { padding: 55px 0 0 128px; height: 315px; background: url('/assets/images/desktop/bg_copyright.jpg') center top no-repeat;
@@ -36,7 +39,7 @@
 
 		/// 모바일 영역
 		@include mobile {
-			.teaser { height: 151px; width: 320px; background: url('/assets/images/mobile/bg_teaser.jpg') center top no-repeat; background-size: contain;
+			.teaser { background: url('/assets/images/mobile/bg_teaser.jpg') center top no-repeat; background-size: contain;
 				.btn-play {
 					&:before { margin-top: -$sm-btn-play01-height/2; margin-left: -$sm-btn-play01-width/2; @include retina_sprite($sm-btn-play01-group); }
 				}
@@ -300,9 +303,9 @@
 				}
 				figcaption { display: block; position: absolute; right: 0; bottom: 11px; left: 23px; z-index: z("default") + 1; width: 100%;
 					.title { display: block; font-size: 16px; color: #4cc1ed;
-						&.link { font-size: 18px; color: #fff;
-							&:after { content: ''; display: inline-block; margin-left: 30px; vertical-align: middle; @include sprite($sd-icon-arrow03); }
-						}
+						// &.link { font-size: 18px; color: #fff;
+						// 	&:after { content: ''; display: inline-block; margin-left: 30px; vertical-align: middle; @include sprite($sd-icon-arrow03); }
+						// }
 					}
 					p { margin-top: 18px; font-size: 13px; color: #dfdfdf; line-height: 18px; }
 				}
@@ -339,9 +342,9 @@
 					img { height: auto; width: 100%; }
 					figcaption { bottom: 10px; left: 23px;
 						.title { font-size: 17px;
-							&.link { font-size: 17px;
-								&:after { margin-top: -2px; margin-left: 23px; @include retina_sprite($sm-icon-arrow03-group); }
-							}
+							// &.link { font-size: 17px;
+							// 	&:after { margin-top: -2px; margin-left: 23px; @include retina_sprite($sm-icon-arrow03-group); }
+							// }
 						}
 						p { margin-top: 14px; font-size: 12px; line-height: 17px; }
 					}
@@ -513,7 +516,7 @@
 	/// 모바일 영역
 	@include mobile { width: auto; background-color: #fff;
 
-		article.contents { padding: 42px 0px 0 0px; width: 320px; color: #333; background: #fff url('/assets/images/desktop/bg_popup_top.jpg') left top no-repeat; background-size: 400px 37px;
+		article.contents { padding: 42px 0px 0 0px; width: 100%; color: #333; background: #fff url('/assets/images/popup/bg_popup_top.jpg') left top no-repeat; background-size: 400px 37px;
 			> .btn-popup-close { top: 10px; right: 10px; @include retina_sprite($sm-btn-close01-group); }
 			> .title { padding-left: 0px; font-size: 16px; }
 		}

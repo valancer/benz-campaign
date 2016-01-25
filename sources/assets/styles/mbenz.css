@@ -225,6 +225,9 @@ body {
   min-width: 320px;
   background-color: #000; }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .popup-box img {
+    width: 100%; } }
 /* Mercedes-Benz header */
 .mbenz-header {
   position: relative;
@@ -245,25 +248,29 @@ body {
     position: absolute;
     right: 0px;
     bottom: 30px; }
-    .mbenz-header p a {
+    .mbenz-header p a,
+    .mbenz-header p span {
       display: block;
       position: relative;
       float: left;
       font-size: 18px;
       color: #949494; }
-      .mbenz-header p a time {
+      .mbenz-header p a time,
+      .mbenz-header p span time {
         display: block;
         position: absolute;
         top: -80%;
         left: 0;
         font-size: 12px;
         color: #949494; }
-      .mbenz-header p a:first-child:after {
+      .mbenz-header p a:first-child:after,
+      .mbenz-header p span:first-child:after {
         content: '|';
         margin-right: 18px;
         margin-left: 18px;
         color: #949494; }
-      .mbenz-header p a.selected {
+      .mbenz-header p a.selected,
+      .mbenz-header p span.selected {
         color: #00aeef; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .mbenz-header {
@@ -284,15 +291,15 @@ body {
       .mbenz-header p {
         position: static;
         margin-top: 27px; }
-        .mbenz-header p a {
+        .mbenz-header p a, .mbenz-header p span {
           width: 50%;
           font-size: 13px;
           text-align: center; }
-          .mbenz-header p a time {
+          .mbenz-header p a time, .mbenz-header p span time {
             top: -70%;
             left: 12px;
             font-size: 11px; }
-          .mbenz-header p a:first-child:after {
+          .mbenz-header p a:first-child:after, .mbenz-header p span:first-child:after {
             content: '|';
             position: absolute;
             right: 0;
@@ -437,19 +444,23 @@ article.contents {
   .pg-event01 .representation .teaser {
     position: relative;
     position: relative;
-    background: url("/assets/images/desktop/bg_teaser.jpg") center top no-repeat; }
+    /*
+    			.btn-play { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; text-indent: -9999px;
+    				&:before { content: ''; display: block; position: absolute; top: 50%; left: 50%; margin-top: -$sd-btn-play01-height/2; margin-left: -$sd-btn-play01-width/2; @include sprite($sd-btn-play01); }
+    			}
+    */ }
     .pg-event01 .representation .teaser:before {
       display: block;
       content: "";
       width: 100%;
-      padding-top: 47.11864%; }
+      padding-top: 56.2753%; }
     .pg-event01 .representation .teaser > .inner {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0; }
-    .pg-event01 .representation .teaser .btn-play {
+    .pg-event01 .representation .teaser iframe {
       display: block;
       position: absolute;
       top: 0;
@@ -457,20 +468,7 @@ article.contents {
       bottom: 0;
       left: 0;
       height: 100%;
-      width: 100%;
-      text-indent: -9999px; }
-      .pg-event01 .representation .teaser .btn-play:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -43.5px;
-        margin-left: -43px;
-        background-image: url(/assets/images/desktop/sprites_desktop.png);
-        background-position: 0px -88px;
-        width: 86px;
-        height: 87px; }
+      width: 100%; }
   .pg-event01 .representation .copyright {
     padding: 55px 0 0 128px;
     height: 315px;
@@ -486,8 +484,6 @@ article.contents {
       line-height: 30px; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .pg-event01 .representation .teaser {
-      height: 151px;
-      width: 320px;
       background: url("/assets/images/mobile/bg_teaser.jpg") center top no-repeat;
       background-size: contain; }
       .pg-event01 .representation .teaser .btn-play:before {
@@ -1173,18 +1169,6 @@ article.contents {
             display: block;
             font-size: 16px;
             color: #4cc1ed; }
-            .pg-event01 .photos-mfs > li figure figcaption .title.link {
-              font-size: 18px;
-              color: #fff; }
-              .pg-event01 .photos-mfs > li figure figcaption .title.link:after {
-                content: '';
-                display: inline-block;
-                margin-left: 30px;
-                vertical-align: middle;
-                background-image: url(/assets/images/desktop/sprites_desktop.png);
-                background-position: -46px -235px;
-                width: 38px;
-                height: 38px; }
           .pg-event01 .photos-mfs > li figure figcaption p {
             margin-top: 18px;
             font-size: 13px;
@@ -1238,20 +1222,6 @@ article.contents {
             left: 23px; }
             .pg-event01 .photos-mfs > li figure figcaption .title {
               font-size: 17px; }
-              .pg-event01 .photos-mfs > li figure figcaption .title.link {
-                font-size: 17px; }
-                .pg-event01 .photos-mfs > li figure figcaption .title.link:after {
-                  margin-top: -2px;
-                  margin-left: 23px;
-                  background-image: url(/assets/images/mobile/sprites_mobile.png);
-                  background-position: -129px -105px;
-                  width: 30px;
-                  height: 30px; } }
-            @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
-              .pg-event01 .photos-mfs > li figure figcaption .title.link:after {
-                background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                background-size: 230px 185px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
             .pg-event01 .photos-mfs > li figure figcaption p {
               margin-top: 14px;
               font-size: 12px;
@@ -1630,9 +1600,9 @@ article.contents {
       background-color: #fff; }
       .pg-popup article.contents {
         padding: 42px 0px 0 0px;
-        width: 320px;
+        width: 100%;
         color: #333;
-        background: #fff url("/assets/images/desktop/bg_popup_top.jpg") left top no-repeat;
+        background: #fff url("/assets/images/popup/bg_popup_top.jpg") left top no-repeat;
         background-size: 400px 37px; }
         .pg-popup article.contents > .btn-popup-close {
           top: 10px;
