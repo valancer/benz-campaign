@@ -27,9 +27,9 @@
 			iframe { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; }
 		}
 
-		.copyright { padding: 55px 0 0 128px; height: 315px; background: url('/assets/images/desktop/bg_copyright.jpg') center top no-repeat;
+		.copyright { padding: 76px 0 0 128px; height: 384px; background: url('/assets/images/desktop/bg_copyright02.jpg') center top no-repeat;
 			.title { font-size: 30px; color: #fff; line-height: 42px; }
-			.message { margin-top: 29px; font-size: 18px; color: #d8d7d7; line-height: 30px; }
+			.message { margin-top: 52px; font-size: 18px; color: #d8d7d7; line-height: 30px; }
 		}
 
 		/// 모바일 영역
@@ -40,11 +40,11 @@
 				}
 			}
 
-			.copyright { padding: 26px 0 0 27px; height: 253px; background: url('/assets/images/mobile/bg_copyright.jpg') center top no-repeat;
-				@include retina { background-image: url('/assets/images/mobile/bg_copyright@2x.jpg'); background-size: 320px 279px; }
+			.copyright { padding: 31px 0 0 27px; height: 239px; background: url('/assets/images/mobile/bg_copyright02.jpg') center top no-repeat;
+				@include retina { background-image: url('/assets/images/mobile/bg_copyright02@2x.jpg'); background-size: 320px 270px; }
 
 				.title { font-size: 15px; line-height: 21px; }
-				.message { margin-top: 19px; font-size: 11px; line-height: 17px; letter-spacing: -0.1em; }
+				.message { margin-top: 36px; font-size: 11px; line-height: 17px; letter-spacing: -0.1em; }
 			}
 		}
 
@@ -56,16 +56,16 @@
 
 	/* SNS 로그인 / 댓글 입력 / 댓글 목록  */
 	/* SNS 로그인 */
-	.login-sns { display: block; overflow: hidden; 
+	.login-sns { display: block; overflow: hidden; position: relative; z-index: z("default"); width: 270px;
 
-		.title { display: block; float: left; margin-right: 11px; font-size: 16px; color: #00aeef; line-height: 48px; vertical-align: middle; }
-		.btn { display: block; float: left; margin-right: 2px; height: 48px; width: 48px; text-indent: -9999px; vertical-align: middle; background-color: #1a1a1a;
+		.title { display: block; float: left; margin-right: 14px; font-size: 16px; color: #00aeef; line-height: 48px; vertical-align: middle; }
+		.btn { display: block; float: left; margin-right: 2px; height: 48px; width: 48px; text-indent: -9999px; vertical-align: middle; background-color: #313131;
 			&.fb { @include sprite($sd-btn-fb01); }
 			&.tw { @include sprite($sd-btn-tw01); }
 			&.ks { @include sprite($sd-btn-ks01); }
 			&.insta { @include sprite($sd-btn-insta01); }
 
-			&.selected { position: relative;
+			&.selected { position: relative; background-color: #1a1a1a;
 				&:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 2px solid #00aeef; }
 
 				&.fb { @include sprite($sd-btn-fb01-selected); }
@@ -101,26 +101,35 @@
 
 
 	/* 댓글 입력 */
-	.write-comment { display: block; position: relative; padding: 3px; height: 40px; border: 1px solid #888; background-color: #1f1f1f;
-		&:before { content: ''; display: block; position: absolute; top: 3px; left: 3px; @include sprite($sd-icon-mbenz); }
+	.write-comment { display: block; position: relative; margin-top: -48px; padding: 0 0 0 90px;
 		
-		.remain { display: block; position: absolute; top: 0; right: 90px; z-index: z("default"); font-size: 12px; color: #9f9f9f; line-height: 48px; }
-		.txt-input { position: absolute; top: 3px; right: 130px; bottom: 3px; left: 53px;
-			input[type=text] { display: block; height: 40px; width: 100%; font-size: 12px; color: #9f9f9f; line-height: 40px; border: 0px; background-color: transparent; }
+		input[type=text] { display: block; box-sizing: border-box; padding-left: 10px; height: 37px; width: 483px; font-size: 12px; color: #9f9f9f; line-height: 35px; border: 1px solid #888; background-color: #1a1a1a; }
+		
+		.customfile-container { margin-bottom: 10px; padding-left: 180px;
+			.customfile-upload { float: left; text-indent: -9999px; @include sprite($sd-btn-upload01); }
+			input[type=text] { height: 48px; width: 258px; line-height: 48px; border: 0px; background-color: transparent; }
 		}
-		.btn-submit { display: block; position: absolute; top: -1px; right: -1px; bottom: -1px; z-index: z("default"); width: 78px; font-size: 15px; font-weight: bold; color: #353535; text-align: center; line-height: 50px; background-color: #ebebeb; }
-		.message { margin-top: 52px; font-size: 12px; color: #9f9f9f; }
+		.txt-area { display: block; position: relative; margin-top: 10px; padding-right: 88px; height: 70px; border: 1px solid #888; background-color: #1a1a1a;
+			.remain { display: block; position: absolute; top: 0; right: 90px; z-index: z("default"); font-size: 12px; color: #9f9f9f; line-height: 70px; }
+			textarea { display: block; overflow: hidden; box-sizing: border-box; padding: 14px 0 0 10px; height: 100%; width: 100%; font-size: 12px; color: #9f9f9f; line-height: 16px; background-color: transparent; resize: none; }
+			.btn-submit { display: block; position: absolute; top: -1px; right: -1px; bottom: -1px; z-index: z("default"); height: 72px; width: 88px; font-size: 15px; font-weight: bold; color: #353535; text-align: center; line-height: 70px; background-color: #ebebeb; }
+		}
 
 		/// 모바일 영역
-		@include mobile { padding: 2px; height: 31px;
-			&:before { top: 2px; left: 2px; @include retina_sprite($sm-icon-mbenz-group); }
+		@include mobile { margin-top: 0; padding: 0px;
 
-			.remain { right: 70px; font-size: 10px; line-height: 35px; }
-			.txt-input { top: 2px; right: 100px; bottom: 2px; left: 41px;
-				input[type=text] { height: 31px; font-size: 10px; line-height: 31px; }
+			.customfile-container { margin-top: 15px; margin-bottom: 15px; padding-left: 0px;
+				.customfile-upload { @include retina_sprite($sm-btn-upload01-group); }
+				input[type=text] { height: 37px; width: 263px; font-size: 10px; line-height: 37px; border: 0px; background-color: transparent; }
 			}
-			.btn-submit { width: 60px; font-size: 11px; line-height: 37px; }
-			.message { margin-top: 34px; font-size: 10px; }
+
+			input[type=text] { height: 38px; width: 100%; font-size: 10px; line-height: 36px; }
+
+			.txt-area { margin-top: 15px; padding-right: 0px; height: 166px; 
+				.remain { top: auto; right: 70px; bottom: 0; font-size: 10px; line-height: 35px; }
+				textarea { font-size: 10px; line-height: 14px; }
+				.btn-submit { height: 168px; width: 60px; font-size: 11px; line-height: 166px; }
+			}
 		}
 
 		/// 데스크탑 영역
@@ -129,71 +138,92 @@
 		}
 	}
 
-
-	/* 댓글 아이템 */
-	.comment-item { overflow: hidden; position: relative; min-height: 40px;
-
-		.user { display: block; float: left; width: 243px;
-			.via { display: inline-block; margin-right: 7px; text-indent: -9999px; vertical-align: middle;
-				&.facebook { @include sprite($sd-icon-facebook01); }
-				&.twitter { @include sprite($sd-icon-twitter01); }
-				&.kakaostory { @include sprite($sd-icon-kakaostory01); }
-				&.instagram { @include sprite($sd-icon-instagram01); }
+	/* 추억 컨텐트 */
+	.memory-item { position: relative; min-height: 417px;
+		> .thumb { @include aspect-ratio(312, 173); background-color: #232323;
+			.inner { overflow: hidden; text-align: center; line-height: 173px; 
+				&:before { content: ''; display: block; position: absolute; top: 50%; left: 50%; margin-top: -$sd-benz-logo01-height/2; margin-left: -$sd-benz-logo01-width/2; @include sprite($sd-benz-logo01); }
+				img { display: inline-block; position: relative; z-index: z("default"); max-height: 100%; max-width: 100%; vertical-align: middle; }
 			}
-			.thumb { display: inline-block; margin-right: 6px; height: 40px; width: 40px; vertical-align: middle; }
-			figcaption { display: inline-block; font-size: 12px; color: #a9a9a9; line-height: 40px; vertical-align: middle; }
 		}
 
-		.comment { display: block; float: left; position: relative; width: 607px; margin-top: 11px; padding-right: 10px; padding-left: 13px; min-height: 20px; font-size: 12px; color: #f8f8f8; line-height: 20px;
-			&:before { content: ''; display: block; position: absolute; top: -1px; left: 0px; height: 20px; width: 1px; background-color: #3c3d3c; }
-
-		}
-
-		/// 모바일 영역
-		@include mobile {
-			.user { float: none; width: 100%;
-				.via { margin-right: 3px;
-					&.facebook { @include retina_sprite($sm-icon-facebook01-group); }
-					&.twitter { @include retina_sprite($sm-icon-twitter01-group); }
-					&.kakaostory { @include retina_sprite($sm-icon-kakaostory01-group); }
-					&.instagram { @include retina_sprite($sm-icon-instagram01-group); }
+		> .info { position: relative; padding: 28px 20px 30px 20px; border-bottom: 5px solid #000; background-color: #1a1a1a;
+			.title { font-size: 14px; color: #fff; }
+			.memory { overflow: hidden; margin-top: 34px; min-height: 63px; max-height: 63px; font-size: 12px; color: #a9a9a9; line-height: 20px; }
+			.btn-toggle { display: block; position: relative; height: 27px; text-align: center; text-indent: -9999px; border-bottom: 1px solid #5f5f5f;
+				&:before { content: ''; display: block; position: absolute; top: 50%; left: 50%; margin: -4px 0 0 -6px; @include sprite($sd-icon-arrow05); }
+			}
+			.user { display: block; padding-top: 10px;
+				.via { display: inline-block; margin-right: 7px; text-indent: -9999px; vertical-align: middle;
+					&.facebook { @include sprite($sd-icon-facebook01); }
+					&.twitter { @include sprite($sd-icon-twitter01); }
+					&.kakaostory { @include sprite($sd-icon-kakaostory01); }
+					&.instagram { @include sprite($sd-icon-instagram01); }
 				}
-				.thumb { margin-right: 4px; height: 30px; width: 30px; }
-				figcaption { font-size: 10px; color: #a9a9a9; line-height: 30px; }
+				.nick { display: inline-block; font-size: 12px; color: #a9a9a9; }
 			}
-			.comment { box-sizing: border-box; margin: 6px 20px 0 28px; padding: 6px 0 0 0; width: 230px; font-size: 10px; color: #f8f8f8; line-height: 14px; border-top: 1px solid #3c3c3c;
-				&:before { content: none; }
+
+			&.open { position: absolute; top: 173px; right: 0; left: 0; z-index: z('default') + 1;
+				.memory { max-height: 300px; }
+				.btn-toggle {
+					&:before { @include sprite($sd-icon-arrow06); }
+				}
+			}
+		}
+
+
+		/// 모바일 영역
+		@include mobile { min-height: auto;
+			> .thumb {
+				.inner { line-height: 166px; }
+			}
+			> .info { padding: 20px 15px 23px 15px;
+				.title { font-size: 12px; }
+				.memory { margin-top: 17px; min-height: 50px; max-height: 50px; font-size: 10px; line-height: 16px; }
+				.user {
+					.via { margin-right: 3px;
+						&.facebook { @include retina_sprite($sm-icon-facebook01-group); }
+						&.twitter { @include retina_sprite($sm-icon-twitter01-group); }
+						&.kakaostory { @include retina_sprite($sm-icon-kakaostory01-group); }
+						&.instagram { @include retina_sprite($sm-icon-instagram01-group); }
+					}
+				}
+				&.open { position: relative; top: 0px; }
 			}
 		}
 
 		/// 데스크탑 영역
-		@include desktop {
-			.comment { width: 844px; }
+		@include desktop { min-height: 460px;
+			> .thumb { @include aspect-ratio(390, 216);
+				.inner { line-height: 216px; }
+			}
+			> .info {
+				&.open { top: 216px; }
+			}
 		}
 	}
 
-
-	/* 댓글 목록 */
-	.list-comments { margin: 40px -40px 0 -40px;
-		> li { position: relative; margin-top: 12px; padding: 10px 0 10px 70px; background-color: #1a1a1a;
-			&:before { content: ''; display: block; position: absolute; top: -$sd-icon-arrow02-height; left: 120px; @include sprite($sd-icon-arrow02); }
+	/* 추억 목록 */
+	.list-memories { float: left; margin-top: 36px; margin-right: -70px; margin-left: -64px;
+		> li { float: left; margin-right: 4px; width: 312px;
+			&.lb { margin-right: 0; }
 		}
 
 		/// 모바일 영역
-		@include mobile { margin: 27px 0 0 0;
-			> li { margin-top: 8px; padding: 8px 0 13px 15px;
-				&:before { top: -$sm-icon-arrow02-height; left: 40px; @include retina_sprite($sm-icon-arrow02-group); }
-			}
+		@include mobile { margin-top: 7px; margin-right: 0; margin-left: 0;
+			> li { float: none; margin: 0; width: 100%; }
 		}
 
 		/// 데스크탑 영역
 		@include desktop {
+			> li { margin-right: 5px; width: 390px;
 
+			}			
 		}
 	}
 
 	/* 더보기 */
-	.btn-list-more { display: block; margin: 12px -40px 0 -40px; font-size: 12px; color: #9f9f9f; line-height: 30px; text-align: center; background-color: #1f1f1f;
+	.btn-list-more { display: block; margin: 12px -70px 0 -64px; font-size: 12px; color: #9f9f9f; line-height: 30px; text-align: center; background-color: #1f1f1f;
 		&:before { content: ''; display: inline-block; margin-top: -2px; margin-right: 5px; vertical-align: middle; @include sprite($sd-icon-arrow01); }
 
 		/// 모바일 영역
@@ -203,17 +233,17 @@
 	}
 
 
-	.sns-area { position: relative; margin-top: -97px; padding: 0 40px;
+	.sns-area { position: relative; margin-top: -177px; padding: 0 70px 0 64px;
 		> .title { display: none; }
 
-		.login-sns { margin-top: 20px; }
-		.write-comment { position: absolute; top: 0; right: 40px; left: 283px; }
+		.login-sns { margin-top: 0px; }
+		.write-comment { }
 
 
 		/// 모바일 영역
-		@include mobile { margin-top: -108px; padding: 0 10px;
+		@include mobile { margin-top: -104px; padding: 0 10px;
 			.login-sns { margin: 0 auto; width: 217px; }
-			.write-comment { position: relative; top: auto; right: auto; left: auto; margin-top: 15px; }
+			.write-comment { }
 		}
 
 		/// 데스크탑 영역
@@ -225,7 +255,7 @@
 
 
 	/* 이벤트 안내 */
-	.event-summary { margin-top: 50px; min-height: 245px; background: url('/assets/images/desktop/bg_summary.png') 600px 0px no-repeat; background-size: 299px 245px;
+	.event-summary { margin-top: 50px; padding-top: 24px; min-height: 249px; background: url('/assets/images/desktop/bg_summary02.png') 100% 0px no-repeat;
 		.title { display: block; font-size: 18px; color: #4cc1ed; }
 		.list-winner-goods { margin-top: 25px; margin-left: 63px;
 			> li { position: relative; padding-left: 10px; font-size: 14px; color: #fff; line-height: 23px;
@@ -255,7 +285,7 @@
 		}
 
 		/// 데스크탑 영역
-		@include desktop { min-height: 272px; background-position: 830px 0; background-size: 332px 272px;
+		@include desktop {
 			.title { font-size: 20px; }
 			.list-winner-goods { margin-top: 27px; margin-left: 70px;
 				> li { font-size: 16px; line-height: 26px;
@@ -390,7 +420,7 @@
 	> .title { margin: 0 -30px; padding: 0 30px; font-size: 20px; color: #333; line-height: 74px; background: url('/assets/images/desktop/bg_popup01.jpg') left top no-repeat; }
 	.btns { margin-top: 30px; text-align: center;
 		a { display: inline-block; margin: 0 3px; height: 48px; width: 108px; font-size: 16px; font-weight: bold; line-height: 48px; text-align: center;
-			&.btn-done { background-color: #4cc1ed; }
+			&.btn-done { background-color: #00aeef; }
 			&.btn-cancel { background-color: #9c9c9c; }
 		}
 	}
@@ -429,6 +459,36 @@
 		&.agreement {
 			.warning { font-size: 14px; font-weight: bold; color: #666; }
 		}
+
+
+		&.service-center {
+			th { padding-top: 8px; vertical-align: top; }
+			td { background-color: #fff; }
+			select { display: block; appearance: none; padding-right: 20px; padding-left: 20px; height: 32px; font-size: 14px; color: #000; line-height: 32px; border: 1px solid #888; background-color: #fff; }
+			.list-center { overflow: auto; box-sizing: border-box; height: 98px; width: 100%; border: 1px solid #888;
+				> li { display: block; padding-left: 20px; height: 32px; font-size: 14px; color: #000; line-height: 32px; border-top: 1px solid #e7e7e7;
+					a { color: #000;
+						&:hover,
+						&.selected { color: #00aeef; }
+					}
+				}
+			}
+
+			.service { padding-top: 14px; padding-bottom: 12px; text-align: right; border-bottom: 1px solid #c3c3c3;
+				.value { font-size: 16px; font-weight: bold; color: #00aeef; }
+				.btn-reset { display: inline-block; margin-left: 6px; padding-right: 15px; padding-left: 15px; font-size: 14px; font-weight: normal; color: #fff; line-height: 28px; background-color: #9c9c9c;
+					&:before { content: ''; display: inline-block; margin: -2px 3px 0 0; vertical-align: middle; @include sprite($sd-icon-reset01); }
+				}
+			}
+		}
+	}
+
+	.guide-message { margin: 25px -30px -30px -30px; padding: 25px 0 20px 78px; background-color: #e7e7e7;
+		li { position: relative; padding-left: 10px; font-size: 14px; color: #000; line-height: 20px;
+			&:before { content: '-'; display: block; position: absolute; top: 0; left: 0; }
+			&.link { &:before { color: #00aeef; } }
+			a { color: #00aeef; }
+		}
 	}
 
 	/// 모바일 영역
@@ -448,7 +508,7 @@
 
 			table { margin-top: 10px; 
 				th { width: 43px; font-size: 11px; }
-				td { padding-left: 17px; font-size: 11px; line-height: 27px; border-bottom: 1px solid #fff; }
+				td { padding: 5px 10px 3px 17px; font-size: 11px; line-height: 18px; border-bottom: 1px solid #fff; }
 			}
 
 			.check { margin-top: 14px; padding-top: 5px; }
@@ -475,7 +535,30 @@
 			&.agreement {
 				.warning { font-size: 11px; line-height: 16px; }
 			}
+
+			&.service-center {
+				th { padding-top: 8px; vertical-align: top; }
+				td { background-color: #fff; }
+				select { display: block; padding-right: 16px; padding-left: 16px; height: 25px; font-size: 11px; line-height: 25px; }
+				.list-center { height: 79px;
+					> li { padding-left: 16px; height: 25px; font-size: 11px; line-height: 25px; }
+				}
+
+				.service { padding-top: 10px; padding-bottom: 10px;
+					.value { font-size: 11px; }
+					.btn-reset { padding-right: 7px; padding-left: 7px; font-size: 11px; line-height: 24px;
+						&:before { margin: -2px 3px 0 0; @include retina_sprite($sm-icon-reset01-group); }
+					}
+				}
+			}
 		}
+
+		.guide-message { margin: 25px -22px -22px -22px; padding: 25px 24px 24px 24px;
+			li { padding-left: 10px; font-size: 11px; line-height: 15px;
+				a { color: #00aeef; }
+			}
+		}
+
 	}
 
 	/// 데스크탑 영역

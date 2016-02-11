@@ -286,7 +286,7 @@ body {
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .mbenz-header > h1 {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
+        background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .mbenz-header p {
         position: static;
@@ -354,7 +354,7 @@ article.contents {
       margin: -3px 0 0 5px;
       vertical-align: middle;
       background-image: url(/assets/images/desktop/sprites_desktop.png);
-      background-position: -254px -115px;
+      background-position: -237px -235px;
       width: 18px;
       height: 18px; }
   .mbenz-footer small {
@@ -369,13 +369,13 @@ article.contents {
         font-size: 10px; }
         .mbenz-footer .btn-top:after {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -208px -131px;
+          background-position: -27px -197px;
           width: 14px;
           height: 14px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .mbenz-footer .btn-top:after {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .mbenz-footer small {
         font-size: 10px; } }
@@ -407,7 +407,7 @@ article.contents {
     margin-right: -42px;
     text-indent: -9999px;
     background-image: url(/assets/images/desktop/sprites_desktop.png);
-    background-position: -46px -235px;
+    background-position: -285px -108px;
     width: 40px;
     height: 40px; }
   .pg-event01 .mfp-iframe-scaler iframe {
@@ -490,13 +490,13 @@ article.contents {
         margin-top: -23px;
         margin-left: -23px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -156px 0px;
+        background-position: -156px -55px;
         width: 46px;
         height: 46px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .pg-event01 .representation .teaser .btn-play:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
+        background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .pg-event01 .representation .copyright {
       padding: 26px 0 0 27px;
@@ -537,7 +537,7 @@ article.contents {
       background-color: #1a1a1a; }
       .pg-event01 .login-sns .btn.fb {
         background-image: url(/assets/images/desktop/sprites_desktop.png);
-        background-position: -92px -88px;
+        background-position: -162px -181px;
         width: 48px;
         height: 48px; }
       .pg-event01 .login-sns .btn.tw {
@@ -552,7 +552,7 @@ article.contents {
         height: 48px; }
       .pg-event01 .login-sns .btn.insta {
         background-image: url(/assets/images/desktop/sprites_desktop.png);
-        background-position: -200px -88px;
+        background-position: -222px -88px;
         width: 48px;
         height: 48px; }
       .pg-event01 .login-sns .btn.selected {
@@ -568,12 +568,12 @@ article.contents {
           border: 2px solid #00aeef; }
         .pg-event01 .login-sns .btn.selected.fb {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -146px -88px;
+          background-position: -168px -88px;
           width: 48px;
           height: 48px; }
         .pg-event01 .login-sns .btn.selected.tw {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -162px -181px;
+          background-position: -285px 0px;
           width: 48px;
           height: 48px; }
         .pg-event01 .login-sns .btn.selected.ks {
@@ -598,83 +598,83 @@ article.contents {
           width: 37px; }
           .pg-event01 .login-sns .btn.fb {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -156px -52px;
+            background-position: 0px -111px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.fb {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.tw {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: 0px -149px;
+            background-position: -211px 0px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.tw {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.ks {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -86px -106px;
+            background-position: 0px -154px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.ks {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.insta {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: 0px -106px;
+            background-position: -86px -111px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.insta {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.selected.fb {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -110px -51px;
+            background-position: -43px -111px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.selected.fb {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.selected.tw {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -43px -149px;
+            background-position: -86px -154px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.selected.tw {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.selected.ks {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -129px -106px;
+            background-position: -43px -154px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.selected.ks {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .login-sns .btn.selected.insta {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -43px -106px;
+            background-position: -129px -111px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .login-sns .btn.selected.insta {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
 
   .pg-event01 .write-comment {
     display: block;
@@ -690,7 +690,7 @@ article.contents {
       top: 3px;
       left: 3px;
       background-image: url(/assets/images/desktop/sprites_desktop.png);
-      background-position: 0px -235px;
+      background-position: -285px -154px;
       width: 40px;
       height: 40px; }
     .pg-event01 .write-comment .remain {
@@ -743,13 +743,13 @@ article.contents {
           top: 2px;
           left: 2px;
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -123px -149px;
+          background-position: -211px -43px;
           width: 31px;
           height: 31px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .pg-event01 .write-comment:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
+        background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
         .pg-event01 .write-comment .remain {
           right: 70px;
@@ -786,22 +786,22 @@ article.contents {
         vertical-align: middle; }
         .pg-event01 .comment-item .user .via.facebook {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -194px -142px;
+          background-position: -143px -235px;
           width: 26px;
           height: 26px; }
         .pg-event01 .comment-item .user .via.twitter {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -162px -142px;
+          background-position: -111px -235px;
           width: 26px;
           height: 26px; }
         .pg-event01 .comment-item .user .via.kakaostory {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -136px -235px;
+          background-position: -79px -235px;
           width: 26px;
           height: 26px; }
         .pg-event01 .comment-item .user .via.instagram {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -226px -142px;
+          background-position: -175px -235px;
           width: 26px;
           height: 26px; }
       .pg-event01 .comment-item .user .thumb {
@@ -845,43 +845,43 @@ article.contents {
           margin-right: 3px; }
           .pg-event01 .comment-item .user .via.facebook {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -105px;
+            background-position: -172px -111px;
             width: 21px;
             height: 20px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .comment-item .user .via.facebook {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .comment-item .user .via.twitter {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -79px;
+            background-position: -115px -78px;
             width: 21px;
             height: 20px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .comment-item .user .via.twitter {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .comment-item .user .via.kakaostory {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -53px;
+            background-position: 0px -197px;
             width: 21px;
             height: 20px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .comment-item .user .via.kakaostory {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event01 .comment-item .user .via.instagram {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -27px;
+            background-position: -172px -154px;
             width: 21px;
             height: 20px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .comment-item .user .via.instagram {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
         .pg-event01 .comment-item .user .thumb {
           margin-right: 4px;
@@ -919,7 +919,7 @@ article.contents {
         top: -9px;
         left: 120px;
         background-image: url(/assets/images/desktop/sprites_desktop.png);
-        background-position: -258px -142px;
+        background-position: -168px -142px;
         width: 18px;
         height: 9px; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -932,13 +932,13 @@ article.contents {
             top: -7px;
             left: 40px;
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -168px;
+            background-position: -229px -180px;
             width: 14px;
             height: 7px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event01 .list-comments > li:before {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
 
   .pg-event01 .btn-list-more {
     display: block;
@@ -955,7 +955,7 @@ article.contents {
       margin-right: 5px;
       vertical-align: middle;
       background-image: url(/assets/images/desktop/sprites_desktop.png);
-      background-position: -258px -157px;
+      background-position: -210px -142px;
       width: 12px;
       height: 8px; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -965,13 +965,13 @@ article.contents {
         line-height: 24px; }
         .pg-event01 .btn-list-more:before {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -110px -94px;
+          background-position: -172px -137px;
           width: 10px;
           height: 6px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .pg-event01 .btn-list-more:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
+        background-size: 248px 217px; } }
 
   .pg-event01 .sns-area {
     position: relative;
@@ -1289,7 +1289,7 @@ article.contents {
     right: 15px;
     text-indent: -9999px;
     background-image: url(/assets/images/desktop/sprites_desktop.png);
-    background-position: -46px -235px;
+    background-position: -285px -108px;
     width: 40px;
     height: 40px; }
   .popup-application > .title {
@@ -1363,12 +1363,12 @@ article.contents {
             margin: -3px 7px 0 0;
             vertical-align: middle;
             background-image: url(/assets/images/desktop/sprites_desktop.png);
-            background-position: -127px -142px;
+            background-position: -44px -235px;
             width: 29px;
             height: 26px; }
         .popup-application .box .radios input[type=radio]:checked + label:before {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -92px -142px;
+          background-position: -285px -200px;
           width: 29px;
           height: 26px; }
     .popup-application .box.basic-info {
@@ -1412,13 +1412,13 @@ article.contents {
         top: 10px;
         right: 10px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -86px -149px;
+        background-position: -211px -80px;
         width: 31px;
         height: 31px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .popup-application > .btn-popup-close {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
+        background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .popup-application > .title {
         margin: 0 -22px;
@@ -1470,23 +1470,23 @@ article.contents {
               margin: -3px 7px 0 0;
               vertical-align: middle;
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -208px 0px;
+              background-position: -115px -51px;
               width: 22px;
               height: 21px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .popup-application .box .radios input[type=radio] + label:before {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 230px 186px; } }
+              background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
           .popup-application .box .radios input[type=radio]:checked + label:before {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -160px -149px;
+            background-position: -211px -153px;
             width: 22px;
             height: 21px; } }
         @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
           .popup-application .box .radios input[type=radio]:checked + label:before {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 230px 186px; } }
+            background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
         .popup-application .box.basic-info {
           padding-top: 7px;
@@ -1532,7 +1532,7 @@ article.contents {
       right: 15px;
       text-indent: -9999px;
       background-image: url(/assets/images/desktop/sprites_desktop.png);
-      background-position: -46px -235px;
+      background-position: -285px -108px;
       width: 40px;
       height: 40px; }
     .pg-popup article.contents > .title {
@@ -1608,13 +1608,13 @@ article.contents {
           top: 10px;
           right: 10px;
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -86px -149px;
+          background-position: -211px -80px;
           width: 31px;
           height: 31px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-popup article.contents > .btn-popup-close {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
         .pg-popup article.contents > .title {
           padding-left: 0px;
@@ -1993,13 +1993,13 @@ article.contents {
               margin: -2px 3px 0 0;
               vertical-align: middle;
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -208px -151px;
+              background-position: -211px -180px;
               width: 12px;
               height: 11px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .pg-popup.mb-myservice .module.myservice .download .title:before {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 230px 186px; } }
+              background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-popup.mb-myservice .module.myservice .download .btn-download {
             display: inline-block;
@@ -2007,23 +2007,23 @@ article.contents {
             .pg-popup.mb-myservice .module.myservice .download .btn-download.android {
               margin-left: 10px;
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: 0px -51px;
+              background-position: -60px -51px;
               width: 49px;
               height: 49px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .pg-popup.mb-myservice .module.myservice .download .btn-download.android {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 230px 186px; } }
+              background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
             .pg-popup.mb-myservice .module.myservice .download .btn-download.ios {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -55px -51px;
+              background-position: -156px 0px;
               width: 49px;
               height: 49px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .pg-popup.mb-myservice .module.myservice .download .btn-download.ios {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 230px 186px; } }
+              background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .pg-popup.mb-myservice .icon01 {
         padding-left: 80px;
@@ -2108,8 +2108,8 @@ article.contents {
   /* SNS 로그인 / 댓글 입력 / 댓글 목록  */
   /* SNS 로그인 */
   /* 댓글 입력 */
-  /* 댓글 아이템 */
-  /* 댓글 목록 */
+  /* 추억 컨텐트 */
+  /* 추억 목록 */
   /* 더보기 */
   /* 이벤트 안내 */
   /* 사진 목록 */
@@ -2122,7 +2122,7 @@ article.contents {
     margin-right: -42px;
     text-indent: -9999px;
     background-image: url(/assets/images/desktop/sprites_desktop.png);
-    background-position: -46px -235px;
+    background-position: -285px -108px;
     width: 40px;
     height: 40px; }
   .pg-event02 .mfp-iframe-scaler iframe {
@@ -2180,15 +2180,15 @@ article.contents {
       height: 100%;
       width: 100%; }
   .pg-event02 .representation .copyright {
-    padding: 55px 0 0 128px;
-    height: 315px;
-    background: url("/assets/images/desktop/bg_copyright.jpg") center top no-repeat; }
+    padding: 76px 0 0 128px;
+    height: 384px;
+    background: url("/assets/images/desktop/bg_copyright02.jpg") center top no-repeat; }
     .pg-event02 .representation .copyright .title {
       font-size: 30px;
       color: #fff;
       line-height: 42px; }
     .pg-event02 .representation .copyright .message {
-      margin-top: 29px;
+      margin-top: 52px;
       font-size: 18px;
       color: #d8d7d7;
       line-height: 30px; }
@@ -2200,38 +2200,41 @@ article.contents {
         margin-top: -23px;
         margin-left: -23px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -156px 0px;
+        background-position: -156px -55px;
         width: 46px;
         height: 46px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .pg-event02 .representation .teaser .btn-play:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
+        background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .pg-event02 .representation .copyright {
-      padding: 26px 0 0 27px;
-      height: 253px;
-      background: url("/assets/images/mobile/bg_copyright.jpg") center top no-repeat; } }
+      padding: 31px 0 0 27px;
+      height: 239px;
+      background: url("/assets/images/mobile/bg_copyright02.jpg") center top no-repeat; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
     .pg-event02 .representation .copyright {
-      background-image: url("/assets/images/mobile/bg_copyright@2x.jpg");
-      background-size: 320px 279px; } }
+      background-image: url("/assets/images/mobile/bg_copyright02@2x.jpg");
+      background-size: 320px 270px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .pg-event02 .representation .copyright .title {
         font-size: 15px;
         line-height: 21px; }
       .pg-event02 .representation .copyright .message {
-        margin-top: 19px;
+        margin-top: 36px;
         font-size: 11px;
         line-height: 17px;
         letter-spacing: -0.1em; } }
   .pg-event02 .login-sns {
     display: block;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 270px; }
     .pg-event02 .login-sns .title {
       display: block;
       float: left;
-      margin-right: 11px;
+      margin-right: 14px;
       font-size: 16px;
       color: #00aeef;
       line-height: 48px;
@@ -2244,10 +2247,10 @@ article.contents {
       width: 48px;
       text-indent: -9999px;
       vertical-align: middle;
-      background-color: #1a1a1a; }
+      background-color: #313131; }
       .pg-event02 .login-sns .btn.fb {
         background-image: url(/assets/images/desktop/sprites_desktop.png);
-        background-position: -92px -88px;
+        background-position: -162px -181px;
         width: 48px;
         height: 48px; }
       .pg-event02 .login-sns .btn.tw {
@@ -2262,11 +2265,12 @@ article.contents {
         height: 48px; }
       .pg-event02 .login-sns .btn.insta {
         background-image: url(/assets/images/desktop/sprites_desktop.png);
-        background-position: -200px -88px;
+        background-position: -222px -88px;
         width: 48px;
         height: 48px; }
       .pg-event02 .login-sns .btn.selected {
-        position: relative; }
+        position: relative;
+        background-color: #1a1a1a; }
         .pg-event02 .login-sns .btn.selected:before {
           content: '';
           display: block;
@@ -2278,12 +2282,12 @@ article.contents {
           border: 2px solid #00aeef; }
         .pg-event02 .login-sns .btn.selected.fb {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -146px -88px;
+          background-position: -168px -88px;
           width: 48px;
           height: 48px; }
         .pg-event02 .login-sns .btn.selected.tw {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -162px -181px;
+          background-position: -285px 0px;
           width: 48px;
           height: 48px; }
         .pg-event02 .login-sns .btn.selected.ks {
@@ -2308,351 +2312,434 @@ article.contents {
           width: 37px; }
           .pg-event02 .login-sns .btn.fb {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -156px -52px;
+            background-position: 0px -111px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event02 .login-sns .btn.fb {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event02 .login-sns .btn.tw {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: 0px -149px;
+            background-position: -211px 0px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event02 .login-sns .btn.tw {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event02 .login-sns .btn.ks {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -86px -106px;
+            background-position: 0px -154px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event02 .login-sns .btn.ks {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event02 .login-sns .btn.insta {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: 0px -106px;
+            background-position: -86px -111px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event02 .login-sns .btn.insta {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event02 .login-sns .btn.selected.fb {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -110px -51px;
+            background-position: -43px -111px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event02 .login-sns .btn.selected.fb {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event02 .login-sns .btn.selected.tw {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -43px -149px;
+            background-position: -86px -154px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event02 .login-sns .btn.selected.tw {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event02 .login-sns .btn.selected.ks {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -129px -106px;
+            background-position: -43px -154px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event02 .login-sns .btn.selected.ks {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-event02 .login-sns .btn.selected.insta {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -43px -106px;
+            background-position: -129px -111px;
             width: 37px;
             height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-event02 .login-sns .btn.selected.insta {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
 
   .pg-event02 .write-comment {
     display: block;
     position: relative;
-    padding: 3px;
-    height: 40px;
-    border: 1px solid #888;
-    background-color: #1f1f1f; }
-    .pg-event02 .write-comment:before {
-      content: '';
+    margin-top: -48px;
+    padding: 0 0 0 90px; }
+    .pg-event02 .write-comment input[type=text] {
       display: block;
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      background-image: url(/assets/images/desktop/sprites_desktop.png);
-      background-position: 0px -235px;
-      width: 40px;
-      height: 40px; }
-    .pg-event02 .write-comment .remain {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 90px;
-      z-index: 1;
+      box-sizing: border-box;
+      padding-left: 10px;
+      height: 37px;
+      width: 483px;
       font-size: 12px;
       color: #9f9f9f;
-      line-height: 48px; }
-    .pg-event02 .write-comment .txt-input {
-      position: absolute;
-      top: 3px;
-      right: 130px;
-      bottom: 3px;
-      left: 53px; }
-      .pg-event02 .write-comment .txt-input input[type=text] {
+      line-height: 35px;
+      border: 1px solid #888;
+      background-color: #1a1a1a; }
+    .pg-event02 .write-comment .customfile-container {
+      margin-bottom: 10px;
+      padding-left: 180px; }
+      .pg-event02 .write-comment .customfile-container .customfile-upload {
+        float: left;
+        text-indent: -9999px;
+        background-image: url(/assets/images/desktop/sprites_desktop.png);
+        background-position: -285px -54px;
+        width: 47px;
+        height: 48px; }
+      .pg-event02 .write-comment .customfile-container input[type=text] {
+        height: 48px;
+        width: 258px;
+        line-height: 48px;
+        border: 0px;
+        background-color: transparent; }
+    .pg-event02 .write-comment .txt-area {
+      display: block;
+      position: relative;
+      margin-top: 10px;
+      padding-right: 88px;
+      height: 70px;
+      border: 1px solid #888;
+      background-color: #1a1a1a; }
+      .pg-event02 .write-comment .txt-area .remain {
         display: block;
-        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 90px;
+        z-index: 1;
+        font-size: 12px;
+        color: #9f9f9f;
+        line-height: 70px; }
+      .pg-event02 .write-comment .txt-area textarea {
+        display: block;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 14px 0 0 10px;
+        height: 100%;
         width: 100%;
         font-size: 12px;
         color: #9f9f9f;
-        line-height: 40px;
-        border: 0px;
-        background-color: transparent; }
-    .pg-event02 .write-comment .btn-submit {
-      display: block;
-      position: absolute;
-      top: -1px;
-      right: -1px;
-      bottom: -1px;
-      z-index: 1;
-      width: 78px;
-      font-size: 15px;
-      font-weight: bold;
-      color: #353535;
-      text-align: center;
-      line-height: 50px;
-      background-color: #ebebeb; }
-    .pg-event02 .write-comment .message {
-      margin-top: 52px;
-      font-size: 12px;
-      color: #9f9f9f; }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-      .pg-event02 .write-comment {
-        padding: 2px;
-        height: 31px; }
-        .pg-event02 .write-comment:before {
-          top: 2px;
-          left: 2px;
-          background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -123px -149px;
-          width: 31px;
-          height: 31px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
-      .pg-event02 .write-comment:before {
-        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-        .pg-event02 .write-comment .remain {
-          right: 70px;
-          font-size: 10px;
-          line-height: 35px; }
-        .pg-event02 .write-comment .txt-input {
-          top: 2px;
-          right: 100px;
-          bottom: 2px;
-          left: 41px; }
-          .pg-event02 .write-comment .txt-input input[type=text] {
-            height: 31px;
-            font-size: 10px;
-            line-height: 31px; }
-        .pg-event02 .write-comment .btn-submit {
-          width: 60px;
-          font-size: 11px;
-          line-height: 37px; }
-        .pg-event02 .write-comment .message {
-          margin-top: 34px;
-          font-size: 10px; } }
-  .pg-event02 .comment-item {
-    overflow: hidden;
-    position: relative;
-    min-height: 40px; }
-    .pg-event02 .comment-item .user {
-      display: block;
-      float: left;
-      width: 243px; }
-      .pg-event02 .comment-item .user .via {
-        display: inline-block;
-        margin-right: 7px;
-        text-indent: -9999px;
-        vertical-align: middle; }
-        .pg-event02 .comment-item .user .via.facebook {
-          background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -194px -142px;
-          width: 26px;
-          height: 26px; }
-        .pg-event02 .comment-item .user .via.twitter {
-          background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -162px -142px;
-          width: 26px;
-          height: 26px; }
-        .pg-event02 .comment-item .user .via.kakaostory {
-          background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -136px -235px;
-          width: 26px;
-          height: 26px; }
-        .pg-event02 .comment-item .user .via.instagram {
-          background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -226px -142px;
-          width: 26px;
-          height: 26px; }
-      .pg-event02 .comment-item .user .thumb {
-        display: inline-block;
-        margin-right: 6px;
-        height: 40px;
-        width: 40px;
-        vertical-align: middle; }
-      .pg-event02 .comment-item .user figcaption {
-        display: inline-block;
-        font-size: 12px;
-        color: #a9a9a9;
-        line-height: 40px;
-        vertical-align: middle; }
-    .pg-event02 .comment-item .comment {
-      display: block;
-      float: left;
-      position: relative;
-      width: 607px;
-      margin-top: 11px;
-      padding-right: 10px;
-      padding-left: 13px;
-      min-height: 20px;
-      font-size: 12px;
-      color: #f8f8f8;
-      line-height: 20px; }
-      .pg-event02 .comment-item .comment:before {
-        content: '';
+        line-height: 16px;
+        background-color: transparent;
+        resize: none; }
+      .pg-event02 .write-comment .txt-area .btn-submit {
         display: block;
         position: absolute;
         top: -1px;
-        left: 0px;
-        height: 20px;
-        width: 1px;
-        background-color: #3c3d3c; }
+        right: -1px;
+        bottom: -1px;
+        z-index: 1;
+        height: 72px;
+        width: 88px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #353535;
+        text-align: center;
+        line-height: 70px;
+        background-color: #ebebeb; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
-      .pg-event02 .comment-item .user {
-        float: none;
-        width: 100%; }
-        .pg-event02 .comment-item .user .via {
-          margin-right: 3px; }
-          .pg-event02 .comment-item .user .via.facebook {
+      .pg-event02 .write-comment {
+        margin-top: 0;
+        padding: 0px; }
+        .pg-event02 .write-comment .customfile-container {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          padding-left: 0px; }
+          .pg-event02 .write-comment .customfile-container .customfile-upload {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -105px;
-            width: 21px;
-            height: 20px; } }
+            background-position: -129px -154px;
+            width: 37px;
+            height: 37px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
-        .pg-event02 .comment-item .user .via.facebook {
+        .pg-event02 .write-comment .customfile-container .customfile-upload {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
-          .pg-event02 .comment-item .user .via.twitter {
-            background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -79px;
-            width: 21px;
-            height: 20px; } }
-      @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
-        .pg-event02 .comment-item .user .via.twitter {
-          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-          .pg-event02 .comment-item .user .via.kakaostory {
-            background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -53px;
-            width: 21px;
-            height: 20px; } }
-      @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
-        .pg-event02 .comment-item .user .via.kakaostory {
-          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-          .pg-event02 .comment-item .user .via.instagram {
-            background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -27px;
-            width: 21px;
-            height: 20px; } }
-      @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
-        .pg-event02 .comment-item .user .via.instagram {
-          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-        .pg-event02 .comment-item .user .thumb {
-          margin-right: 4px;
-          height: 30px;
-          width: 30px; }
-        .pg-event02 .comment-item .user figcaption {
+          .pg-event02 .write-comment .customfile-container input[type=text] {
+            height: 37px;
+            width: 263px;
+            font-size: 10px;
+            line-height: 37px;
+            border: 0px;
+            background-color: transparent; }
+        .pg-event02 .write-comment input[type=text] {
+          height: 38px;
+          width: 100%;
           font-size: 10px;
-          color: #a9a9a9;
-          line-height: 30px; }
-      .pg-event02 .comment-item .comment {
-        box-sizing: border-box;
-        margin: 6px 20px 0 28px;
-        padding: 6px 0 0 0;
-        width: 230px;
-        font-size: 10px;
-        color: #f8f8f8;
-        line-height: 14px;
-        border-top: 1px solid #3c3c3c; }
-        .pg-event02 .comment-item .comment:before {
-          content: none; } }
-    @media only screen and (min-width: 1280px) {
-      .pg-event02 .comment-item .comment {
-        width: 844px; } }
-  .pg-event02 .list-comments {
-    margin: 40px -40px 0 -40px; }
-    .pg-event02 .list-comments > li {
+          line-height: 36px; }
+        .pg-event02 .write-comment .txt-area {
+          margin-top: 15px;
+          padding-right: 0px;
+          height: 166px; }
+          .pg-event02 .write-comment .txt-area .remain {
+            top: auto;
+            right: 70px;
+            bottom: 0;
+            font-size: 10px;
+            line-height: 35px; }
+          .pg-event02 .write-comment .txt-area textarea {
+            font-size: 10px;
+            line-height: 14px; }
+          .pg-event02 .write-comment .txt-area .btn-submit {
+            height: 168px;
+            width: 60px;
+            font-size: 11px;
+            line-height: 166px; } }
+  .pg-event02 .memory-item {
+    position: relative;
+    min-height: 417px; }
+    .pg-event02 .memory-item > .thumb {
       position: relative;
-      margin-top: 12px;
-      padding: 10px 0 10px 70px;
-      background-color: #1a1a1a; }
-      .pg-event02 .list-comments > li:before {
-        content: '';
+      background-color: #232323; }
+      .pg-event02 .memory-item > .thumb:before {
         display: block;
+        content: "";
+        width: 100%;
+        padding-top: 55.44872%; }
+      .pg-event02 .memory-item > .thumb > .inner {
         position: absolute;
-        top: -9px;
-        left: 120px;
-        background-image: url(/assets/images/desktop/sprites_desktop.png);
-        background-position: -258px -142px;
-        width: 18px;
-        height: 9px; }
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+      .pg-event02 .memory-item > .thumb .inner {
+        overflow: hidden;
+        text-align: center;
+        line-height: 173px; }
+        .pg-event02 .memory-item > .thumb .inner:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -35px;
+          margin-left: -35px;
+          background-image: url(/assets/images/desktop/sprites_desktop.png);
+          background-position: -92px -88px;
+          width: 70px;
+          height: 70px; }
+        .pg-event02 .memory-item > .thumb .inner img {
+          display: inline-block;
+          position: relative;
+          z-index: 1;
+          max-height: 100%;
+          max-width: 100%;
+          vertical-align: middle; }
+    .pg-event02 .memory-item > .info {
+      position: relative;
+      padding: 28px 20px 30px 20px;
+      border-bottom: 5px solid #000;
+      background-color: #1a1a1a; }
+      .pg-event02 .memory-item > .info .title {
+        font-size: 14px;
+        color: #fff; }
+      .pg-event02 .memory-item > .info .memory {
+        overflow: hidden;
+        margin-top: 34px;
+        min-height: 63px;
+        max-height: 63px;
+        font-size: 12px;
+        color: #a9a9a9;
+        line-height: 20px; }
+      .pg-event02 .memory-item > .info .btn-toggle {
+        display: block;
+        position: relative;
+        height: 27px;
+        text-align: center;
+        text-indent: -9999px;
+        border-bottom: 1px solid #5f5f5f; }
+        .pg-event02 .memory-item > .info .btn-toggle:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -4px 0 0 -6px;
+          background-image: url(/assets/images/desktop/sprites_desktop.png);
+          background-position: -320px -216px;
+          width: 12px;
+          height: 8px; }
+      .pg-event02 .memory-item > .info .user {
+        display: block;
+        padding-top: 10px; }
+        .pg-event02 .memory-item > .info .user .via {
+          display: inline-block;
+          margin-right: 7px;
+          text-indent: -9999px;
+          vertical-align: middle; }
+          .pg-event02 .memory-item > .info .user .via.facebook {
+            background-image: url(/assets/images/desktop/sprites_desktop.png);
+            background-position: -143px -235px;
+            width: 26px;
+            height: 26px; }
+          .pg-event02 .memory-item > .info .user .via.twitter {
+            background-image: url(/assets/images/desktop/sprites_desktop.png);
+            background-position: -111px -235px;
+            width: 26px;
+            height: 26px; }
+          .pg-event02 .memory-item > .info .user .via.kakaostory {
+            background-image: url(/assets/images/desktop/sprites_desktop.png);
+            background-position: -79px -235px;
+            width: 26px;
+            height: 26px; }
+          .pg-event02 .memory-item > .info .user .via.instagram {
+            background-image: url(/assets/images/desktop/sprites_desktop.png);
+            background-position: -175px -235px;
+            width: 26px;
+            height: 26px; }
+        .pg-event02 .memory-item > .info .user .nick {
+          display: inline-block;
+          font-size: 12px;
+          color: #a9a9a9; }
+      .pg-event02 .memory-item > .info.open {
+        position: absolute;
+        top: 173px;
+        right: 0;
+        left: 0;
+        z-index: 2; }
+        .pg-event02 .memory-item > .info.open .memory {
+          max-height: 300px; }
+        .pg-event02 .memory-item > .info.open .btn-toggle:before {
+          background-image: url(/assets/images/desktop/sprites_desktop.png);
+          background-position: -192px -142px;
+          width: 12px;
+          height: 8px; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
-      .pg-event02 .list-comments {
-        margin: 27px 0 0 0; }
-        .pg-event02 .list-comments > li {
-          margin-top: 8px;
-          padding: 8px 0 13px 15px; }
-          .pg-event02 .list-comments > li:before {
-            top: -7px;
-            left: 40px;
-            background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -208px -168px;
-            width: 14px;
-            height: 7px; } }
-      @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
-        .pg-event02 .list-comments > li:before {
-          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
-
+      .pg-event02 .memory-item {
+        min-height: auto; }
+        .pg-event02 .memory-item > .thumb .inner {
+          line-height: 166px; }
+        .pg-event02 .memory-item > .info {
+          padding: 20px 15px 23px 15px; }
+          .pg-event02 .memory-item > .info .title {
+            font-size: 12px; }
+          .pg-event02 .memory-item > .info .memory {
+            margin-top: 17px;
+            min-height: 50px;
+            max-height: 50px;
+            font-size: 10px;
+            line-height: 16px; }
+          .pg-event02 .memory-item > .info .user .via {
+            margin-right: 3px; }
+            .pg-event02 .memory-item > .info .user .via.facebook {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -172px -111px;
+              width: 21px;
+              height: 20px; } }
+        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+          .pg-event02 .memory-item > .info .user .via.facebook {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 248px 217px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+            .pg-event02 .memory-item > .info .user .via.twitter {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -115px -78px;
+              width: 21px;
+              height: 20px; } }
+        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+          .pg-event02 .memory-item > .info .user .via.twitter {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 248px 217px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+            .pg-event02 .memory-item > .info .user .via.kakaostory {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: 0px -197px;
+              width: 21px;
+              height: 20px; } }
+        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+          .pg-event02 .memory-item > .info .user .via.kakaostory {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 248px 217px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+            .pg-event02 .memory-item > .info .user .via.instagram {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -172px -154px;
+              width: 21px;
+              height: 20px; } }
+        @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+          .pg-event02 .memory-item > .info .user .via.instagram {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 248px 217px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+          .pg-event02 .memory-item > .info.open {
+            position: relative;
+            top: 0px; } }
+    @media only screen and (min-width: 1280px) {
+      .pg-event02 .memory-item {
+        min-height: 460px; }
+        .pg-event02 .memory-item > .thumb {
+          position: relative; }
+          .pg-event02 .memory-item > .thumb:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 55.38462%; }
+          .pg-event02 .memory-item > .thumb > .inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; }
+          .pg-event02 .memory-item > .thumb .inner {
+            line-height: 216px; }
+        .pg-event02 .memory-item > .info.open {
+          top: 216px; } }
+  .pg-event02 .list-memories {
+    float: left;
+    margin-top: 36px;
+    margin-right: -70px;
+    margin-left: -64px; }
+    .pg-event02 .list-memories > li {
+      float: left;
+      margin-right: 4px;
+      width: 312px; }
+      .pg-event02 .list-memories > li.lb {
+        margin-right: 0; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .pg-event02 .list-memories {
+        margin-top: 7px;
+        margin-right: 0;
+        margin-left: 0; }
+        .pg-event02 .list-memories > li {
+          float: none;
+          margin: 0;
+          width: 100%; } }
+    @media only screen and (min-width: 1280px) {
+      .pg-event02 .list-memories > li {
+        margin-right: 5px;
+        width: 390px; } }
   .pg-event02 .btn-list-more {
     display: block;
-    margin: 12px -40px 0 -40px;
+    margin: 12px -70px 0 -64px;
     font-size: 12px;
     color: #9f9f9f;
     line-height: 30px;
@@ -2665,7 +2752,7 @@ article.contents {
       margin-right: 5px;
       vertical-align: middle;
       background-image: url(/assets/images/desktop/sprites_desktop.png);
-      background-position: -258px -157px;
+      background-position: -210px -142px;
       width: 12px;
       height: 8px; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -2675,45 +2762,34 @@ article.contents {
         line-height: 24px; }
         .pg-event02 .btn-list-more:before {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -110px -94px;
+          background-position: -172px -137px;
           width: 10px;
           height: 6px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .pg-event02 .btn-list-more:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
+        background-size: 248px 217px; } }
 
   .pg-event02 .sns-area {
     position: relative;
-    margin-top: -97px;
-    padding: 0 40px; }
+    margin-top: -177px;
+    padding: 0 70px 0 64px; }
     .pg-event02 .sns-area > .title {
       display: none; }
     .pg-event02 .sns-area .login-sns {
-      margin-top: 20px; }
-    .pg-event02 .sns-area .write-comment {
-      position: absolute;
-      top: 0;
-      right: 40px;
-      left: 283px; }
+      margin-top: 0px; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .pg-event02 .sns-area {
-        margin-top: -108px;
+        margin-top: -104px;
         padding: 0 10px; }
         .pg-event02 .sns-area .login-sns {
           margin: 0 auto;
-          width: 217px; }
-        .pg-event02 .sns-area .write-comment {
-          position: relative;
-          top: auto;
-          right: auto;
-          left: auto;
-          margin-top: 15px; } }
+          width: 217px; } }
   .pg-event02 .event-summary {
     margin-top: 50px;
-    min-height: 245px;
-    background: url("/assets/images/desktop/bg_summary.png") 600px 0px no-repeat;
-    background-size: 299px 245px; }
+    padding-top: 24px;
+    min-height: 249px;
+    background: url("/assets/images/desktop/bg_summary02.png") 100% 0px no-repeat; }
     .pg-event02 .event-summary .title {
       display: block;
       font-size: 18px;
@@ -2777,29 +2853,25 @@ article.contents {
           .pg-event02 .event-summary .description span {
             margin-left: 0px; } }
     @media only screen and (min-width: 1280px) {
-      .pg-event02 .event-summary {
-        min-height: 272px;
-        background-position: 830px 0;
-        background-size: 332px 272px; }
-        .pg-event02 .event-summary .title {
-          font-size: 20px; }
-        .pg-event02 .event-summary .list-winner-goods {
-          margin-top: 27px;
-          margin-left: 70px; }
-          .pg-event02 .event-summary .list-winner-goods > li {
-            font-size: 16px;
-            line-height: 26px; }
-            .pg-event02 .event-summary .list-winner-goods > li:before {
-              top: 10px; }
-        .pg-event02 .event-summary .description {
-          margin-top: 20px;
-          margin-left: 79px;
-          font-size: 16px; }
-          .pg-event02 .event-summary .description em {
-            margin-top: 18px;
-            font-size: 15px; }
-          .pg-event02 .event-summary .description span {
-            margin-left: 46px; } }
+      .pg-event02 .event-summary .title {
+        font-size: 20px; }
+      .pg-event02 .event-summary .list-winner-goods {
+        margin-top: 27px;
+        margin-left: 70px; }
+        .pg-event02 .event-summary .list-winner-goods > li {
+          font-size: 16px;
+          line-height: 26px; }
+          .pg-event02 .event-summary .list-winner-goods > li:before {
+            top: 10px; }
+      .pg-event02 .event-summary .description {
+        margin-top: 20px;
+        margin-left: 79px;
+        font-size: 16px; }
+        .pg-event02 .event-summary .description em {
+          margin-top: 18px;
+          font-size: 15px; }
+        .pg-event02 .event-summary .description span {
+          margin-left: 46px; } }
   .pg-event02 .photos-mfs {
     position: relative;
     overflow: hidden; }
@@ -2999,7 +3071,7 @@ article.contents {
     right: 15px;
     text-indent: -9999px;
     background-image: url(/assets/images/desktop/sprites_desktop.png);
-    background-position: -46px -235px;
+    background-position: -285px -108px;
     width: 40px;
     height: 40px; }
   .popup-application > .title {
@@ -3022,7 +3094,7 @@ article.contents {
       line-height: 48px;
       text-align: center; }
       .popup-application .btns a.btn-done {
-        background-color: #4cc1ed; }
+        background-color: #00aeef; }
       .popup-application .btns a.btn-cancel {
         background-color: #9c9c9c; }
   .popup-application .box {
@@ -3073,12 +3145,12 @@ article.contents {
             margin: -3px 7px 0 0;
             vertical-align: middle;
             background-image: url(/assets/images/desktop/sprites_desktop.png);
-            background-position: -127px -142px;
+            background-position: -44px -235px;
             width: 29px;
             height: 26px; }
         .popup-application .box .radios input[type=radio]:checked + label:before {
           background-image: url(/assets/images/desktop/sprites_desktop.png);
-          background-position: -92px -142px;
+          background-position: -285px -200px;
           width: 29px;
           height: 26px; }
     .popup-application .box.basic-info {
@@ -3114,6 +3186,90 @@ article.contents {
       font-size: 14px;
       font-weight: bold;
       color: #666; }
+    .popup-application .box.service-center th {
+      padding-top: 8px;
+      vertical-align: top; }
+    .popup-application .box.service-center td {
+      background-color: #fff; }
+    .popup-application .box.service-center select {
+      display: block;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      padding-right: 20px;
+      padding-left: 20px;
+      height: 32px;
+      font-size: 14px;
+      color: #000;
+      line-height: 32px;
+      border: 1px solid #888;
+      background-color: #fff; }
+    .popup-application .box.service-center .list-center {
+      overflow: auto;
+      box-sizing: border-box;
+      height: 98px;
+      width: 100%;
+      border: 1px solid #888; }
+      .popup-application .box.service-center .list-center > li {
+        display: block;
+        padding-left: 20px;
+        height: 32px;
+        font-size: 14px;
+        color: #000;
+        line-height: 32px;
+        border-top: 1px solid #e7e7e7; }
+        .popup-application .box.service-center .list-center > li a {
+          color: #000; }
+          .popup-application .box.service-center .list-center > li a:hover, .popup-application .box.service-center .list-center > li a.selected {
+            color: #00aeef; }
+    .popup-application .box.service-center .service {
+      padding-top: 14px;
+      padding-bottom: 12px;
+      text-align: right;
+      border-bottom: 1px solid #c3c3c3; }
+      .popup-application .box.service-center .service .value {
+        font-size: 16px;
+        font-weight: bold;
+        color: #00aeef; }
+      .popup-application .box.service-center .service .btn-reset {
+        display: inline-block;
+        margin-left: 6px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #fff;
+        line-height: 28px;
+        background-color: #9c9c9c; }
+        .popup-application .box.service-center .service .btn-reset:before {
+          content: '';
+          display: inline-block;
+          margin: -2px 3px 0 0;
+          vertical-align: middle;
+          background-image: url(/assets/images/desktop/sprites_desktop.png);
+          background-position: -320px -200px;
+          width: 11px;
+          height: 10px; }
+  .popup-application .guide-message {
+    margin: 25px -30px -30px -30px;
+    padding: 25px 0 20px 78px;
+    background-color: #e7e7e7; }
+    .popup-application .guide-message li {
+      position: relative;
+      padding-left: 10px;
+      font-size: 14px;
+      color: #000;
+      line-height: 20px; }
+      .popup-application .guide-message li:before {
+        content: '-';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .popup-application .guide-message li.link:before {
+        color: #00aeef; }
+      .popup-application .guide-message li a {
+        color: #00aeef; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .popup-application {
       padding: 0 22px 22px 22px;
@@ -3122,13 +3278,13 @@ article.contents {
         top: 10px;
         right: 10px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -86px -149px;
+        background-position: -211px -80px;
         width: 31px;
         height: 31px; } }
     @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
       .popup-application > .btn-popup-close {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 230px 186px; } }
+        background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .popup-application > .title {
         margin: 0 -22px;
@@ -3162,9 +3318,9 @@ article.contents {
             width: 43px;
             font-size: 11px; }
           .popup-application .box table td {
-            padding-left: 17px;
+            padding: 5px 10px 3px 17px;
             font-size: 11px;
-            line-height: 27px;
+            line-height: 18px;
             border-bottom: 1px solid #fff; }
         .popup-application .box .check {
           margin-top: 14px;
@@ -3180,23 +3336,23 @@ article.contents {
               margin: -3px 7px 0 0;
               vertical-align: middle;
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -208px 0px;
+              background-position: -115px -51px;
               width: 22px;
               height: 21px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .popup-application .box .radios input[type=radio] + label:before {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 230px 186px; } }
+              background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
           .popup-application .box .radios input[type=radio]:checked + label:before {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -160px -149px;
+            background-position: -211px -153px;
             width: 22px;
             height: 21px; } }
         @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
           .popup-application .box .radios input[type=radio]:checked + label:before {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 230px 186px; } }
+            background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
         .popup-application .box.basic-info {
           padding-top: 7px;
@@ -3220,7 +3376,56 @@ article.contents {
             width: 55px; }
         .popup-application .box.agreement .warning {
           font-size: 11px;
-          line-height: 16px; } }
+          line-height: 16px; }
+        .popup-application .box.service-center th {
+          padding-top: 8px;
+          vertical-align: top; }
+        .popup-application .box.service-center td {
+          background-color: #fff; }
+        .popup-application .box.service-center select {
+          display: block;
+          padding-right: 16px;
+          padding-left: 16px;
+          height: 25px;
+          font-size: 11px;
+          line-height: 25px; }
+        .popup-application .box.service-center .list-center {
+          height: 79px; }
+          .popup-application .box.service-center .list-center > li {
+            padding-left: 16px;
+            height: 25px;
+            font-size: 11px;
+            line-height: 25px; }
+        .popup-application .box.service-center .service {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+          .popup-application .box.service-center .service .value {
+            font-size: 11px; }
+          .popup-application .box.service-center .service .btn-reset {
+            padding-right: 7px;
+            padding-left: 7px;
+            font-size: 11px;
+            line-height: 24px; }
+            .popup-application .box.service-center .service .btn-reset:before {
+              margin: -2px 3px 0 0;
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -239px -153px;
+              width: 8px;
+              height: 7px; } }
+          @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+            .popup-application .box.service-center .service .btn-reset:before {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 248px 217px; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .popup-application .guide-message {
+        margin: 25px -22px -22px -22px;
+        padding: 25px 24px 24px 24px; }
+        .popup-application .guide-message li {
+          padding-left: 10px;
+          font-size: 11px;
+          line-height: 15px; }
+          .popup-application .guide-message li a {
+            color: #00aeef; } }
 
 /* 컨텐츠 팝업 */
 .pg-popup {
@@ -3242,7 +3447,7 @@ article.contents {
       right: 15px;
       text-indent: -9999px;
       background-image: url(/assets/images/desktop/sprites_desktop.png);
-      background-position: -46px -235px;
+      background-position: -285px -108px;
       width: 40px;
       height: 40px; }
     .pg-popup article.contents > .title {
@@ -3318,13 +3523,13 @@ article.contents {
           top: 10px;
           right: 10px;
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -86px -149px;
+          background-position: -211px -80px;
           width: 31px;
           height: 31px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
         .pg-popup article.contents > .btn-popup-close {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 230px 186px; } }
+          background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
         .pg-popup article.contents > .title {
           padding-left: 0px;
@@ -3703,13 +3908,13 @@ article.contents {
               margin: -2px 3px 0 0;
               vertical-align: middle;
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -208px -151px;
+              background-position: -211px -180px;
               width: 12px;
               height: 11px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .pg-popup.mb-myservice .module.myservice .download .title:before {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 230px 186px; } }
+              background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
           .pg-popup.mb-myservice .module.myservice .download .btn-download {
             display: inline-block;
@@ -3717,23 +3922,23 @@ article.contents {
             .pg-popup.mb-myservice .module.myservice .download .btn-download.android {
               margin-left: 10px;
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: 0px -51px;
+              background-position: -60px -51px;
               width: 49px;
               height: 49px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .pg-popup.mb-myservice .module.myservice .download .btn-download.android {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 230px 186px; } }
+              background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
             .pg-popup.mb-myservice .module.myservice .download .btn-download.ios {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -55px -51px;
+              background-position: -156px 0px;
               width: 49px;
               height: 49px; } }
           @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
             .pg-popup.mb-myservice .module.myservice .download .btn-download.ios {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 230px 186px; } }
+              background-size: 248px 217px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
       .pg-popup.mb-myservice .icon01 {
         padding-left: 80px;
