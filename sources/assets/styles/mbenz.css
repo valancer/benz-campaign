@@ -2726,6 +2726,7 @@ article.contents {
         margin-right: 0; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .pg-event02 .list-memories {
+        float: none;
         margin-top: 7px;
         margin-right: 0;
         margin-left: 0; }

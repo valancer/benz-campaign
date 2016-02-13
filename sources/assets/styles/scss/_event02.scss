@@ -210,7 +210,7 @@
 		}
 
 		/// 모바일 영역
-		@include mobile { margin-top: 7px; margin-right: 0; margin-left: 0;
+		@include mobile { float: none; margin-top: 7px; margin-right: 0; margin-left: 0;
 			> li { float: none; margin: 0; width: 100%; }
 		}
 
