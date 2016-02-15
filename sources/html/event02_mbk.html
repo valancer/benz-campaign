@@ -9,6 +9,11 @@ include "head.html"
 			},
 		}, 0);
 
+		$('.btn-play').magnificPopup({
+			type: 'ajax'
+			,fixedContentPos: true
+			,mainClass: 'mfp-fade'
+		});
 		$('.btn-mb-service').magnificPopup({
 			type: 'ajax'
 			,fixedContentPos: true
@@ -68,6 +73,7 @@ include "head.html"
 		}
 		
 		$('input[type=file]').customFile();
+		$('.memory-item .thumb .inner').imagefill();
 	});
 	</script>
 
@@ -87,7 +93,7 @@ include "head.html"
 				<!-- 티져 영상 -->
 				<div class="teaser">
 					<!-- <a href="./contents_youtube.html" class="btn-play">티져영상 플레이</a> -->
-					<iframe id="" width="100%" height="100%" src="//www.youtube.com/embed/nlaT5gLhDY8?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1&vq=hd720" frameborder="0" allowfullscreen></iframe>
+					<iframe id="" width="100%" height="100%" src="//www.youtube.com/embed/avPamaxb_kA?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1&vq=hd720" frameborder="0" allowfullscreen></iframe>
 				</div>
 				
 				<!-- 이벤트 카피 -->
@@ -324,15 +330,15 @@ include "head.html"
 
 				<ul class="photos-mfs">
 					<li class="makingfilm01">
-						<a href="https://www.youtube.com/channel/UChbw0qKAMdFf6TlC0T3Z_zw" target="_blank">
+						<a href="./contents_youtube.html" class="btn-play">
 							<figure>
 								<div class="thumb">
 									<img src="/assets/images/desktop/makingfilm01.jpg" alt="">
 								</div>
 								<figcaption>
-									<span class="title">캠페인영상 보러가기</span>
+									<span class="title">태크마스터 영상보기</span>
 									<p>
-										메르세데스-벤츠의 영상 컨텐츠를 확인하세요
+										메르세데스-벤츠의 영상 컨텐츠를 확인하세요<br class="only-desktop"><br class="only-desktop">
 									</p>
 								</figcaption>
 							</figure>
