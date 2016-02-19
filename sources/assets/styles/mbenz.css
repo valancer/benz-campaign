@@ -115,7 +115,7 @@ a:hover {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .only-desktop {
-    display: none; } }
+    display: none !important; } }
 @media only screen and (min-width: 767px) and (max-width: 1280px) {
   .only-mobile {
     display: none; } }
@@ -386,6 +386,178 @@ article.contents {
       .mbenz-footer:before {
         right: 26px;
         left: 26px; } }
+
+/* 당첨자 팝업 */
+.popup-winner {
+  display: block;
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  padding: 57px 50px 0 50px;
+  width: 638px;
+  color: #666;
+  border: 1px solid #888;
+  background-color: #000; }
+  .popup-winner > .btn-popup-close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-indent: -9999px;
+    background-image: url(/assets/images/desktop/sprites_desktop.png);
+    background-position: -285px -108px;
+    width: 40px;
+    height: 40px; }
+  .popup-winner h1 {
+    font-size: 20px;
+    color: #00aeef;
+    line-height: 30px; }
+    .popup-winner h1 p {
+      color: #fff; }
+  .popup-winner h2 {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #fff; }
+    .popup-winner h2 em {
+      color: #00aeef; }
+  .popup-winner .list-winner {
+    margin-top: 5px;
+    width: 100%; }
+    .popup-winner .list-winner tr {
+      border-top: 2px solid #000; }
+    .popup-winner .list-winner th, .popup-winner .list-winner td {
+      height: 40px;
+      font-size: 12px;
+      font-weight: normal;
+      text-align: left;
+      color: #f8f8f8;
+      background-color: #1a1a1a; }
+    .popup-winner .list-winner th {
+      font-weight: bold;
+      color: #a9a9a9; }
+      .popup-winner .list-winner th.l {
+        padding-left: 74px;
+        width: 73px; }
+      .popup-winner .list-winner th.r {
+        width: 73px; }
+    .popup-winner .list-winner td.l {
+      width: 168px; }
+    .popup-winner .list-winner td.r {
+      width: 150px; }
+  .popup-winner .close {
+    position: relative;
+    padding: 35px 0;
+    text-align: center; }
+    .popup-winner .close .check {
+      display: block;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      font-size: 12px;
+      color: #a9a9a9; }
+      .popup-winner .close .check input[type=checkbox] {
+        vertical-align: middle; }
+      .popup-winner .close .check label {
+        margin-left: 3px;
+        vertical-align: middle; }
+    .popup-winner .close .btn-done {
+      display: inline-block;
+      width: 108px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 48px;
+      background-color: #00aeef; }
+  .popup-winner .list-guide {
+    margin: 0 -50px;
+    padding: 26px 47px;
+    background-color: #e7e7e7; }
+    .popup-winner .list-guide > li {
+      position: relative;
+      padding-left: 8px;
+      font-size: 14px;
+      color: #000;
+      line-height: 20px; }
+      .popup-winner .list-guide > li:before {
+        content: '-';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .popup-winner .list-guide > li.em {
+        color: #00aeef; }
+      .popup-winner .list-guide > li a {
+        color: #00aeef; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .popup-winner {
+      top: auto;
+      right: auto;
+      padding: 25px 10px 0 10px;
+      width: auto; }
+      .popup-winner > .btn-popup-close {
+        top: 10px;
+        right: 10px;
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -211px -80px;
+        width: 31px;
+        height: 31px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+      .popup-winner > .btn-popup-close {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 248px 217px; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .popup-winner h1 {
+        font-size: 16px;
+        line-height: 20px; }
+      .popup-winner h2 {
+        margin-top: 20px;
+        font-size: 14px; }
+      .popup-winner .list-winner {
+        oveflow: hidden;
+        width: 100%; }
+        .popup-winner .list-winner tr {
+          border-top: 0px; }
+        .popup-winner .list-winner th, .popup-winner .list-winner td {
+          height: 24px;
+          display: block;
+          float: left;
+          text-align: center;
+          line-height: 24px;
+          border-top: 1px solid #000; }
+        .popup-winner .list-winner th.l {
+          padding-left: 0px;
+          width: 30%;
+          text-align: right; }
+        .popup-winner .list-winner th.r {
+          width: 30%;
+          text-align: right; }
+        .popup-winner .list-winner td.l {
+          width: 70%; }
+        .popup-winner .list-winner td.r {
+          width: 70%; }
+      .popup-winner .close {
+        position: relative;
+        padding: 35px 0;
+        text-align: center; }
+        .popup-winner .close .check {
+          display: block;
+          position: relative;
+          top: auto;
+          left: auto;
+          margin: 0 auto;
+          padding-bottom: 5px; }
+        .popup-winner .close .btn-done {
+          display: block;
+          margin: 0 auto;
+          width: 54px;
+          font-size: 14px;
+          line-height: 28px; }
+      .popup-winner .list-guide {
+        margin: 0 -10px;
+        padding: 13px 10px; }
+        .popup-winner .list-guide > li {
+          font-size: 12px;
+          line-height: 16px; } }
 
 /* event - 추억도 A/S가 되나요? */
 .pg-event01 {
