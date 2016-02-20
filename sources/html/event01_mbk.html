@@ -6,8 +6,8 @@ include "head.html"
 			$.magnificPopup.open({
 				items: {
 					src: '#popup-event01-winner',
-				},
-				alignTop: true
+				}
+				,alignTop: true
 			}, 0);
 		}
 
@@ -713,7 +713,7 @@ include "head.html"
 				<label for="expired">오늘하루 이창을 열지 않음</label>
 			</p>
 
-			<button type="button" class="btn-done">확인</button>
+			<button type="button" class="btn-close">확인</button>
 		</fieldset>
 
 		<ul class="list-guide">
@@ -725,7 +725,9 @@ include "head.html"
 	</aside>
 	<script>
 	$(window.document).ready(function(){
-		$('.popup-winner .btn-done').on('click', function(e) {
+		$('.popup-winner .btn-close').on('click', function(e) {
+			e.preventDefault();
+
 			if( $('input[name=expired]').is(":checked") ) {
 				$.cookie('winner', 'hidden', {expires : 1});
 			}

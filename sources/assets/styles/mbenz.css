@@ -390,9 +390,10 @@ article.contents {
 /* 당첨자 팝업 */
 .popup-winner {
   display: block;
-  position: absolute;
-  top: 110px;
-  right: 0px;
+  position: relative;
+  margin-top: 120px;
+  float: right;
+  /*position: absolute; top: 110px; right: 0px;*/
   padding: 57px 50px 0 50px;
   width: 638px;
   color: #666;
@@ -460,7 +461,7 @@ article.contents {
       .popup-winner .close .check label {
         margin-left: 3px;
         vertical-align: middle; }
-    .popup-winner .close .btn-done {
+    .popup-winner .close .btn-close {
       display: inline-block;
       width: 108px;
       font-size: 16px;
@@ -492,6 +493,8 @@ article.contents {
     .popup-winner {
       top: auto;
       right: auto;
+      float: none;
+      margin-top: 0px;
       padding: 25px 10px 0 10px;
       width: auto; }
       .popup-winner > .btn-popup-close {
@@ -546,7 +549,7 @@ article.contents {
           left: auto;
           margin: 0 auto;
           padding-bottom: 5px; }
-        .popup-winner .close .btn-done {
+        .popup-winner .close .btn-close {
           display: block;
           margin: 0 auto;
           width: 54px;
