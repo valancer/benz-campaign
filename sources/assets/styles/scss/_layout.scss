@@ -93,3 +93,79 @@ article.contents { position: relative; margin: 0 auto; padding-bottom: 50px; wid
 	}
 }
 
+
+/* 당첨자 팝업 */
+.popup-winner { display: block; position: relative; margin-top: 120px; float: right; /*position: absolute; top: 110px; right: 0px;*/ padding: 57px 50px 0 50px; width: 638px; color: #666; border: 1px solid #888; background-color: #000;
+	> .btn-popup-close { display: block; position: absolute; top: 15px; right: 15px; text-indent: -9999px; @include sprite($sd-btn-close01); }
+	h1 { font-size: 20px; color: #00aeef; line-height: 30px;
+		p { color: #fff; }
+	}
+	h2 { margin-top: 40px; font-size: 16px; color: #fff;
+		em { color: #00aeef; }
+	}
+
+	.list-winner { margin-top: 5px; width: 100%;
+		tr { border-top: 2px solid #000; }
+		th, td { height: 40px; font-size: 12px; font-weight: normal; text-align: left; color: #f8f8f8; background-color: #1a1a1a; }
+		th { font-weight: bold; color: #a9a9a9;
+			&.l { padding-left: 74px; width: 73px; }
+			&.r { width: 73px; }
+		}
+		td { 
+			&.l { width: 168px; }
+			&.r { width: 150px; }
+		}
+	}
+
+	.close { position: relative; padding: 35px 0; text-align: center;
+		.check { display: block; position: absolute; top: 45px; left: 0; font-size: 12px; color: #a9a9a9;
+			input[type=checkbox] { vertical-align: middle; }
+			label { margin-left: 3px; vertical-align: middle; }
+		}
+		.btn-close { display: inline-block; width: 108px; font-size: 16px; font-weight: bold; color: #fff; line-height: 48px; background-color: #00aeef; }
+	}
+
+	.list-guide { margin: 0 -50px; padding: 26px 47px; background-color: #e7e7e7;
+		> li { position: relative; padding-left: 8px; font-size: 14px; color: #000; line-height: 20px;
+			&:before { content: '-'; display: block; position: absolute; top: 0; left: 0; }
+			&.em { color: #00aeef; }
+			a { color: #00aeef; }
+		}
+	}
+
+
+	/// 모바일 영역
+	@include mobile { top: auto; right: auto; float: none; margin-top: 0px; padding: 25px 10px 0 10px; width: auto;
+		> .btn-popup-close { top: 10px; right: 10px; @include retina_sprite($sm-btn-close01-group); }
+
+		h1 { font-size: 16px; line-height: 20px; }
+		h2 { margin-top: 20px; font-size: 14px;  }
+
+		.list-winner { oveflow: hidden; width: 100%;
+			tr { border-top: 0px; }
+			th, td { height: 24px; display: block; float: left; text-align: center; line-height: 24px; border-top: 1px solid #000; }
+			th {
+				&.l { padding-left: 0px; width: 30%; text-align: right; }
+				&.r { width: 30%; text-align: right; }
+			}
+			td { 
+				&.l { width: 70%; }
+				&.r { width: 70%; }
+			}
+		}
+
+		.close { position: relative; padding: 35px 0; text-align: center;
+			.check { display: block; position: relative; top: auto; left: auto; margin: 0 auto; padding-bottom: 5px; }
+			.btn-close { display: block; margin: 0 auto; width: 54px; font-size: 14px; line-height: 28px; }
+		}
+
+		.list-guide { margin: 0 -10px; padding: 13px 10px;
+			> li { font-size: 12px; line-height: 16px; }
+		}
+	}
+
+}
+
+
+
+

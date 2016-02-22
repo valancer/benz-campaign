@@ -37,7 +37,7 @@ a:hover { color: #fff; text-decoration: underline; }
 /// 모바일 영역
 @include mobile {
 	.only-mobile { }
-	.only-desktop { display: none; }
+	.only-desktop { display: none !important; }
 }
 
 @include default {

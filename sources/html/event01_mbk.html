@@ -2,12 +2,15 @@ include "head.html"
 <body class="pg-event01">
 	<script>
 	$(window.document).ready(function(){
+		if( $.cookie('winner') != 'hidden' ) {
+			$.magnificPopup.open({
+				items: {
+					src: '#popup-event01-winner',
+				}
+				,alignTop: true
+			}, 0);
+		}
 
-		$.magnificPopup.open({
-			items: {
-				src: '#popup-event01'
-			},
-		}, 0);
 
 		// popups
 		// $('.btn-play').magnificPopup({
@@ -454,6 +457,284 @@ include "head.html"
 			</p>
 		</fieldset>
 	</aside>
+
+
+	<!-- 1차 당첨자 발표 -->
+	<aside id="popup-event01-winner" class="popup-winner mfp-hide">
+		<button class="btn-popup-close mfp-close">닫기</button>
+
+		<h1>
+			추억도 A/S가 되나요?
+			<p>[이벤트1] 당첨을 축하드립니다!</p>
+		</h1>
+
+		<h2><em>1등</em>(1명) : 남해 사우스케이프(1인 2매 : 주말기준)</h2>
+		<table class="list-winner">
+			<caption>남해 사우스케이프(1인 2매 : 주말기준) 당첨자 명단</caption>
+			<tbody>
+				<tr>
+					<th class="l">이*호</th>
+					<td class="l">010-****-0151</td>
+					<th class="r only-desktop"></th>
+					<td class="r only-desktop"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2><em>2등</em>(20명) : 메가박스 부티크M 스위트룸 예매권(1인 2매)</h2>
+		<table class="list-winner">
+			<caption>메가박스 부티크M 스위트룸 예매권(1인 2매) 당첨자 명단</caption>
+			<tbody>
+				<tr>
+					<th class="l">이*표</th>
+					<td class="l">010-****-0043</td>
+					<th class="r">정*진</th>
+					<td class="r">010-****-9706</td>
+				</tr>
+				<tr>
+					<th class="l">장*근</th>
+					<td class="l">010-****-3196</td>
+					<th class="r">김*혜</th>
+					<td class="r">010-****-4456</td>
+				</tr>
+				<tr>
+					<th class="l">이*영</th>
+					<td class="l">010-****-3641</td>
+					<th class="r">신*빈</th>
+					<td class="r">010-****-7194</td>
+				</tr>
+				<tr>
+					<th class="l">김*영</th>
+					<td class="l">010-****-9987</td>
+					<th class="r">최*신</th>
+					<td class="r">010-****-7015</td>
+				</tr>
+				<tr>
+					<th class="l">이*섭</th>
+					<td class="l">010-****-6041</td>
+					<th class="r">오*근</th>
+					<td class="r">010-****-9729</td>
+				</tr>
+				<tr>
+					<th class="l">김*태</th>
+					<td class="l">010-****-2610</td>
+					<th class="r">곽*성</th>
+					<td class="r">010-****-8871</td>
+				</tr>
+				<tr>
+					<th class="l">정*우</th>
+					<td class="l">010-****-9230</td>
+					<th class="r">차*백</th>
+					<td class="r">010-****-2684</td>
+				</tr>
+				<tr>
+					<th class="l">조*비</th>
+					<td class="l">010-****-1124</td>
+					<th class="r">김*원</th>
+					<td class="r">010-****-9262</td>
+				</tr>
+				<tr>
+					<th class="l">이*민</th>
+					<td class="l">010-****-3780</td>
+					<th class="r">김*희</th>
+					<td class="r">010-****-3373</td>
+				</tr>
+				<tr>
+					<th class="l">황*진</th>
+					<td class="l">010-****-3537</td>
+					<th class="r">장*훈</th>
+					<td class="r">010-****-0361</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2><em>3등</em>(50명) : 스타벅스 아메리카노 기프티콘</h2>
+		<table class="list-winner">
+			<caption>메가박스 부티크M 스위트룸 예매권(1인 2매) 당첨자 명단</caption>
+			<tbody>
+				<tr>
+					<th class="l">이*진</th>
+					<td class="l">010-****-8333</td>
+					<th class="r">오*환</th>
+					<td class="r">010-****-6382</td>
+					</tr>
+				<tr>
+					<th class="l">송*희</th>
+					<td class="l">010-****-5350</td>
+					<th class="r">강*주</th>
+					<td class="r">010-****-1826</td>
+				</tr>
+				<tr>
+					<th class="l">위*은</th>
+					<td class="l">010-****-3215</td>
+					<th class="r">이*름</th>
+					<td class="r">010-****-0083</td>
+				</tr>
+				<tr>
+					<th class="l">김*</th>
+					<td class="l">010-****-1350</td>
+					<th class="r">박*현</th>
+					<td class="r">010-****-9314</td>
+				</tr>
+				<tr>
+					<th class="l">김*수</th>
+					<td class="l">010-****-4172</td>
+					<th class="r">서*열</th>
+					<td class="r">010-****-7587</td>
+				</tr>
+				<tr>
+					<th class="l">김*희</th>
+					<td class="l">010-****-2120</td>
+					<th class="r">최*진</th>
+					<td class="r">010-****-3621</td>
+				</tr>
+				<tr>
+					<th class="l">전*형</th>
+					<td class="l">010-****-1824</td>
+					<th class="r">조*완</th>
+					<td class="r">010-****-8098</td>
+				</tr>
+				<tr>
+					<th class="l">박*미</th>
+					<td class="l">010-****-5325</td>
+					<th class="r">이*혁</th>
+					<td class="r">010-****-7788</td>
+				</tr>
+				<tr>
+					<th class="l">이*지</th>
+					<td class="l">010-****-1170</td>
+					<th class="r">이*</th>
+					<td class="r">010-****-8249</td>
+				</tr>
+				<tr>
+					<th class="l">김*태</th>
+					<td class="l">010-****-8645</td>
+					<th class="r">강*</th>
+					<td class="r">010-****-1844</td>
+				</tr>
+				<tr>
+					<th class="l">이*기</th>
+					<td class="l">010-****-3442</td>
+					<th class="r">박*수</th>
+					<td class="r">010-****-5204</td>
+				</tr>
+				<tr>
+					<th class="l">이*기</th>
+					<td class="l">010-****-0729</td>
+					<th class="r">김*경</th>
+					<td class="r">010-****-8024</td>
+				</tr>
+				<tr>
+					<th class="l">나*섭</th>
+					<td class="l">010-****-5810</td>
+					<th class="r">심*호</th>
+					<td class="r">010-****-1762</td>
+				</tr>
+				<tr>
+					<th class="l">이*민</th>
+					<td class="l">010-****-0787</td>
+					<th class="r">김*범</th>
+					<td class="r">010-****-1024</td>
+				</tr>
+				<tr>
+					<th class="l">문*완</th>
+					<td class="l">010-****-1220</td>
+					<th class="r">하*봄</th>
+					<td class="r">010-****-1310</td>
+				</tr>
+				<tr>
+					<th class="l">이*은</th>
+					<td class="l">010-****-9888</td>
+					<th class="r">여*영</th>
+					<td class="r">010-****-1733</td>
+				</tr>
+				<tr>
+					<th class="l">조*희</th>
+					<td class="l">010-****-5027</td>
+					<th class="r">이*움</th>
+					<td class="r">010-****-2900</td>
+				</tr>
+				<tr>
+					<th class="l">이*민</th>
+					<td class="l">010-****-5907</td>
+					<th class="r">이*호</th>
+					<td class="r">010-****-6570</td>
+				</tr>
+				<tr>
+					<th class="l">안*주</th>
+					<td class="l">010-****-1291</td>
+					<th class="r">한*경</th>
+					<td class="r">010-****-7137</td>
+				</tr>
+				<tr>
+					<th class="l">이*산</th>
+					<td class="l">010-****-8448</td>
+					<th class="r">이*승</th>
+					<td class="r">010-****-1575</td>
+				</tr>
+				<tr>
+					<th class="l">심*덕</th>
+					<td class="l">010-****-5886</td>
+					<th class="r">안*근</th>
+					<td class="r">010-****-2094</td>
+				</tr>
+				<tr>
+					<th class="l">김*혜</th>
+					<td class="l">010-****-2889</td>
+					<th class="r">박*석</th>
+					<td class="r">010-****-4472</td>
+				</tr>
+				<tr>
+					<th class="l">임*숙</th>
+					<td class="l">010-****-3311</td>
+					<th class="r">황*용</th>
+					<td class="r">010-****-3709</td>
+				</tr>
+				<tr>
+					<th class="l">강*수</th>
+					<td class="l">010-****-6080</td>
+					<th class="r">장*호</th>
+					<td class="r">010-****-1029</td>
+				</tr>
+				<tr>
+					<th class="l">이*주</th>
+					<td class="l">010-****-6547</td>
+					<th class="r">조*완</th>
+					<td class="r">011-***-8155</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<fieldset class="close">
+			<legend>닫기</legend>
+
+			<p class="check">
+				<input type="checkbox" id="expired" name="expired">
+				<label for="expired">오늘하루 이창을 열지 않음</label>
+			</p>
+
+			<button type="button" class="btn-close">확인</button>
+		</fieldset>
+
+		<ul class="list-guide">
+			<li>당첨자 발표 후 2주간 연락이 닿지 않을 경우 당첨이 취소됩니다.</li>
+			<li>잘못 등록한 개인정보로 인해 이벤트 당첨 대상에서 제외되었을 경우 당사가 책임지지 않습니다.</li>
+			<li>이벤트 진행 사정에 따라 경품 및 당첨자 발표일이 변경될 수 있습니다.</li>
+			<li class="em"><a href="http://www.mercedes-benz.co.kr/content/korea/mpc/mpc_korea_website/krng/home_mpc/passengercars/home/world/private_policy.html" target="_blank">메르세데스-벤츠 개인정보 취급방침 보기&gt;</a></li>
+		</ul>
+	</aside>
+	<script>
+	$(window.document).ready(function(){
+		$('.popup-winner .btn-close').on('click', function(e) {
+			e.preventDefault();
+
+			if( $('input[name=expired]').is(":checked") ) {
+				$.cookie('winner', 'hidden', {expires : 1});
+			}
+			$.magnificPopup.close();
+		});
+	});
+	</script>
 
 	<!-- 하단 영역 -->
 	include "footer.html"
