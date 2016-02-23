@@ -143,7 +143,7 @@
 		> .thumb { @include aspect-ratio(312, 173); background-color: #232323;
 			.inner { overflow: hidden; text-align: center; line-height: 173px;
 				&:before { content: ''; display: block; position: absolute; top: 50%; left: 50%; margin-top: -$sd-benz-logo01-height/2; margin-left: -$sd-benz-logo01-width/2; @include sprite($sd-benz-logo01); }
-				// img { display: inline-block; position: relative; z-index: z("default"); max-height: 100%; max-width: 100%; vertical-align: middle; }
+				img { z-index: z("default"); }
 			}
 		}
 

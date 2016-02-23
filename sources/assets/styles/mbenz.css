@@ -2722,6 +2722,8 @@ article.contents {
           background-position: -92px -88px;
           width: 70px;
           height: 70px; }
+        .pg-event02 .memory-item > .thumb .inner img {
+          z-index: 1; }
     .pg-event02 .memory-item > .info {
       position: relative;
       padding: 28px 20px 30px 20px;
